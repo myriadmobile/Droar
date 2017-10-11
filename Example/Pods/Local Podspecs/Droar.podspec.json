@@ -1,0 +1,33 @@
+{
+  "name": "Droar",
+  "version": "1.0.0",
+  "summary": "A short description of Droar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Janglinator/Droar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Janglinator": "njangula@myriadmobile.com"
+  },
+  "source": {
+    "git": "https://github.com/Janglinator/Droar.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Droar/Classes/**/*",
+  "resource_bundles": {
+    "Droar": [
+      "Droar/Classes/**/*.{xib,png,jpeg,jpg,txt}"
+    ]
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "SDVersion": [
+
+    ]
+  }
+}

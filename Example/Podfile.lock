@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Droar (1.0.0):
+    - SDVersion
+  - SDVersion (4.3.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Droar (from `../`)
+  - SDVersion
+
+EXTERNAL SOURCES:
+  Droar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Droar: 3e5570a208879349a67b6a158b47d3485d2576c0
+  SDVersion: f89668d817ccfee16a57fc279030635bd2ad8fae
+
+PODFILE CHECKSUM: 1267e79e1f66e54ecf099a6ad8544f1bda01467c
+
+COCOAPODS: 1.2.1

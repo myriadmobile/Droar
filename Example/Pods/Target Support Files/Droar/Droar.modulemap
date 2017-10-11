@@ -1,0 +1,6 @@
+framework module Droar {
+  umbrella header "Droar-umbrella.h"
+
+  export *
+  module * { export * }
+}
