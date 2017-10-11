@@ -19,7 +19,7 @@ Droar is a useful tool for displaying runtime information and settings, useful f
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Janglinator' => 'njangula@myriadmobile.com' }
-  s.source           = { :git => 'https://github.com/Janglinator/Droar.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Janglinator/Droar.git', :branch => 'master', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
