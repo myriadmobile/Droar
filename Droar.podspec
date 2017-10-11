@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Droar'
-  s.version          = '1.0.0'
-  s.summary          = 'A runtime debugging tool.'
+  s.version          = '1.0.1'
+  s.summary          = 'A runtime debugging tool for iOS.'
 
   s.description      = <<-DESC
 Droar is a useful tool for displaying runtime information and settings, useful for debugging.
