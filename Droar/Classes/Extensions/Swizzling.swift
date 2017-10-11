@@ -12,7 +12,7 @@ public class DispatchOnce {
     
     private var locked = false
     
-    public func perform(block: (Void) -> Void) {
+    public func perform(block: () -> Void) {
         if !locked {
             locked = true
             block()

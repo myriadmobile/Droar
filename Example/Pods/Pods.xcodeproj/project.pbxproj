@@ -68,7 +68,6 @@
 		D1ED8EED46635C7A5005275EF3C74072 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9F06512F7C1AF9E2BF05E9424A9F69 /* SDiOSVersion.m */; };
 		D4888C11D51D8BCE3DCDB26F61D051E9 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F5BAC6173B32DB8D8A5C4E2532EF76 /* Swizzling.swift */; };
 		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D705EFC427D45C15C7C3E93A26AC9EEC /* AFURLSessionManager.m */; };
-		DC9B8D221AE2B476A3BB90E2E6F6F9C4 /* NSURLSessionConfigurationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C6E0F8F4B80EC8F86BB7B25B8514A0 /* NSURLSessionConfigurationExtensions.swift */; };
 		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 179BC435B6E344E274EF30A324915208 /* AFNetworkReachabilityManager.m */; };
 		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A581744A8DFD1EE18874461515437AD2 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C84526EA3433103567EA1EF9A7FDC /* AFHTTPSessionManager.m */; };
@@ -121,15 +120,14 @@
 /* Begin PBXFileReference section */
 		00DF2CF488B13B2BA09E8E98A9B9A167 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FD75AFF6E3EEFEAC812B23B438A15A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		0ABD61CF8E32EC666CC5B2CAFEB3090D /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		0ABD61CF8E32EC666CC5B2CAFEB3090D /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		12096360C0ED1E228427F74D7EC45DC8 /* DeviceInfoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceInfoSource.swift; sourceTree = "<group>"; };
-		14C6E0F8F4B80EC8F86BB7B25B8514A0 /* NSURLSessionConfigurationExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSURLSessionConfigurationExtensions.swift; sourceTree = "<group>"; };
 		179BC435B6E344E274EF30A324915208 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		19A237F3B9E82FDA36D1DD6B97E17B66 /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		1CD53B3425C74E0C689D9062B4677F3E /* TestflightDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestflightDetection.swift; sourceTree = "<group>"; };
 		1FDD7D171D0FE12B57BAC98D1CC46F69 /* Droar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-prefix.pch"; sourceTree = "<group>"; };
 		2045170165CB7405BD20392D2D0DC8B5 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		2079AB2C15E1CD573FACB3434628C383 /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDVersion.framework; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2079AB2C15E1CD573FACB3434628C383 /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D7684824BEF1440ACDBD2C9409396B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		2185984C0373F7C7D831776F86255741 /* SDiOSVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDiOSVersion.h; path = SDVersion/SDiOSVersion/SDiOSVersion.h; sourceTree = "<group>"; };
 		21A65E0A484845C1B964DAA121D651D7 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
@@ -144,8 +142,8 @@
 		43579ABA758BAAD52DB203A8228B8D26 /* SDVersion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-prefix.pch"; sourceTree = "<group>"; };
 		44584C89789BA8314BA38D4FF187F929 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4698498BDD731DAC17027578411C4539 /* Pods-Droar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Droar.bundle; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		506A04233F9804A336C8A8D8FA84EA55 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDVersion.modulemap; sourceTree = "<group>"; };
+		48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		506A04233F9804A336C8A8D8FA84EA55 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDVersion.modulemap; sourceTree = "<group>"; };
 		51D73166C6885EA521AE1B39CD599597 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		54084A185AAEA7F15543E22BD6CECD96 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		545F8398A13FA57B5B1636599EEA5C7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -166,17 +164,17 @@
 		7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droar_Example-umbrella.h"; sourceTree = "<group>"; };
 		8359A4E6526C9B26B647DFA8497075D8 /* SectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionManager.swift; sourceTree = "<group>"; };
 		8D23B50397F94471E21C9B2117FE98E6 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9412D2CF9A912C7D5FDA7313C9D9B960 /* Operands.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operands.swift; sourceTree = "<group>"; };
 		945349D5076ACA09B8A524DF5E0713A0 /* Droar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Droar.xcconfig; sourceTree = "<group>"; };
 		97137BE957EC14CC6F2A1D2AEE6BD972 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		A0526022F7AA6823FE8B8046562F536E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		A460B69541CCCADE8A3C251ABC3E95A5 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		A581744A8DFD1EE18874461515437AD2 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		A982897E2E553C26FEF9E6D989313E62 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
+		A982897E2E553C26FEF9E6D989313E62 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
 		A9F027024199B9C44B974BCB9DDFE3BE /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		B071340E0724F0680A20DB1B8085447F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		B30FBF8BF4419D117D3B703C3CE36FDB /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Droar.modulemap; sourceTree = "<group>"; };
+		B30FBF8BF4419D117D3B703C3CE36FDB /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Droar.modulemap; sourceTree = "<group>"; };
 		B4E2BA0433C9CB522A5F24C9700A88D3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		B5E1C775241464BE8D02C69E43D9C5BB /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		B6E7EE8DA33C2A0E4F7D48C8C303499E /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
@@ -196,20 +194,20 @@
 		D728F3E95A4BAF8EC5092DC4E569AF43 /* Droar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-umbrella.h"; sourceTree = "<group>"; };
 		DCC0E964669D24878AEAEA3A9818CC73 /* Loader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
 		DCD519B4D0AA1348959CF776708783DB /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		DCF8FF18794EC148554F380524A4FC6E /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF8FF18794EC148554F380524A4FC6E /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4EBDF4D9091F2282FFFEA0504FD3FC /* SDVersion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDVersion-dummy.m"; sourceTree = "<group>"; };
 		E07AA3BD8C72C9244EE2D141D62678B9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		E112FBF99F829948EE894E740F52C60C /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Droar.swift; sourceTree = "<group>"; };
 		E21678360C4EC6BB24838C52E7B4BD52 /* Pods-Droar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E38402670D1A914F8ED5DB30731C1D5F /* Loader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
-		E5AD3CEDC9F6EC67832050433F1178CF /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Droar_Example.framework; path = "Pods-Droar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AD3CEDC9F6EC67832050433F1178CF /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CEE563D81B030CC646486EC84F82F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79DE146B9C028003269C7D6F90F843B /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
 		E871A19CCC7654D1BCE13BFE5C371EF1 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		EB96B816FCBBFBE8A178F93CE7E6BCE3 /* SDVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-umbrella.h"; sourceTree = "<group>"; };
 		F2290BDD01AAED14453FF4C6EB854A13 /* Pods-Droar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3409CF0746D34E3D78F60C6B78D833F /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		F63577FC91E5C71E22CF3BCF1B3A2DC2 /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Droar.framework; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63577FC91E5C71E22CF3BCF1B3A2DC2 /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88C2593BDB26E2D55A6276449AEEDA6 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		FA45BE5BB21E5E78181831D9BC6742FF /* Pods-Droar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Droar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,7 +266,6 @@
 			children = (
 				E77CED56204A75346F43B41DDF1631B5 /* Classes */,
 			);
-			name = Droar;
 			path = Droar;
 			sourceTree = "<group>";
 		};
@@ -276,10 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				19A237F3B9E82FDA36D1DD6B97E17B66 /* BundleExtensions.swift */,
-				14C6E0F8F4B80EC8F86BB7B25B8514A0 /* NSURLSessionConfigurationExtensions.swift */,
 				77F5BAC6173B32DB8D8A5C4E2532EF76 /* Swizzling.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -299,7 +294,6 @@
 			children = (
 				C30A04128AEBA7A10E32E4C30B0DE3BA /* DroarViewController.swift */,
 			);
-			name = Implementation;
 			path = Implementation;
 			sourceTree = "<group>";
 		};
@@ -309,7 +303,6 @@
 				9412D2CF9A912C7D5FDA7313C9D9B960 /* Operands.swift */,
 				1CD53B3425C74E0C689D9062B4677F3E /* TestflightDetection.swift */,
 			);
-			name = Helpers;
 			path = Helpers;
 			sourceTree = "<group>";
 		};
@@ -324,7 +317,6 @@
 				BB28203C85D87291DE3B1F5429DAAC97 /* Support Files */,
 				767E68D77C9B092560E39C8D0A691B7A /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -342,7 +334,6 @@
 				32C8C33ED4F212C6453E8F25D9EF47F2 /* BuildInfoSource.swift */,
 				12096360C0ED1E228427F74D7EC45DC8 /* DeviceInfoSource.swift */,
 			);
-			name = "Default Sources";
 			path = "Default Sources";
 			sourceTree = "<group>";
 		};
@@ -363,7 +354,6 @@
 				C2FD17D680470596B09B9C17198151BE /* SDVersion.h */,
 				784E96616468A3F07857E389261C2E01 /* Support Files */,
 			);
-			name = SDVersion;
 			path = SDVersion;
 			sourceTree = "<group>";
 		};
@@ -485,7 +475,6 @@
 				C147A2D7C44308BF13F7CA1633089579 /* DroarLabelCell.swift */,
 				B7E288CC93EAF8703DD805AA721588BB /* DroarLabelCell.xib */,
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -494,7 +483,6 @@
 			children = (
 				C22B15880DCCA028AA99355D7AC0419D /* Cells */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -534,7 +522,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Cells;
 			path = Cells;
 			sourceTree = "<group>";
 		};
@@ -551,7 +538,6 @@
 			children = (
 				9D0251656C9A07BDC413398FFB165993 /* Classes */,
 			);
-			name = Droar;
 			path = Droar;
 			sourceTree = "<group>";
 		};
@@ -595,7 +581,6 @@
 				475A7E9928D9838BD655247D59A85395 /* Implementation */,
 				F98264CBDED2BA72B6FCA8423A196B51 /* Loader */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -605,7 +590,6 @@
 				E38402670D1A914F8ED5DB30731C1D5F /* Loader.h */,
 				DCC0E964669D24878AEAEA3A9818CC73 /* Loader.m */,
 			);
-			name = Loader;
 			path = Loader;
 			sourceTree = "<group>";
 		};
@@ -873,7 +857,6 @@
 				59902357504FA22491E61005D4ACE782 /* DroarViewController.swift in Sources */,
 				641821C86F5A9C55BFC55D61E64DE170 /* ISectionSource.swift in Sources */,
 				F4BDCE1AEEFF4B0D6F050F132ED0AD76 /* Loader.m in Sources */,
-				DC9B8D221AE2B476A3BB90E2E6F6F9C4 /* NSURLSessionConfigurationExtensions.swift in Sources */,
 				923F43A05CB641A2056703851857D43F /* Operands.swift in Sources */,
 				5A6667751E832E45B8DC3D43E656104E /* SectionManager.swift in Sources */,
 				D4888C11D51D8BCE3DCDB26F61D051E9 /* Swizzling.swift in Sources */,
