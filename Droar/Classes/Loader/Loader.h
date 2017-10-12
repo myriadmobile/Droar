@@ -10,7 +10,7 @@
 
 @interface Loader : NSObject
     
-    NSString *compileDate();
-    NSString *compileTime();
+    NSString *compileDate(void);
+    NSString *compileTime(void);
     
 @end
