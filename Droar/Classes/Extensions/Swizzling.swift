@@ -20,8 +20,8 @@ public class DispatchOnce {
     }
 }
 
-extension NSObject {
-    class func swizzleImplementations(origSelector: Selector, withSelector: Selector, once:DispatchOnce) {
+public extension NSObject {
+    public class func swizzleImplementations(origSelector: Selector, withSelector: Selector, once:DispatchOnce) {
         let aClass: AnyClass = object_getClass(self)!
         
         let origMethod = class_getClassMethod(aClass, origSelector)!
@@ -30,7 +30,7 @@ extension NSObject {
         swizzleImplementations(aClass: aClass, origSelector: origSelector, withSelector: withSelector, origMethod: origMethod, withMethod: withMethod, once: once)
     }
     
-    func swizzleImplementations(origSelector: Selector, withSelector: Selector, once:DispatchOnce) {
+    public func swizzleImplementations(origSelector: Selector, withSelector: Selector, once:DispatchOnce) {
         
         let aClass: AnyClass = object_getClass(self)!
         

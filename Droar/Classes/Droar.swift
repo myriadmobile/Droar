@@ -25,7 +25,7 @@ import Foundation
         initializeWindow()
     }
     
-    public func registerSource(source: ISectionSource) {
+    public static func register(source: ISectionSource) {
         SectionManager.sharedInstance.registerSource(source: source)
         Droar.viewController?.tableView.reloadData()
     }
@@ -41,7 +41,7 @@ import Foundation
         return isDebug || TestflightDetection.isTestflightBuild()
     }
     
-    static var firstAdd = true
+    private static var firstAdd = true
     
     private static func addDebugDrawer()
     {

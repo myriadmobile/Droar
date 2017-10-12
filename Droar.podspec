@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Droar'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A runtime debugging tool for iOS.'
 
   s.description      = <<-DESC
