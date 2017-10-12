@@ -13,7 +13,7 @@
     
     + (void)load
     {
-        [Droar start];
+        [Droar performSelector:NSSelectorFromString(@"start")];
     }
     
     NSString *compileDate() {

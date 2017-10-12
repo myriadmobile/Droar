@@ -19,13 +19,17 @@ import Foundation
     private static var viewController: DroarViewController?
     private static let drawerWidth:CGFloat = 250
     
-    @objc public static func start()
+    private static let startOnce = DispatchOnce()
+    
+    @objc internal static func start()
     {
-        addDebugDrawer()
-        initializeWindow()
+        startOnce.perform {
+            addDebugDrawer()
+            initializeWindow()
+        }
     }
     
-    public static func register(source: ISectionSource) {
+    @objc public static func register(source: ISectionSource) {
         SectionManager.sharedInstance.registerSource(source: source)
         Droar.viewController?.tableView.reloadData()
     }
@@ -41,12 +45,10 @@ import Foundation
         return isDebug || TestflightDetection.isTestflightBuild()
     }
     
-    private static var firstAdd = true
     
     private static func addDebugDrawer()
     {
         if !allowEnable() { return }
-        if !firstAdd { return }
         
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.numberOfTapsRequired = 3
@@ -57,8 +59,6 @@ import Foundation
         dismissalRecognizer?.direction = .right
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
-        
-        firstAdd = false
     }
     
     @objc public static func setGestureReconizer(value: UIGestureRecognizer)
