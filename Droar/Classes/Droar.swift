@@ -29,7 +29,7 @@ import Foundation
         }
     }
     
-    @objc public static func register(source: ISectionSource) {
+    @objc public static func register(source: IDroarSource) {
         SectionManager.sharedInstance.registerSource(source: source)
         Droar.viewController?.tableView.reloadData()
     }

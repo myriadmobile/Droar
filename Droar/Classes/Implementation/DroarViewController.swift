@@ -15,19 +15,18 @@ class DroarViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SectionManager.sharedInstance.sources[section].sectionNumberOfCells()
+        return SectionManager.sharedInstance.sources[section].droarSectionNumberOfCells()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return SectionManager.sharedInstance.sources[indexPath.section].sectionCellForIndex(index: indexPath.row, tableView: tableView)
+        return SectionManager.sharedInstance.sources[indexPath.section].droarSectionCellForIndex(index: indexPath.row, tableView: tableView)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var shouldDeselect = true
-        SectionManager.sharedInstance.sources[indexPath.section].indexSelected(tableView: tableView, selectedIndex: indexPath.row, shouldDeselect: &shouldDeselect)
-        
-        if (shouldDeselect) {
-            tableView.deselectRow(at: indexPath, animated: true)
+        if let indexSelectedAction = SectionManager.sharedInstance.sources[indexPath.section].droarSectionIndexSelected {
+            indexSelectedAction(tableView, indexPath.row)
         }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import Droar
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
+    func droarSectionTitle() -> String {
+        return "Example Rows"
+    }
+    
+    func droarSectionPosition() -> PositionInfo {
+        return PositionInfo(position: .top, priority: .high)
+    }
+    
+    func droarSectionNumberOfCells() -> Int {
+        return 1
+    }
+    
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+        return DroarLabelCell.create(title: "Droar Label Cell", detail: "Click Me!", allowSelection: true)
+    }
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Droar.register(source: self)
         return true
     }
 

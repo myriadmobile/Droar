@@ -12,7 +12,7 @@ public class DroarLabelCell : UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     
-    public static func create(title: String = "", detail: String = "", allowSelection: Bool = false) -> DroarLabelCell {
+    public static func create(title: String? = "", detail: String? = "", allowSelection: Bool = false) -> DroarLabelCell {
         var cell: DroarLabelCell?
         
         for view in Bundle.podBundle.loadNibNamed("DroarLabelCell", owner: self, options: nil) ?? [Any]() {

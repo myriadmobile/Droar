@@ -8,7 +8,7 @@
 import Foundation
 import SDVersion
 
-internal class DeviceInfoSource : ISectionSource {
+internal class DeviceInfoSource : IDroarSource {
     private enum DeviceInfoRow: Int {
         case name = 0
         case systemName = 1
@@ -19,20 +19,19 @@ internal class DeviceInfoSource : ISectionSource {
         case identifier = 6
         case count = 7
     }
-    
-    func sectionTitle() -> String {
+    func droarSectionTitle() -> String {
         return "Device Info"
     }
     
-    func sectionPosition() -> PositionInfo {
+    func droarSectionPosition() -> PositionInfo {
         return PositionInfo(position: .bottom, priority: .low)
     }
     
-    func sectionNumberOfCells() -> Int {
+    func droarSectionNumberOfCells() -> Int {
         return DeviceInfoRow.count.rawValue
     }
     
-    func sectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         
         let device = UIDevice.current

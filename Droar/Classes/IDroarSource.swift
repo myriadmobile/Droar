@@ -29,14 +29,15 @@ import Foundation
     @objc public private(set) var priority: PositionPriority
 }
 
-@objc public protocol ISectionSource {
-    @objc func sectionTitle() -> String
-    @objc func sectionPosition() -> PositionInfo
-    @objc func sectionNumberOfCells() -> Int
-    @objc func sectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
+@objc public protocol IDroarSource {
+    @objc func droarSectionTitle() -> String
+    @objc func droarSectionPosition() -> PositionInfo
+    @objc func droarSectionNumberOfCells() -> Int
+    @objc func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
+    @objc optional func droarSectionPerformSetup(tableView: UITableView)
+    @objc optional func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int)
 }
 
-public extension ISectionSource {
-    func performSetup(tableView: UITableView) {}
-    func indexSelected(tableView: UITableView, selectedIndex: Int, shouldDeselect: inout Bool) {}
+public extension IDroarSource {
+    
 }

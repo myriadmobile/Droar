@@ -7,7 +7,8 @@
 
 import Foundation
 
-internal class BuildInfoSource : ISectionSource {
+internal class BuildInfoSource : IDroarSource {
+    
     private enum BuildInfoRow: Int {
         case name = 0
         case displayName = 1
@@ -23,19 +24,19 @@ internal class BuildInfoSource : ISectionSource {
         case count = 10
     }
     
-    func sectionTitle() -> String {
+    func droarSectionTitle() -> String {
         return "Build Info"
     }
     
-    func sectionPosition() -> PositionInfo {
+    func droarSectionPosition() -> PositionInfo {
         return PositionInfo(position: .bottom, priority: .low)
     }
     
-    func sectionNumberOfCells() -> Int {
+    func droarSectionNumberOfCells() -> Int {
         return BuildInfoRow.count.rawValue
     }
     
-    func sectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         
         let info = Bundle.main.infoDictionary
