@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Droar (1.0.3):
+  - Droar (1.0.7):
     - SDVersion
   - SDVersion (4.3.1)
 
@@ -29,7 +29,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Droar: 8ed9bc410f6532e88ad522ba6a3951c5600936ee
+  Droar: 244afa8d24275a00f2cd2dc3141c3aebc15e1a20
   SDVersion: f89668d817ccfee16a57fc279030635bd2ad8fae
 
 PODFILE CHECKSUM: 1267e79e1f66e54ecf099a6ad8544f1bda01467c

@@ -8,18 +8,6 @@
 
 import Foundation
 
-public class DispatchOnce {
-    
-    private var locked = false
-    
-    public func perform(block: () -> Void) {
-        if !locked {
-            locked = true
-            block()
-        }
-    }
-}
-
 public extension NSObject {
     public class func swizzleImplementations(origSelector: Selector, withSelector: Selector, once:DispatchOnce) {
         let aClass: AnyClass = object_getClass(self)!

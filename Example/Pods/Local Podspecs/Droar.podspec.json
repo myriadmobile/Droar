@@ -1,6 +1,6 @@
 {
   "name": "Droar",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "summary": "A runtime debugging tool for iOS.",
   "description": "Droar is a useful tool for displaying runtime information and settings, useful for debugging.",
   "homepage": "https://github.com/Janglinator/Droar",
@@ -14,7 +14,7 @@
   "source": {
     "git": "https://github.com/Janglinator/Droar.git",
     "branch": "master",
-    "tag": "1.0.3"
+    "tag": "1.0.7"
   },
   "platforms": {
     "ios": "10.0"
