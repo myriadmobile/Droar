@@ -39,10 +39,10 @@ class SectionManager {
             
             if (position1.position != position2.position)
             {
-                return position1.position.rawValue >= position2.position.rawValue
+                return position1.position.rawValue <= position2.position.rawValue
             }
             
-            return position1.priority.rawValue >= position2.priority.rawValue
+            return position1.priority.rawValue <= position2.priority.rawValue
         }
     }
     
