@@ -21,7 +21,7 @@ import Foundation
 }
 
 @objc public class PositionInfo: NSObject {
-    init(position: SectionPosition = SectionPosition.middle, priority:PositionPriority) {
+    init(position: SectionPosition = .middle, priority:PositionPriority = .medium) {
         self.position = position
         self.priority = priority
     }

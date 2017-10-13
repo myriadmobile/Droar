@@ -1,8 +1,8 @@
 {
   "name": "Droar",
-  "version": "1.0.0",
-  "summary": "A short description of Droar.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.3",
+  "summary": "A runtime debugging tool for iOS.",
+  "description": "Droar is a useful tool for displaying runtime information and settings, useful for debugging.",
   "homepage": "https://github.com/Janglinator/Droar",
   "license": {
     "type": "MIT",
@@ -13,7 +13,8 @@
   },
   "source": {
     "git": "https://github.com/Janglinator/Droar.git",
-    "tag": "1.0.0"
+    "branch": "master",
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "10.0"
