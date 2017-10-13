@@ -21,19 +21,19 @@ import Foundation
 }
 
 @objc public class PositionInfo: NSObject {
-    init(position: SectionPosition = .middle, priority:PositionPriority = .medium) {
+    @objc public init(position: SectionPosition = .middle, priority:PositionPriority = .medium) {
         self.position = position
         self.priority = priority
     }
-    private(set) var position: SectionPosition
-    private(set) var priority: PositionPriority
+    @objc public private(set) var position: SectionPosition
+    @objc public private(set) var priority: PositionPriority
 }
 
 @objc public protocol ISectionSource {
-    func sectionTitle() -> String
-    func sectionPosition() -> PositionInfo
-    func sectionNumberOfCells() -> Int
-    func sectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
+    @objc func sectionTitle() -> String
+    @objc func sectionPosition() -> PositionInfo
+    @objc func sectionNumberOfCells() -> Int
+    @objc func sectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
 }
 
 public extension ISectionSource {
