@@ -23,7 +23,7 @@ public class DroarLabelCell : UITableViewCell {
         
         cell?.titleLabel.text = title
         cell?.detailLabel.text = detail
-        cell?.isUserInteractionEnabled = false
+        cell?.isUserInteractionEnabled = allowSelection
         
         return cell ?? DroarLabelCell()
     }
