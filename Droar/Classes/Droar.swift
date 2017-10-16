@@ -34,6 +34,11 @@ import Foundation
         Droar.viewController?.tableView.reloadData()
     }
     
+    public static func registerBasicSources(_ sources: [BasicSourceType]) {
+        SectionManager.sharedInstance.registerBasicSources(sources)
+        Droar.viewController?.tableView.reloadData()
+    }
+    
     private static func allowEnable() -> Bool
     {
         var isDebug = false

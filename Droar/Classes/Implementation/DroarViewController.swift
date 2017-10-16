@@ -29,4 +29,8 @@ class DroarViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return SectionManager.sharedInstance.sources[section].droarSectionTitle()
+    }
 }

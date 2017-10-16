@@ -7,8 +7,25 @@
 //
 
 import UIKit
+import Droar
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, IDroarSource {
+    func droarSectionTitle() -> String {
+        return "ViewController"
+    }
+    
+    func droarSectionPosition() -> PositionInfo {
+        return PositionInfo(position: .top, priority: .low)
+    }
+    
+    func droarSectionNumberOfCells() -> Int {
+        return 1
+    }
+    
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+        return DroarLabelCell.create(title: "Dynamic source!", detail: "Neat!", allowSelection: false)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
