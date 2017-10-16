@@ -34,10 +34,6 @@ import Foundation
     @objc func droarSectionPosition() -> PositionInfo
     @objc func droarSectionNumberOfCells() -> Int
     @objc func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
-    @objc optional func droarSectionPerformSetup(tableView: UITableView)
+//    @objc optional func droarSectionPerformSetup(tableView: UITableView)
     @objc optional func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int)
-}
-
-public extension IDroarSource {
-    
 }

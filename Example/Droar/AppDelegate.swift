@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Droar.start()
         Droar.register(source: self)
         return true
     }

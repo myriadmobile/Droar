@@ -8,12 +8,11 @@
 
 import Foundation
 
-public class TestflightDetection
+public class SourceDetection
 {
     private init() { }
 
-    public static func isTestflightBuild() -> Bool
-    {
+    public static func isTestflightBuild() -> Bool {
         var isTestflight = Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
 
         isTestflight |= Bundle.main.path(forResource: "embedded", ofType: "mobileprovision") != nil

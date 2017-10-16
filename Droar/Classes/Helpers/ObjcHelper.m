@@ -1,20 +1,15 @@
 //
-//  Loader.m
+//  ObjcHelper.m
 //  Pods
 //
 //  Created by Nathan Jangula on 6/15/17.
 //
 //
 
-#import "Loader.h"
+#import "ObjcHelper.h"
 #import <Droar/Droar-Swift.h>
 
-@implementation Loader
-    
-    + (void)load
-    {
-        [Droar performSelector:NSSelectorFromString(@"start")];
-    }
+@implementation ObjcHelper
     
     NSString *compileDate() {
         return [NSString stringWithUTF8String:__DATE__];

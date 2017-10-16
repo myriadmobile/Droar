@@ -8,31 +8,41 @@
 
 import Foundation
 
-class SectionManager {
+internal class SectionManager {
     
     static let sharedInstance = SectionManager()
+    private var staticSources = [IDroarSource]()
     public private(set) var sources = [IDroarSource]()
-    
+
     private init() {
-        sources.append(BuildInfoSource())
-        sources.append(DeviceInfoSource())
+        staticSources.append(BuildInfoSource())
+        staticSources.append(DeviceInfoSource())
         sortSources()
     }
     
-    public func registerSource(source: IDroarSource) {
-        if (!sources.contains(where: { (existingSource) -> Bool in
-            return existingSource.droarSectionTitle() == source.droarSectionTitle()
+    public func registerStaticSource(_ source: IDroarSource) {
+        if (!staticSources.contains(where: { (existingSource) -> Bool in
+            return existingSource === source
         })) {
-            cacheSources(newSource: source)
+            staticSources.append(source)
+            sortSources()
         }
     }
     
-    private func cacheSources(newSource: IDroarSource) {
-        sources.append(newSource)
+    public func registerDynamicSources(_ sources: [IDroarSource]) {
+        self.sources = sources
         sortSources()
     }
     
     private func sortSources() {
+        for source in staticSources {
+            if (!sources.contains(where: { (existingSource) -> Bool in
+                return existingSource === source
+            })) {
+                sources.append(source)
+            }
+        }
+        
         sources.sort { (source1, source2) -> Bool in
             let position1 = source1.droarSectionPosition()
             let position2 = source2.droarSectionPosition()
@@ -46,11 +56,11 @@ class SectionManager {
         }
     }
     
-    public func initializeSections(tableView: UITableView) {
-        for section in sources {
-            if let performSetupAction = section.droarSectionPerformSetup {
-                performSetupAction(tableView)
-            }
-        }
-    }
+//    public func initializeSections(tableView: UITableView) {
+//        for section in sources {
+//            if let performSetupAction = section.droarSectionPerformSetup {
+//                performSetupAction(tableView)
+//            }
+//        }
+//    }
 }

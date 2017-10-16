@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Droar'
-  s.version          = '1.0.10'
+  s.version          = '1.1.0'
   s.summary          = 'A runtime debugging tool for iOS.'
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ Droar is a useful tool for displaying runtime information and settings, useful f
   s.homepage         = 'https://github.com/Janglinator/Droar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Janglinator' => 'njangula@myriadmobile.com' }
+  s.author           = { 'Janglinator' => 'ndjangula@hotmail.com' }
   s.source           = { :git => 'https://github.com/Janglinator/Droar.git', :branch => 'master', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
