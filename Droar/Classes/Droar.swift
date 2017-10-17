@@ -31,12 +31,12 @@ import Foundation
     
     @objc public static func register(source: IDroarSource) {
         SectionManager.sharedInstance.registerStaticSource(source)
-        Droar.viewController?.tableView.reloadData()
+        viewController?.tableView.reloadData()
     }
     
     public static func registerBasicSources(_ sources: [BasicSourceType]) {
         SectionManager.sharedInstance.registerBasicSources(sources)
-        Droar.viewController?.tableView.reloadData()
+        viewController?.tableView.reloadData()
     }
     
     private static func allowEnable() -> Bool
@@ -82,13 +82,13 @@ import Foundation
     
     @objc public static func toggleVisibility() {
         if let keyWindow = loadKeyWindow() {
-            if Droar.navController?.view.transform.isIdentity ?? false {
-                Droar.navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
+            if navController?.view.transform.isIdentity ?? false {
+                navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
                 
-                keyWindow.addSubview(Droar.navController.view)
+                keyWindow.addSubview(navController.view)
                 SectionManager.sharedInstance.registerDynamicSources(loadDynamicSources())
                 
-                Droar.viewController?.tableView.reloadData()
+                viewController?.tableView.reloadData()
             }
             
             UIView.animate(withDuration: 0.25, animations: {
@@ -192,5 +192,21 @@ import Foundation
         separatorView.backgroundColor = UIColor.black
         separatorView.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
         navController.view.addSubview(separatorView)
+    }
+    
+    internal static func captureScreen() -> UIImage? {
+        let parent = navController.view.superview
+        navController.view.removeFromSuperview()
+        
+        guard let window = loadKeyWindow() else { return .none }
+        UIGraphicsBeginImageContextWithOptions(window.bounds.size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return .none }
+        window.layer.render(in: context)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        parent?.addSubview(navController.view)
+        
+        return image
     }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 public enum BasicSourceType: Int {
-    case buildInfo, deviceInfo
-    static let allValues: [BasicSourceType] = [.buildInfo, .deviceInfo]
+    case buildInfo, deviceInfo, reporting
+    static let defaultValues: [BasicSourceType] = [.buildInfo, .deviceInfo, .reporting]
 }
 
 internal class SectionManager {
@@ -22,7 +22,7 @@ internal class SectionManager {
     public private(set) var sources = [IDroarSource]()
     
     private init() {
-        registerBasicSources(BasicSourceType.allValues)
+        registerBasicSources(BasicSourceType.defaultValues)
     }
     
     public func registerBasicSources(_ sources: [BasicSourceType]) {
@@ -32,6 +32,7 @@ internal class SectionManager {
             switch type {
             case .buildInfo: basicSources.append(BuildInfoSource()); break;
             case .deviceInfo: basicSources.append(DeviceInfoSource()); break;
+            case .reporting: basicSources.append(ReportingSource()); break;
             }
         }
         

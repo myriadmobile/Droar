@@ -8,76 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		00C05031BBA5BA48A00FE41348F41BDA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2045170165CB7405BD20392D2D0DC8B5 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00D1A07916DDB6A0B1199BEA84F9FD0D /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6CA0F5DE25978F33C7C7722EA06C75 /* Droar-dummy.m */; };
-		056DF3B2E5C19239C367B0DDCD47ECBE /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD39FFB330515B741F0DA5BCDDE047E /* DroarLabelCell.xib */; };
-		092E7085E700A625DA49392681CC390C /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC4169571D5FE29D4C4BCA5DC086F9 /* BundleExtensions.swift */; };
-		0CD45CE88F4BA105FA0A1EF34B630FCD /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EE38AF288D26D2D0527B4BF8F81EC0 /* Swizzling.swift */; };
+		0A2CBD3E074E9764C999DC7EC4078920 /* DroarLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73F634EB908709AC143EEFAEC638847 /* DroarLabelCell.swift */; };
+		0B12B0E588D19F935B3802BB8D078CFB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF8123520AF5998452C5729415CAE5 /* UIViewControllerExtensions.swift */; };
 		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FD75AFF6E3EEFEAC812B23B438A15A /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A43961D75761D7B17504440F4C82AFE /* UIActivityIndicatorView+AFNetworking.m */; };
 		1E2A6D057E20BE8F5ED3E594F7B8C286 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2319FC0A7018C34ACC801164562F4757 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2039E39C9172EA1B9463BCFE7D02563E /* BuildInfoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79184567B3529E7273AC30DF66D7FB68 /* BuildInfoSource.swift */; };
-		25EA5DDA673A3D916F4FECD91EE6DA93 /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABACA76EE8B415415485E615C11237E /* DroarViewController.swift */; };
-		2711954C6F25368CC2C097BEE3C87F05 /* SourceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959FDF602D4F3E150503BAA91BD5778B /* SourceDetection.swift */; };
+		233BF74D3894F041668B0117359D7220 /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAF64AC375D1F26513B59AF3FDE2A71 /* DroarLabelCell.xib */; };
+		23FC0FFEC8324C24DF5E18B7741F54EA /* Operands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AB74D1EFB855CFBCB95BBEB3B0A07 /* Operands.swift */; };
+		245ECFAD453D27D9E459DF4D1E9E845A /* SDVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4EBDF4D9091F2282FFFEA0504FD3FC /* SDVersion-dummy.m */; };
 		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF686EA8871F8A0B8D2533A8406A909 /* AFURLRequestSerialization.m */; };
 		2B0705CC26A4CBEE32A5A60284AED35B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7576EF1411D7C5BE5BEEC0880FF00B1F /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9D77869235771996B54A9B303C32E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63650834609D0D9F31FBCC562CE6A06E /* UIKit.framework */; };
 		30F0BAE1DBB79BBB6CBD957EA8B89E4B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1C4B1D0F247004E603B2344B5F79B9 /* MobileCoreServices.framework */; };
 		32076D3DD644045CF79DFFEBB6BFF3F2 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F027024199B9C44B974BCB9DDFE3BE /* UIButton+AFNetworking.m */; };
 		34C88657FE7ABE9F833623F94952D253 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 28420D8216FD9FAD09DE27F098968DA6 /* UIProgressView+AFNetworking.m */; };
+		357CB3B7198B791DB73229412C2D18EB /* Droar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2D7F5BDA09A6A94364D7068AA65E9F /* Droar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35CBB7B255FD8D412AFCECBC4311A847 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A460B69541CCCADE8A3C251ABC3E95A5 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3792E25649C0A146E8134235A02419CF /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9F06512F7C1AF9E2BF05E9424A9F69 /* SDiOSVersion.m */; };
-		41ECEC8F18928200CFD79D4DB1DA739A /* Droar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */; };
+		3CB4DEE59DD8D6B68286DC9756B62E00 /* ObjcHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFDC65EBD16175954A9726874D7DB76 /* ObjcHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42AF1BB1ED090CC9E588A463441D09E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B071340E0724F0680A20DB1B8085447F /* SystemConfiguration.framework */; };
 		4442D8453D210EFC13CFE2CAF862ED1D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD519B4D0AA1348959CF776708783DB /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45F802D04B3BE0CAEC586C2F3016027B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D7684824BEF1440ACDBD2C9409396B /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 55026A0E9A149DE276380614F3B90FC1 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50339E83BFF495C0631374AA17B0ECE9 /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EC20F4E8F339C8C60A0406A9BBB138 /* DispatchOnce.swift */; };
+		4E7818F731360534BF63639B7BF62835 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9F06512F7C1AF9E2BF05E9424A9F69 /* SDiOSVersion.m */; };
 		51047C1945103943F70BEADE83725630 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E871A19CCC7654D1BCE13BFE5C371EF1 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D95A4286DA030A179EE34AEE75714B /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4516F2B505989988AF7A1868202F9C86 /* DroarViewController.swift */; };
+		52A859F2E38146243C1724423EAF7F1B /* Droar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */; };
 		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B981512E0605BE9B52B6F9B934EFF5 /* AFURLResponseSerialization.m */; };
-		5B906D122FAEB550CCE610E53BB7A59F /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5926479ABA7B0ECA7D77F1AB01ADAC97 /* SDVersion.framework */; };
 		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5832DFC4FD84CC71DBA4A8FBB7CCC1BF /* AFNetworkActivityIndicatorManager.m */; };
 		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E07AA3BD8C72C9244EE2D141D62678B9 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65F8B0A1E3D8CE0CFA02A94D65B56F19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63650834609D0D9F31FBCC562CE6A06E /* UIKit.framework */; };
-		6D92CE3341521BEBB4CA5F62377CF6A8 /* ObjcHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 85142E23DF05ED3BAD0188A74F62FA7F /* ObjcHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77B072E3A320E1322B2EB491E831F1DE /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A7812600DC0F2A38A3FC1DA6DEF1C1 /* DispatchOnce.swift */; };
 		789D749690B308852115FF20CD982A69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545F8398A13FA57B5B1636599EEA5C7B /* CoreGraphics.framework */; };
 		7A112C0F21A62CB6F1AA8D917A6EEA6C /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 97137BE957EC14CC6F2A1D2AEE6BD972 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A61A6F382B62A9140B9BE6DB26A4524 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2185984C0373F7C7D831776F86255741 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F88C2593BDB26E2D55A6276449AEEDA6 /* UIWebView+AFNetworking.m */; };
 		80CFB2D61CC31E599EF2B5C4DDCBA44D /* Pods-Droar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80EAD1EFA2373FC23D2C0051F63EDE60 /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5926479ABA7B0ECA7D77F1AB01ADAC97 /* SDVersion.framework */; };
 		82D554EC9FB9A62D935B6555325F5898 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0526022F7AA6823FE8B8046562F536E /* Security.framework */; };
-		85AD8F4685310B4FBF7C14AABFDD6A59 /* DeviceInfoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535DE3EB4BC3FE1A451922504B61934D /* DeviceInfoSource.swift */; };
-		88C69F082C7A9FE07BAAE1233B5D5A09 /* Operands.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2B1129D619EAB0BC887621D0F5C76 /* Operands.swift */; };
-		8B64BD2F46F84964272E02BCF05074BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
+		8507027E760DB422D13CAB096DDB6797 /* SectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0276401A6E2A58EB2441F96A8C81B /* SectionManager.swift */; };
+		88011D56FB81BDFED91424B827838B7F /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F3278F5F88D6694C5B6E03C6B7AC4B /* BundleExtensions.swift */; };
+		89118B719485FF5A3BB42D26532FF826 /* SourceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E244E24FE284A8C45A9F617F3794CE6 /* SourceDetection.swift */; };
 		909F8B53254BC52AC15C5A44558E0350 /* Pods-Droar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */; };
 		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAB94C83F26C3FC6184EA446E151245 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93DFC0CC12E763AE770017349EE009D1 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2E719E07715617BE7CC08E25ED451E /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCFE3325F4C181AB025EEEC92D1EC87 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D23B50397F94471E21C9B2117FE98E6 /* AFAutoPurgingImageCache.m */; };
 		A398D63C8DED664D99A864D79881A13C /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A65E0A484845C1B964DAA121D651D7 /* AFImageDownloader.m */; };
+		A3AA0295D06A14CBC676C65C1858A170 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
+		A47DC0AA4BF5360DDE85F9693FFD8C3C /* DroarLabelCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF64AC375D1F26513B59AF3FDE2A71 /* DroarLabelCell.xib */; };
 		A8C297643282E0CF5E7DF9CB6E23A0D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
 		AE976B0E8E3DD81E4F49DBEF19D3C0AD /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D73166C6885EA521AE1B39CD599597 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF095AA03FB4B9742CC5EFCC25543296 /* SDVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB96B816FCBBFBE8A178F93CE7E6BCE3 /* SDVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B003905A447C97375410D54779848EFD /* Droar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F2FB49D3A18E28D98B95EF09A17B1 /* Droar.swift */; };
 		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C9895373A642219D445EB146E8EE4EB2 /* UIRefreshControl+AFNetworking.m */; };
-		B2405B82C97B6EE83467D1FFD28A3B72 /* DroarLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE35C798C0B642EE4DA961BBF33DF6 /* DroarLabelCell.swift */; };
-		C661F2394F08CF98B9A5799820DBC103 /* Droar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0626F0A705139F5B4527E3A13EB4158A /* Droar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1C8FEEB07DDDA36511655D5034E029E /* DeviceInfoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF0FEA260072D4638CA6713A9B93362 /* DeviceInfoSource.swift */; };
+		B8BAD2A1DE29862AEF7C1A8F43358275 /* IDroarSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851D5DE525A010B71D6AB8EEF84D33C /* IDroarSource.swift */; };
 		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E1C775241464BE8D02C69E43D9C5BB /* AFSecurityPolicy.m */; };
 		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30136673909C5925398E1E8A10322B23 /* AFNetworking-dummy.m */; };
-		CF41768D32F2E5AFE3C1E394C14A2102 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A073D8562F6D8FEA917A57E71B4B5EFE /* ObjcHelper.m */; };
 		D4E80BD7EAAB83200183110578A80591 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D705EFC427D45C15C7C3E93A26AC9EEC /* AFURLSessionManager.m */; };
-		D590393C37D96A28C688FEC28B6E2DEF /* DroarLabelCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7CD39FFB330515B741F0DA5BCDDE047E /* DroarLabelCell.xib */; };
-		D5A55042736BC055C32A606E5721171A /* SectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A279C853EA712F457F06E1F1CC703C4C /* SectionManager.swift */; };
-		D74C7DCD14015956F88248246F6F8B9C /* SDVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4EBDF4D9091F2282FFFEA0504FD3FC /* SDVersion-dummy.m */; };
+		DA3F42F48BFCB9D4D44052CB01673D5A /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2185984C0373F7C7D831776F86255741 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6DA0E2C3CD623EB0CFEF6738B60DA7 /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2DF9C59D3A24048E1463365C2B9389 /* Droar-dummy.m */; };
+		DCF346D21DC14E17B8AFF5F8FAE196F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
 		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 179BC435B6E344E274EF30A324915208 /* AFNetworkReachabilityManager.m */; };
-		DF446A2BE863015124947E6C41F569A3 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D845E409E76F0BFCCCB46EC9686CDF /* UIViewControllerExtensions.swift */; };
 		E23B9A6F533461CB33C0FA6FB59E3AB2 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A581744A8DFD1EE18874461515437AD2 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5680D1944993FF3168E68F002D65D30 /* Droar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5952CCA04E6DCD95E48BAC0B4BEC6947 /* Droar.swift */; };
+		E64CB20627B5EFC5E1536A8FDC3957E6 /* BuildInfoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D78420A322B4FBE381E647FE8BD798 /* BuildInfoSource.swift */; };
 		EAF16633DB3C992CF975BE4A2932D41C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C84526EA3433103567EA1EF9A7FDC /* AFHTTPSessionManager.m */; };
+		EB2AF4893AE16B817850AD7A71688224 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACCAEE8318EB53773A4C4AB8F35325 /* Swizzling.swift */; };
+		F0157909A062CD674E9CEC9618B787E2 /* SDVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB96B816FCBBFBE8A178F93CE7E6BCE3 /* SDVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1BA18DDF6769719C6445A5A2848579D /* ReportingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A06C8A6CD6FCAF0453E108651E9A6 /* ReportingSource.swift */; };
 		F1CAA2EBDDFF558DEF98684F2479A7AF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E2BA0433C9CB522A5F24C9700A88D3 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54084A185AAEA7F15543E22BD6CECD96 /* UIImageView+AFNetworking.m */; };
-		F3AA5217D5B8474BE41A3BD28B3A3453 /* IDroarSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4D4F1FA9164B817DAA770A9E4A9B5 /* IDroarSource.swift */; };
+		F4224080FFCCFBE7A1F35B0AEDCDE9F3 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FD17D680470596B09B9C17198151BE /* SDVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F697796D1379355A75E2570B6C835F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
-		F75F15DA58F583B46040875570607EDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */; };
 		F84DD74BB7F612DE372F8C051420DF72 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F3409CF0746D34E3D78F60C6B78D833F /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB265301A6467D4866CEAFF1D48B3173 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = C2FD17D680470596B09B9C17198151BE /* SDVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA837004EE16867543E072BA7047D5B8 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 222E2AB9022B80C909F00E6FE8C39922 /* ObjcHelper.m */; };
 		FEF6EACE962EAE70E2EAC5F3C83EF7C8 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D4E27E3CC47B1F7E5F038CB286EF08 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -86,15 +87,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 87A4CE5273E548D528160F6E98C160DA;
+			remoteGlobalIDString = 50A47E7DBE2B1617D8F3C2423FCCFAA1;
 			remoteInfo = SDVersion;
-		};
-		6ECF111BB6F09006A045D83BD106F98F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3128ED36E97F2E89EDA022E181DBB314;
-			remoteInfo = "Droar-Droar";
 		};
 		8152829056A0808C11B9CE22862D4319 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -103,80 +97,88 @@
 			remoteGlobalIDString = CF671F7E57B92905F1CC91D036D6B4A7;
 			remoteInfo = AFNetworking;
 		};
-		853AD2B3C20517B092E5ECDE866CCA68 /* PBXContainerItemProxy */ = {
+		8BB5BB820C6084AEBC03E70107F48441 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 87A4CE5273E548D528160F6E98C160DA;
+			remoteGlobalIDString = 185217AC7313DEF905E875502D37A511;
+			remoteInfo = "Droar-Droar";
+		};
+		939827E9F5F6A5D3BE6B0B7C3262DEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A47E7DBE2B1617D8F3C2423FCCFAA1;
 			remoteInfo = SDVersion;
 		};
 		A38C90BE07ED0D6A377E780ECA3C5935 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BCB48C3991D1DF9DD4D98B0F90098392;
+			remoteGlobalIDString = 67544F6CAC280BF6983144A7363DFDA1;
 			remoteInfo = Droar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00DF2CF488B13B2BA09E8E98A9B9A167 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A7812600DC0F2A38A3FC1DA6DEF1C1 /* DispatchOnce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 		02FD75AFF6E3EEFEAC812B23B438A15A /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		0626F0A705139F5B4527E3A13EB4158A /* Droar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-umbrella.h"; sourceTree = "<group>"; };
 		0ABD61CF8E32EC666CC5B2CAFEB3090D /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		0B3AB74D1EFB855CFBCB95BBEB3B0A07 /* Operands.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operands.swift; sourceTree = "<group>"; };
+		0E244E24FE284A8C45A9F617F3794CE6 /* SourceDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SourceDetection.swift; sourceTree = "<group>"; };
 		179BC435B6E344E274EF30A324915208 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		2045170165CB7405BD20392D2D0DC8B5 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
 		2079AB2C15E1CD573FACB3434628C383 /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDVersion.framework; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D7684824BEF1440ACDBD2C9409396B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		2185984C0373F7C7D831776F86255741 /* SDiOSVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDiOSVersion.h; path = SDVersion/SDiOSVersion/SDiOSVersion.h; sourceTree = "<group>"; };
 		21A65E0A484845C1B964DAA121D651D7 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		222E2AB9022B80C909F00E6FE8C39922 /* ObjcHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
+		22F3278F5F88D6694C5B6E03C6B7AC4B /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		2319FC0A7018C34ACC801164562F4757 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
 		28420D8216FD9FAD09DE27F098968DA6 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		2851D5DE525A010B71D6AB8EEF84D33C /* IDroarSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDroarSource.swift; path = Droar/Classes/IDroarSource.swift; sourceTree = "<group>"; };
 		2A43961D75761D7B17504440F4C82AFE /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		2A99DFE55AAE5D708FD97752E982BB25 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		2CCFE3325F4C181AB025EEEC92D1EC87 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		30136673909C5925398E1E8A10322B23 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		30D78420A322B4FBE381E647FE8BD798 /* BuildInfoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuildInfoSource.swift; sourceTree = "<group>"; };
+		3BAF64AC375D1F26513B59AF3FDE2A71 /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
 		4047230B09E0E0DE2934DA1A7E7EA756 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
 		43579ABA758BAAD52DB203A8228B8D26 /* SDVersion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-prefix.pch"; sourceTree = "<group>"; };
 		44584C89789BA8314BA38D4FF187F929 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4516F2B505989988AF7A1868202F9C86 /* DroarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarViewController.swift; sourceTree = "<group>"; };
 		4698498BDD731DAC17027578411C4539 /* Pods-Droar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Droar.bundle; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B6CA0F5DE25978F33C7C7722EA06C75 /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
+		4BACCAEE8318EB53773A4C4AB8F35325 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
+		4E5F2FB49D3A18E28D98B95EF09A17B1 /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Droar.swift; path = Droar/Classes/Droar.swift; sourceTree = "<group>"; };
 		506A04233F9804A336C8A8D8FA84EA55 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDVersion.modulemap; sourceTree = "<group>"; };
+		513BAAE52284EC63C1331F9B03D38B94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51D73166C6885EA521AE1B39CD599597 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		531ECF24FFC29E6C2C06A4021689771B /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
-		535DE3EB4BC3FE1A451922504B61934D /* DeviceInfoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceInfoSource.swift; sourceTree = "<group>"; };
 		54084A185AAEA7F15543E22BD6CECD96 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		545F8398A13FA57B5B1636599EEA5C7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		55026A0E9A149DE276380614F3B90FC1 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		5520E4CC39EE79E55B72FB3918F5CD28 /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Droar.modulemap; sourceTree = "<group>"; };
 		5832DFC4FD84CC71DBA4A8FBB7CCC1BF /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		584D282CF7BF7712E9918EF3DC2C8F0E /* Droar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-prefix.pch"; sourceTree = "<group>"; };
 		5926479ABA7B0ECA7D77F1AB01ADAC97 /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5952CCA04E6DCD95E48BAC0B4BEC6947 /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Droar.swift; path = Droar/Classes/Droar.swift; sourceTree = "<group>"; };
-		59C307D3C88C4E184585AAD9F37B1AA2 /* Droar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-prefix.pch"; sourceTree = "<group>"; };
-		5ABACA76EE8B415415485E615C11237E /* DroarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarViewController.swift; sourceTree = "<group>"; };
-		5E2B753AD2808FF49AABC703DD72748A /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Droar.modulemap; sourceTree = "<group>"; };
+		5E2DF9C59D3A24048E1463365C2B9389 /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
 		5F39D62CBB8A684E2265C4F33C814338 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5FF0FEA260072D4638CA6713A9B93362 /* DeviceInfoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceInfoSource.swift; sourceTree = "<group>"; };
 		5FF686EA8871F8A0B8D2533A8406A909 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		5FFDC65EBD16175954A9726874D7DB76 /* ObjcHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
 		62D4E27E3CC47B1F7E5F038CB286EF08 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		63650834609D0D9F31FBCC562CE6A06E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		65EC20F4E8F339C8C60A0406A9BBB138 /* DispatchOnce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 		691C84526EA3433103567EA1EF9A7FDC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		6F2E719E07715617BE7CC08E25ED451E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		7576EF1411D7C5BE5BEEC0880FF00B1F /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		75B981512E0605BE9B52B6F9B934EFF5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		75EE38AF288D26D2D0527B4BF8F81EC0 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droar_Example-umbrella.h"; sourceTree = "<group>"; };
-		79184567B3529E7273AC30DF66D7FB68 /* BuildInfoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuildInfoSource.swift; sourceTree = "<group>"; };
-		7CD39FFB330515B741F0DA5BCDDE047E /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
-		85142E23DF05ED3BAD0188A74F62FA7F /* ObjcHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
+		8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Droar.xcconfig; sourceTree = "<group>"; };
 		8D23B50397F94471E21C9B2117FE98E6 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94D845E409E76F0BFCCCB46EC9686CDF /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		959FDF602D4F3E150503BAA91BD5778B /* SourceDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SourceDetection.swift; sourceTree = "<group>"; };
 		97137BE957EC14CC6F2A1D2AEE6BD972 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		A0526022F7AA6823FE8B8046562F536E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		A073D8562F6D8FEA917A57E71B4B5EFE /* ObjcHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
-		A279C853EA712F457F06E1F1CC703C4C /* SectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionManager.swift; path = Droar/Classes/SectionManager.swift; sourceTree = "<group>"; };
 		A460B69541CCCADE8A3C251ABC3E95A5 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		A581744A8DFD1EE18874461515437AD2 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		A982897E2E553C26FEF9E6D989313E62 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
@@ -184,8 +186,6 @@
 		B071340E0724F0680A20DB1B8085447F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		B4E2BA0433C9CB522A5F24C9700A88D3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		B5E1C775241464BE8D02C69E43D9C5BB /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		B9B5EC32C95C4777E2D5F3B907AD0A30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BACC4169571D5FE29D4C4BCA5DC086F9 /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		BC5AC1D65A609BC1C7D7F2206527BA95 /* SDVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDVersion.xcconfig; sourceTree = "<group>"; };
 		BC9F06512F7C1AF9E2BF05E9424A9F69 /* SDiOSVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDiOSVersion.m; path = SDVersion/SDiOSVersion/SDiOSVersion.m; sourceTree = "<group>"; };
 		BD1C4B1D0F247004E603B2344B5F79B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
@@ -193,44 +193,39 @@
 		C2FD17D680470596B09B9C17198151BE /* SDVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
 		C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droar_Example-dummy.m"; sourceTree = "<group>"; };
 		C9895373A642219D445EB146E8EE4EB2 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Droar.xcconfig; sourceTree = "<group>"; };
+		C9DF8123520AF5998452C5729415CAE5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CDAB94C83F26C3FC6184EA446E151245 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		D336FC03201622B22329B195D06A3EB1 /* Pods-Droar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D705EFC427D45C15C7C3E93A26AC9EEC /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		D73F634EB908709AC143EEFAEC638847 /* DroarLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarLabelCell.swift; sourceTree = "<group>"; };
+		DAD0276401A6E2A58EB2441F96A8C81B /* SectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionManager.swift; path = Droar/Classes/SectionManager.swift; sourceTree = "<group>"; };
 		DCD519B4D0AA1348959CF776708783DB /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		DCF8FF18794EC148554F380524A4FC6E /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4EBDF4D9091F2282FFFEA0504FD3FC /* SDVersion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDVersion-dummy.m"; sourceTree = "<group>"; };
 		E07AA3BD8C72C9244EE2D141D62678B9 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		E21678360C4EC6BB24838C52E7B4BD52 /* Pods-Droar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		E5AD3CEDC9F6EC67832050433F1178CF /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Droar_Example.framework; path = "Pods-Droar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5C2B1129D619EAB0BC887621D0F5C76 /* Operands.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operands.swift; sourceTree = "<group>"; };
 		E6CEE563D81B030CC646486EC84F82F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7BE35C798C0B642EE4DA961BBF33DF6 /* DroarLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarLabelCell.swift; sourceTree = "<group>"; };
 		E871A19CCC7654D1BCE13BFE5C371EF1 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		EB2D7F5BDA09A6A94364D7068AA65E9F /* Droar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-umbrella.h"; sourceTree = "<group>"; };
 		EB96B816FCBBFBE8A178F93CE7E6BCE3 /* SDVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-umbrella.h"; sourceTree = "<group>"; };
-		ECB4D4F1FA9164B817DAA770A9E4A9B5 /* IDroarSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDroarSource.swift; path = Droar/Classes/IDroarSource.swift; sourceTree = "<group>"; };
 		F2290BDD01AAED14453FF4C6EB854A13 /* Pods-Droar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F3409CF0746D34E3D78F60C6B78D833F /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		F63577FC91E5C71E22CF3BCF1B3A2DC2 /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Droar.framework; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88C2593BDB26E2D55A6276449AEEDA6 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		FA45BE5BB21E5E78181831D9BC6742FF /* Pods-Droar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Droar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FCED4544155A48883E6E59BFD8ED0C50 /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
+		FF3A06C8A6CD6FCAF0453E108651E9A6 /* ReportingSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportingSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D4DEB04F2EF5FE54AB479D497A49CAE /* Frameworks */ = {
+		18D19147E31D1EE16A6DA28AED46F37E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2744C164A4278BDD39C14F244BDF3DB1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F75F15DA58F583B46040875570607EDB /* Foundation.framework in Frameworks */,
-				5B906D122FAEB550CCE610E53BB7A59F /* SDVersion.framework in Frameworks */,
-				65F8B0A1E3D8CE0CFA02A94D65B56F19 /* UIKit.framework in Frameworks */,
+				A3AA0295D06A14CBC676C65C1858A170 /* Foundation.framework in Frameworks */,
+				80EAD1EFA2373FC23D2C0051F63EDE60 /* SDVersion.framework in Frameworks */,
+				2C9D77869235771996B54A9B303C32E7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F697796D1379355A75E2570B6C835F01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49EC143008535898957648466A842593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF346D21DC14E17B8AFF5F8FAE196F3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,59 +257,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E248EFD9BC5F4BEE117713B90F19189D /* Frameworks */ = {
+		7DD4293C8BC1DB0764C41A595867B415 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B64BD2F46F84964272E02BCF05074BF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F2944DF9D50EDD907D0F103A8AB3E78 /* Support Files */ = {
+		04AAE0C85C0A30A5D7639B45C2C3065F /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				5E2B753AD2808FF49AABC703DD72748A /* Droar.modulemap */,
-				CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */,
-				4B6CA0F5DE25978F33C7C7722EA06C75 /* Droar-dummy.m */,
-				59C307D3C88C4E184585AAD9F37B1AA2 /* Droar-prefix.pch */,
-				0626F0A705139F5B4527E3A13EB4158A /* Droar-umbrella.h */,
-				B9B5EC32C95C4777E2D5F3B907AD0A30 /* Info.plist */,
-				531ECF24FFC29E6C2C06A4021689771B /* ResourceBundle-Droar-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Droar";
-			sourceTree = "<group>";
-		};
-		2AA926EE070BDD3F55F8138865093A3D /* Implementation */ = {
-			isa = PBXGroup;
-			children = (
-				5ABACA76EE8B415415485E615C11237E /* DroarViewController.swift */,
+				4516F2B505989988AF7A1868202F9C86 /* DroarViewController.swift */,
 			);
 			name = Implementation;
 			path = Droar/Classes/Implementation;
 			sourceTree = "<group>";
 		};
-		33BFE8908771C499970BD99BDD465332 /* Resources */ = {
+		423D8D7A770040A5FBE1B9D4A17A198B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D73F634EB908709AC143EEFAEC638847 /* DroarLabelCell.swift */,
+				3BAF64AC375D1F26513B59AF3FDE2A71 /* DroarLabelCell.xib */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3B015937332E78A64D7B5F6064F4331D /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				65EC20F4E8F339C8C60A0406A9BBB138 /* DispatchOnce.swift */,
-				85142E23DF05ED3BAD0188A74F62FA7F /* ObjcHelper.h */,
-				A073D8562F6D8FEA917A57E71B4B5EFE /* ObjcHelper.m */,
-				E5C2B1129D619EAB0BC887621D0F5C76 /* Operands.swift */,
-				959FDF602D4F3E150503BAA91BD5778B /* SourceDetection.swift */,
-			);
-			name = Helpers;
-			path = Droar/Classes/Helpers;
+			name = Cells;
+			path = Droar/Classes/Cells;
 			sourceTree = "<group>";
 		};
 		4358995CEF3BCFB049637C4778D8B897 /* NSURLSession */ = {
@@ -320,20 +297,10 @@
 			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		4AA3B6DA577C484734918F499258E6E1 /* Default Sources */ = {
-			isa = PBXGroup;
-			children = (
-				79184567B3529E7273AC30DF66D7FB68 /* BuildInfoSource.swift */,
-				535DE3EB4BC3FE1A451922504B61934D /* DeviceInfoSource.swift */,
-			);
-			name = "Default Sources";
-			path = "Droar/Classes/Default Sources";
-			sourceTree = "<group>";
-		};
 		4AAA2F3BE9F68076869C0011A85BE8EB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF90960D6A3A9BF7E3C11261B3E083AB /* Droar */,
+				5D521B960ABE61C5A2CD5514502F7E1D /* Droar */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -351,6 +318,24 @@
 			);
 			name = AFNetworking;
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		5D521B960ABE61C5A2CD5514502F7E1D /* Droar */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F2FB49D3A18E28D98B95EF09A17B1 /* Droar.swift */,
+				2851D5DE525A010B71D6AB8EEF84D33C /* IDroarSource.swift */,
+				DAD0276401A6E2A58EB2441F96A8C81B /* SectionManager.swift */,
+				423D8D7A770040A5FBE1B9D4A17A198B /* Cells */,
+				EEA60A205285A623DD8D2B92D4767B56 /* Default Sources */,
+				FE81D7BDCA05D1CE6A0902F3ED2DE875 /* Extensions */,
+				F6CA5CBF03C0549124DD04FDBB76903A /* Helpers */,
+				04AAE0C85C0A30A5D7639B45C2C3065F /* Implementation */,
+				DAA4524E135FE81AB5AC32AB90797CB9 /* Resources */,
+				F999208F2F33D85C05B1C4D14D0D142E /* Support Files */,
+			);
+			name = Droar;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		63803EDA2880DF9475D2A1E05E9E40DC /* Frameworks */ = {
@@ -372,16 +357,6 @@
 			);
 			name = SDVersion;
 			path = SDVersion;
-			sourceTree = "<group>";
-		};
-		73017B57E52F1C99E24F480BC5C4D7D6 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				E7BE35C798C0B642EE4DA961BBF33DF6 /* DroarLabelCell.swift */,
-				7CD39FFB330515B741F0DA5BCDDE047E /* DroarLabelCell.xib */,
-			);
-			name = Cells;
-			path = Droar/Classes/Cells;
 			sourceTree = "<group>";
 		};
 		767E68D77C9B092560E39C8D0A691B7A /* UIKit */ = {
@@ -499,24 +474,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AF90960D6A3A9BF7E3C11261B3E083AB /* Droar */ = {
-			isa = PBXGroup;
-			children = (
-				5952CCA04E6DCD95E48BAC0B4BEC6947 /* Droar.swift */,
-				ECB4D4F1FA9164B817DAA770A9E4A9B5 /* IDroarSource.swift */,
-				A279C853EA712F457F06E1F1CC703C4C /* SectionManager.swift */,
-				73017B57E52F1C99E24F480BC5C4D7D6 /* Cells */,
-				4AA3B6DA577C484734918F499258E6E1 /* Default Sources */,
-				E1CBB294336D1856368E2B08D35F7AAC /* Extensions */,
-				3B015937332E78A64D7B5F6064F4331D /* Helpers */,
-				2AA926EE070BDD3F55F8138865093A3D /* Implementation */,
-				33BFE8908771C499970BD99BDD465332 /* Resources */,
-				0F2944DF9D50EDD907D0F103A8AB3E78 /* Support Files */,
-			);
-			name = Droar;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		BB28203C85D87291DE3B1F5429DAAC97 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +486,13 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		DAA4524E135FE81AB5AC32AB90797CB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DB128B20B2F0E6DB132EF159B58DC4F4 /* Pods-Droar_Example */ = {
@@ -549,17 +513,6 @@
 			path = "Target Support Files/Pods-Droar_Example";
 			sourceTree = "<group>";
 		};
-		E1CBB294336D1856368E2B08D35F7AAC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BACC4169571D5FE29D4C4BCA5DC086F9 /* BundleExtensions.swift */,
-				75EE38AF288D26D2D0527B4BF8F81EC0 /* Swizzling.swift */,
-				94D845E409E76F0BFCCCB46EC9686CDF /* UIViewControllerExtensions.swift */,
-			);
-			name = Extensions;
-			path = Droar/Classes/Extensions;
-			sourceTree = "<group>";
-		};
 		E4A2C14311C49D4ECF48C9CEFC4F450C /* Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +520,56 @@
 				B5E1C775241464BE8D02C69E43D9C5BB /* AFSecurityPolicy.m */,
 			);
 			name = Security;
+			sourceTree = "<group>";
+		};
+		EEA60A205285A623DD8D2B92D4767B56 /* Default Sources */ = {
+			isa = PBXGroup;
+			children = (
+				30D78420A322B4FBE381E647FE8BD798 /* BuildInfoSource.swift */,
+				5FF0FEA260072D4638CA6713A9B93362 /* DeviceInfoSource.swift */,
+				FF3A06C8A6CD6FCAF0453E108651E9A6 /* ReportingSource.swift */,
+			);
+			name = "Default Sources";
+			path = "Droar/Classes/Default Sources";
+			sourceTree = "<group>";
+		};
+		F6CA5CBF03C0549124DD04FDBB76903A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				02A7812600DC0F2A38A3FC1DA6DEF1C1 /* DispatchOnce.swift */,
+				5FFDC65EBD16175954A9726874D7DB76 /* ObjcHelper.h */,
+				222E2AB9022B80C909F00E6FE8C39922 /* ObjcHelper.m */,
+				0B3AB74D1EFB855CFBCB95BBEB3B0A07 /* Operands.swift */,
+				0E244E24FE284A8C45A9F617F3794CE6 /* SourceDetection.swift */,
+			);
+			name = Helpers;
+			path = Droar/Classes/Helpers;
+			sourceTree = "<group>";
+		};
+		F999208F2F33D85C05B1C4D14D0D142E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5520E4CC39EE79E55B72FB3918F5CD28 /* Droar.modulemap */,
+				8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */,
+				5E2DF9C59D3A24048E1463365C2B9389 /* Droar-dummy.m */,
+				584D282CF7BF7712E9918EF3DC2C8F0E /* Droar-prefix.pch */,
+				EB2D7F5BDA09A6A94364D7068AA65E9F /* Droar-umbrella.h */,
+				513BAAE52284EC63C1331F9B03D38B94 /* Info.plist */,
+				FCED4544155A48883E6E59BFD8ED0C50 /* ResourceBundle-Droar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Droar";
+			sourceTree = "<group>";
+		};
+		FE81D7BDCA05D1CE6A0902F3ED2DE875 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22F3278F5F88D6694C5B6E03C6B7AC4B /* BundleExtensions.swift */,
+				4BACCAEE8318EB53773A4C4AB8F35325 /* Swizzling.swift */,
+				C9DF8123520AF5998452C5729415CAE5 /* UIViewControllerExtensions.swift */,
+			);
+			name = Extensions;
+			path = Droar/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,22 +583,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46D075D5BDA765E89F4250B83A7EC108 /* Headers */ = {
+		1FAABFBAC11DE353249ECD903354A078 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A61A6F382B62A9140B9BE6DB26A4524 /* SDiOSVersion.h in Headers */,
-				AF095AA03FB4B9742CC5EFCC25543296 /* SDVersion-umbrella.h in Headers */,
-				FB265301A6467D4866CEAFF1D48B3173 /* SDVersion.h in Headers */,
+				357CB3B7198B791DB73229412C2D18EB /* Droar-umbrella.h in Headers */,
+				3CB4DEE59DD8D6B68286DC9756B62E00 /* ObjcHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E744E35B83705CA58844394D11B0C1D /* Headers */ = {
+		ABD3BD28D5588735D3A13A793EB49418 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C661F2394F08CF98B9A5799820DBC103 /* Droar-umbrella.h in Headers */,
-				6D92CE3341521BEBB4CA5F62377CF6A8 /* ObjcHelper.h in Headers */,
+				DA3F42F48BFCB9D4D44052CB01673D5A /* SDiOSVersion.h in Headers */,
+				F0157909A062CD674E9CEC9618B787E2 /* SDVersion-umbrella.h in Headers */,
+				F4224080FFCCFBE7A1F35B0AEDCDE9F3 /* SDVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +631,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		185217AC7313DEF905E875502D37A511 /* Droar-Droar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E472A6B8C386F63223E907B30A938E3 /* Build configuration list for PBXNativeTarget "Droar-Droar" */;
+			buildPhases = (
+				90810572DA652662F16B804B5907FB92 /* Sources */,
+				7DD4293C8BC1DB0764C41A595867B415 /* Frameworks */,
+				136FA77D7FF9D8A1FD271AD9FDFA2F2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Droar-Droar";
+			productName = "Droar-Droar";
+			productReference = 48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		1D688FDAE1087D5C43B469E4E34283AF /* Pods-Droar_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45F07A3B85E8F6DB515346909105FB41 /* Build configuration list for PBXNativeTarget "Pods-Droar_Example" */;
@@ -648,30 +668,13 @@
 			productReference = E5AD3CEDC9F6EC67832050433F1178CF /* Pods_Droar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3128ED36E97F2E89EDA022E181DBB314 /* Droar-Droar */ = {
+		50A47E7DBE2B1617D8F3C2423FCCFAA1 /* SDVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 139D699359B115A0E92B85859FB96C8B /* Build configuration list for PBXNativeTarget "Droar-Droar" */;
+			buildConfigurationList = 5F92571FD85A8A723E1979CC21DFFA24 /* Build configuration list for PBXNativeTarget "SDVersion" */;
 			buildPhases = (
-				197F3A4334B3EA40626B2BD343F09CC1 /* Sources */,
-				0D4DEB04F2EF5FE54AB479D497A49CAE /* Frameworks */,
-				28C86C79BAA3103C58C3722A7AB545B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Droar-Droar";
-			productName = "Droar-Droar";
-			productReference = 48471EBD1ADB46753C3A6886824629A2 /* Droar.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		87A4CE5273E548D528160F6E98C160DA /* SDVersion */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 91860401FF214144FFC5C71006DC85D2 /* Build configuration list for PBXNativeTarget "SDVersion" */;
-			buildPhases = (
-				7240EDB854FBD7332CE4C2760157CBE4 /* Sources */,
-				E248EFD9BC5F4BEE117713B90F19189D /* Frameworks */,
-				46D075D5BDA765E89F4250B83A7EC108 /* Headers */,
+				0FC7DDC43134CE7FD0A7CA50DA168DBB /* Sources */,
+				49EC143008535898957648466A842593 /* Frameworks */,
+				ABD3BD28D5588735D3A13A793EB49418 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -682,20 +685,20 @@
 			productReference = 2079AB2C15E1CD573FACB3434628C383 /* SDVersion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BCB48C3991D1DF9DD4D98B0F90098392 /* Droar */ = {
+		67544F6CAC280BF6983144A7363DFDA1 /* Droar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA767B3D2C3DA8E63389A6FC66F2E36 /* Build configuration list for PBXNativeTarget "Droar" */;
+			buildConfigurationList = 98DF2F7FD917361A8F0502E37AACA305 /* Build configuration list for PBXNativeTarget "Droar" */;
 			buildPhases = (
-				7EFEB732111AA8A3F186A45A68FD67C0 /* Sources */,
-				2744C164A4278BDD39C14F244BDF3DB1 /* Frameworks */,
-				38355B53997823E68B8B1E8250B77B9F /* Resources */,
-				9E744E35B83705CA58844394D11B0C1D /* Headers */,
+				C5C1D2F793DCFA87B2D686396A4A6985 /* Sources */,
+				18D19147E31D1EE16A6DA28AED46F37E /* Frameworks */,
+				A132080BA063F711A725DB4C5D9CC695 /* Resources */,
+				1FAABFBAC11DE353249ECD903354A078 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4706EF4564AA221B9FA7B427AEAE2A9A /* PBXTargetDependency */,
-				B674E6CF35A4A2B3CBB08A181A8CFD1F /* PBXTargetDependency */,
+				851C9AD594143794522E7158C8E06720 /* PBXTargetDependency */,
+				BC8F2A8D243B981CCF066930EE2414B1 /* PBXTargetDependency */,
 			);
 			name = Droar;
 			productName = Droar;
@@ -741,38 +744,40 @@
 			projectRoot = "";
 			targets = (
 				CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */,
-				BCB48C3991D1DF9DD4D98B0F90098392 /* Droar */,
-				3128ED36E97F2E89EDA022E181DBB314 /* Droar-Droar */,
+				67544F6CAC280BF6983144A7363DFDA1 /* Droar */,
+				185217AC7313DEF905E875502D37A511 /* Droar-Droar */,
 				1D688FDAE1087D5C43B469E4E34283AF /* Pods-Droar_Example */,
-				87A4CE5273E548D528160F6E98C160DA /* SDVersion */,
+				50A47E7DBE2B1617D8F3C2423FCCFAA1 /* SDVersion */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		28C86C79BAA3103C58C3722A7AB545B6 /* Resources */ = {
+		136FA77D7FF9D8A1FD271AD9FDFA2F2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056DF3B2E5C19239C367B0DDCD47ECBE /* DroarLabelCell.xib in Resources */,
+				233BF74D3894F041668B0117359D7220 /* DroarLabelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38355B53997823E68B8B1E8250B77B9F /* Resources */ = {
+		A132080BA063F711A725DB4C5D9CC695 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41ECEC8F18928200CFD79D4DB1DA739A /* Droar.bundle in Resources */,
+				52A859F2E38146243C1724423EAF7F1B /* Droar.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		197F3A4334B3EA40626B2BD343F09CC1 /* Sources */ = {
+		0FC7DDC43134CE7FD0A7CA50DA168DBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7818F731360534BF63639B7BF62835 /* SDiOSVersion.m in Sources */,
+				245ECFAD453D27D9E459DF4D1E9E845A /* SDVersion-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,35 +804,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7240EDB854FBD7332CE4C2760157CBE4 /* Sources */ = {
+		90810572DA652662F16B804B5907FB92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3792E25649C0A146E8134235A02419CF /* SDiOSVersion.m in Sources */,
-				D74C7DCD14015956F88248246F6F8B9C /* SDVersion-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EFEB732111AA8A3F186A45A68FD67C0 /* Sources */ = {
+		C5C1D2F793DCFA87B2D686396A4A6985 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2039E39C9172EA1B9463BCFE7D02563E /* BuildInfoSource.swift in Sources */,
-				092E7085E700A625DA49392681CC390C /* BundleExtensions.swift in Sources */,
-				85AD8F4685310B4FBF7C14AABFDD6A59 /* DeviceInfoSource.swift in Sources */,
-				50339E83BFF495C0631374AA17B0ECE9 /* DispatchOnce.swift in Sources */,
-				00D1A07916DDB6A0B1199BEA84F9FD0D /* Droar-dummy.m in Sources */,
-				E5680D1944993FF3168E68F002D65D30 /* Droar.swift in Sources */,
-				B2405B82C97B6EE83467D1FFD28A3B72 /* DroarLabelCell.swift in Sources */,
-				D590393C37D96A28C688FEC28B6E2DEF /* DroarLabelCell.xib in Sources */,
-				25EA5DDA673A3D916F4FECD91EE6DA93 /* DroarViewController.swift in Sources */,
-				F3AA5217D5B8474BE41A3BD28B3A3453 /* IDroarSource.swift in Sources */,
-				CF41768D32F2E5AFE3C1E394C14A2102 /* ObjcHelper.m in Sources */,
-				88C69F082C7A9FE07BAAE1233B5D5A09 /* Operands.swift in Sources */,
-				D5A55042736BC055C32A606E5721171A /* SectionManager.swift in Sources */,
-				2711954C6F25368CC2C097BEE3C87F05 /* SourceDetection.swift in Sources */,
-				0CD45CE88F4BA105FA0A1EF34B630FCD /* Swizzling.swift in Sources */,
-				DF446A2BE863015124947E6C41F569A3 /* UIViewControllerExtensions.swift in Sources */,
+				E64CB20627B5EFC5E1536A8FDC3957E6 /* BuildInfoSource.swift in Sources */,
+				88011D56FB81BDFED91424B827838B7F /* BundleExtensions.swift in Sources */,
+				B1C8FEEB07DDDA36511655D5034E029E /* DeviceInfoSource.swift in Sources */,
+				77B072E3A320E1322B2EB491E831F1DE /* DispatchOnce.swift in Sources */,
+				DC6DA0E2C3CD623EB0CFEF6738B60DA7 /* Droar-dummy.m in Sources */,
+				B003905A447C97375410D54779848EFD /* Droar.swift in Sources */,
+				0A2CBD3E074E9764C999DC7EC4078920 /* DroarLabelCell.swift in Sources */,
+				A47DC0AA4BF5360DDE85F9693FFD8C3C /* DroarLabelCell.xib in Sources */,
+				51D95A4286DA030A179EE34AEE75714B /* DroarViewController.swift in Sources */,
+				B8BAD2A1DE29862AEF7C1A8F43358275 /* IDroarSource.swift in Sources */,
+				FA837004EE16867543E072BA7047D5B8 /* ObjcHelper.m in Sources */,
+				23FC0FFEC8324C24DF5E18B7741F54EA /* Operands.swift in Sources */,
+				F1BA18DDF6769719C6445A5A2848579D /* ReportingSource.swift in Sources */,
+				8507027E760DB422D13CAB096DDB6797 /* SectionManager.swift in Sources */,
+				89118B719485FF5A3BB42D26532FF826 /* SourceDetection.swift in Sources */,
+				EB2AF4893AE16B817850AD7A71688224 /* Swizzling.swift in Sources */,
+				0B12B0E588D19F935B3802BB8D078CFB /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,16 +846,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4706EF4564AA221B9FA7B427AEAE2A9A /* PBXTargetDependency */ = {
+		851C9AD594143794522E7158C8E06720 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Droar-Droar";
-			target = 3128ED36E97F2E89EDA022E181DBB314 /* Droar-Droar */;
-			targetProxy = 6ECF111BB6F09006A045D83BD106F98F /* PBXContainerItemProxy */;
+			target = 185217AC7313DEF905E875502D37A511 /* Droar-Droar */;
+			targetProxy = 8BB5BB820C6084AEBC03E70107F48441 /* PBXContainerItemProxy */;
 		};
 		A0B703B8E4792757B4B904015DA415F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Droar;
-			target = BCB48C3991D1DF9DD4D98B0F90098392 /* Droar */;
+			target = 67544F6CAC280BF6983144A7363DFDA1 /* Droar */;
 			targetProxy = A38C90BE07ED0D6A377E780ECA3C5935 /* PBXContainerItemProxy */;
 		};
 		ABC537E4973F4B1BF65E087FB19D2E07 /* PBXTargetDependency */ = {
@@ -860,16 +864,16 @@
 			target = CF671F7E57B92905F1CC91D036D6B4A7 /* AFNetworking */;
 			targetProxy = 8152829056A0808C11B9CE22862D4319 /* PBXContainerItemProxy */;
 		};
-		B674E6CF35A4A2B3CBB08A181A8CFD1F /* PBXTargetDependency */ = {
+		BC8F2A8D243B981CCF066930EE2414B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDVersion;
-			target = 87A4CE5273E548D528160F6E98C160DA /* SDVersion */;
-			targetProxy = 853AD2B3C20517B092E5ECDE866CCA68 /* PBXContainerItemProxy */;
+			target = 50A47E7DBE2B1617D8F3C2423FCCFAA1 /* SDVersion */;
+			targetProxy = 939827E9F5F6A5D3BE6B0B7C3262DEB9 /* PBXContainerItemProxy */;
 		};
 		C54955807CAC045F3E7A11D99E5D0BEC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDVersion;
-			target = 87A4CE5273E548D528160F6E98C160DA /* SDVersion */;
+			target = 50A47E7DBE2B1617D8F3C2423FCCFAA1 /* SDVersion */;
 			targetProxy = 4EED72915F533695AEE2EED998009580 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -905,9 +909,9 @@
 			};
 			name = Debug;
 		};
-		2F23BA496016F2C7AC515399EA54A736 /* Release */ = {
+		21F7EBDE9A29287723210937C88FE261 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */;
+			baseConfigurationReference = 8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -921,30 +925,59 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
 				PRODUCT_NAME = Droar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		32F56E278EBF796465BA24DDCD5AAAAB /* Debug */ = {
+		5F0EAEF5503FD1B9BFABA7A16B0DF386 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */;
+			baseConfigurationReference = BC5AC1D65A609BC1C7D7F2206527BA95 /* SDVersion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDVersion/SDVersion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDVersion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDVersion/SDVersion.modulemap";
+				PRODUCT_NAME = SDVersion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64A186777A72151214EF2D03BFAEE6B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Droar";
 				INFOPLIST_FILE = "Target Support Files/Droar/ResourceBundle-Droar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Droar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -953,14 +986,14 @@
 			};
 			name = Debug;
 		};
-		5A9A51AF9D1E2D148BA9838809B20196 /* Release */ = {
+		7660EF33408F55503CEAD95A9D841518 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */;
+			baseConfigurationReference = 8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Droar";
 				INFOPLIST_FILE = "Target Support Files/Droar/ResourceBundle-Droar-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Droar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1026,36 +1059,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		8163FA01859C6A30C54ECBD56A54BDBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC5AC1D65A609BC1C7D7F2206527BA95 /* SDVersion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SDVersion/SDVersion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDVersion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SDVersion/SDVersion.modulemap";
-				PRODUCT_NAME = SDVersion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1145,6 +1148,38 @@
 			};
 			name = Release;
 		};
+		A1479805EE4F3013A5ABF822754564AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA47CCE2AB75270E18D37A78D064CC6 /* Droar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
+				PRODUCT_NAME = Droar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		ACB934D92068053C9EF0690F338ABE9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2290BDD01AAED14453FF4C6EB854A13 /* Pods-Droar_Example.debug.xcconfig */;
@@ -1179,7 +1214,7 @@
 			};
 			name = Debug;
 		};
-		D7BFDBBE3719B7944A4FEE883B72A15A /* Release */ = {
+		C294EBE77D94DE75AAD4F09B4B47401C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC5AC1D65A609BC1C7D7F2206527BA95 /* SDVersion.xcconfig */;
 			buildSettings = {
@@ -1244,49 +1279,9 @@
 			};
 			name = Release;
 		};
-		FE57E4EDD7A596D25C1D6155C4E50706 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD79EC281C0665FD7CC6160E82A95A6A /* Droar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
-				PRODUCT_NAME = Droar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		139D699359B115A0E92B85859FB96C8B /* Build configuration list for PBXNativeTarget "Droar-Droar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32F56E278EBF796465BA24DDCD5AAAAB /* Debug */,
-				5A9A51AF9D1E2D148BA9838809B20196 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1314,20 +1309,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91860401FF214144FFC5C71006DC85D2 /* Build configuration list for PBXNativeTarget "SDVersion" */ = {
+		5F92571FD85A8A723E1979CC21DFFA24 /* Build configuration list for PBXNativeTarget "SDVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8163FA01859C6A30C54ECBD56A54BDBF /* Debug */,
-				D7BFDBBE3719B7944A4FEE883B72A15A /* Release */,
+				5F0EAEF5503FD1B9BFABA7A16B0DF386 /* Debug */,
+				C294EBE77D94DE75AAD4F09B4B47401C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA767B3D2C3DA8E63389A6FC66F2E36 /* Build configuration list for PBXNativeTarget "Droar" */ = {
+		7E472A6B8C386F63223E907B30A938E3 /* Build configuration list for PBXNativeTarget "Droar-Droar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE57E4EDD7A596D25C1D6155C4E50706 /* Debug */,
-				2F23BA496016F2C7AC515399EA54A736 /* Release */,
+				64A186777A72151214EF2D03BFAEE6B6 /* Debug */,
+				7660EF33408F55503CEAD95A9D841518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98DF2F7FD917361A8F0502E37AACA305 /* Build configuration list for PBXNativeTarget "Droar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F7EBDE9A29287723210937C88FE261 /* Debug */,
+				A1479805EE4F3013A5ABF822754564AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
