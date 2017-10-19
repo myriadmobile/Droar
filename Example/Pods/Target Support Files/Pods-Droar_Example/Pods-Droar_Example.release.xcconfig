@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/Droar" "$PODS_CONFIGURATION_BUILD_DIR/SDVersion" "$PODS_CONFIGURATION_BUILD_DIR/netfox" "$PODS_CONFIGURATION_BUILD_DIR/netfox-Droar"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Droar" "$PODS_CONFIGURATION_BUILD_DIR/SDVersion"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Droar/Droar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDVersion/SDVersion.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/netfox-Droar/netfox_Droar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/netfox/netfox.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "Droar" -framework "SDVersion" -framework "netfox" -framework "netfox_Droar"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Droar/Droar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDVersion/SDVersion.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Droar" -framework "SDVersion"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

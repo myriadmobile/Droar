@@ -1,6 +1,6 @@
 //
 //  DeviceInfoSource.swift
-//  AFNetworking
+//  Droar
 //
 //  Created by Nathan Jangula on 10/11/17.
 //

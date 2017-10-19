@@ -102,18 +102,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Droar/Droar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/netfox/netfox.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/netfox-Droar/netfox_Droar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Droar/Droar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/netfox/netfox.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/netfox-Droar/netfox_Droar.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
