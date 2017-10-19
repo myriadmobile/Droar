@@ -1,6 +1,6 @@
 # Droar
 
-[![CI Status](http://img.shields.io/travis/Janglinator/Droar.svg?style=flat)](https://travis-ci.org/Janglinator/Droar)
+[![CI Status](http://img.shields.io/travis/myriadmobile/Droar.svg?style=flat)](https://travis-ci.org/myriadmobile/Droar)
 [![Version](https://img.shields.io/cocoapods/v/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 [![License](https://img.shields.io/cocoapods/l/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 [![Platform](https://img.shields.io/cocoapods/p/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
