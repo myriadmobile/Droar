@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Droar'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'A runtime debugging tool for iOS.'
 
   s.description      = <<-DESC
 Droar is a useful tool for displaying runtime information and settings, useful for debugging.
                        DESC
 
-  s.homepage         = 'www.myriadmobile.com'
+  s.homepage         = 'https://github.com/myriadmobile/Droar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'myriadmobile' => 'developer@myriadmobile.com' }
