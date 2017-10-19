@@ -1,0 +1,6 @@
+framework module netfox_Droar {
+  umbrella header "netfox-Droar-umbrella.h"
+
+  export *
+  module * { export * }
+}

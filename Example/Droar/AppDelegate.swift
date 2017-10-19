@@ -8,6 +8,7 @@
 
 import UIKit
 import Droar
+import netfox_Droar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
@@ -26,12 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
     func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
         return DroarLabelCell.create(title: "Droar Label Cell", detail: "Click Me!", allowSelection: true)
     }
+    
+    func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {
+        
+    }
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Droar.start()
+        netfox_Droar.initialize()
+        
         Droar.register(source: self)
         return true
     }
