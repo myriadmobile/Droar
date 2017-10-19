@@ -22,7 +22,7 @@ pod "Droar"
 
 ## Author
 
-Janglinator, njangula@myriadmobile.com
+Myriad Mobile, developer@myriadmobile.com
 
 ## License
 
