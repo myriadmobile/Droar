@@ -10,7 +10,7 @@ import UIKit
 import Droar
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
+class AppDelegate: UIResponder, UIApplicationDelegate, IDroarKnob {
     func droarSectionTitle() -> String {
         return "Example Rows"
     }
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IDroarSource {
         // Override point for customization after application launch.
         Droar.start()
         
-        Droar.register(source: self)
+        Droar.register(self)
         return true
     }
 

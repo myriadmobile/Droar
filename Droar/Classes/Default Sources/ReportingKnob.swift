@@ -1,5 +1,5 @@
 //
-//  ReportingSource.swift
+//  ReportingKnob.swift
 //  Droar
 //
 //  Created by Nathan Jangula on 10/16/17.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class ReportingSource : IDroarSource {
+internal class ReportingKnob : IDroarKnob {
     
     private enum ReportingRow: Int {
         case screenshot = 0

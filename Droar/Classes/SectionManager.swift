@@ -8,59 +8,68 @@
 
 import Foundation
 
-public enum BasicSourceType: Int {
+public enum DefaultKnobType: Int {
     case buildInfo, deviceInfo, reporting
-    static let defaultValues: [BasicSourceType] = [.buildInfo, .deviceInfo, .reporting]
+    static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting]
 }
 
 internal class SectionManager {
     
     static let sharedInstance = SectionManager()
-    private var basicSources = [IDroarSource]()
-    private var staticSources = [IDroarSource]()
-    private var dynamicSources = [IDroarSource]()
-    public private(set) var sources = [IDroarSource]()
+    private var defaultKnobs = [IDroarKnob]()
+    private var staticKnobs = [IDroarKnob]()
+    private var dynamicKnobs = [IDroarKnob]()
+    public private(set) var visibleKnobs = [IDroarKnob]()
     
     private init() {
-        registerBasicSources(BasicSourceType.defaultValues)
+        registerDefaultKnobs(DefaultKnobType.defaultValues)
     }
     
-    public func registerBasicSources(_ sources: [BasicSourceType]) {
-        basicSources = [IDroarSource]()
+    public func registerDefaultKnobs(_ types: [DefaultKnobType]) {
+        defaultKnobs = [IDroarKnob]()
         
-        for type in sources {
+        for type in types {
             switch type {
-            case .buildInfo: basicSources.append(BuildInfoSource()); break;
-            case .deviceInfo: basicSources.append(DeviceInfoSource()); break;
-            case .reporting: basicSources.append(ReportingSource()); break;
+            case .buildInfo: defaultKnobs.append(BuildInfoKnob()); break;
+            case .deviceInfo: defaultKnobs.append(DeviceInfoKnob()); break;
+            case .reporting: defaultKnobs.append(ReportingKnob()); break;
             }
         }
         
-        sortSources()
+        sortKnobs()
     }
     
-    public func registerStaticSource(_ source: IDroarSource) {
-        if (!staticSources.contains(where: { (existingSource) -> Bool in
-            return existingSource === source
+    public func registerStaticKnob(_ knob: IDroarKnob) {
+        if (!staticKnobs.contains(where: { (existingKnob) -> Bool in
+            return existingKnob === knob
         })) {
-            staticSources.append(source)
-            sortSources()
+            staticKnobs.append(knob)
+            sortKnobs()
         }
     }
     
-    public func registerDynamicSources(_ sources: [IDroarSource]) {
-        self.dynamicSources = sources
-        sortSources()
+    public func registerDynamicKnobs(_ knobs: [IDroarKnob]) {
+        self.dynamicKnobs = knobs
+        sortKnobs()
     }
     
-    private func sortSources() {
-        sources = dynamicSources
-        sources.append(contentsOf: staticSources)
-        sources.append(contentsOf: basicSources)
+    public func prepareForDisplay(tableView: UITableView?) {
+        for section in visibleKnobs {
+            if let performSetupAction = section.droarSectionWillBeginLoading(tableView:) {
+                performSetupAction(tableView)
+            }
+        }
+    }
+    
+    private func sortKnobs() {
+        visibleKnobs = []
+        visibleKnobs.append(contentsOf: dynamicKnobs)
+        visibleKnobs.append(contentsOf: staticKnobs)
+        visibleKnobs.append(contentsOf: defaultKnobs)
         
-        sources.sort { (source1, source2) -> Bool in
-            let position1 = source1.droarSectionPosition()
-            let position2 = source2.droarSectionPosition()
+        visibleKnobs.sort { (knob1, knob2) -> Bool in
+            let position1 = knob1.droarSectionPosition()
+            let position2 = knob2.droarSectionPosition()
             
             if (position1.position != position2.position)
             {
@@ -70,12 +79,4 @@ internal class SectionManager {
             return position1.priority.rawValue <= position2.priority.rawValue
         }
     }
-    
-    //    public func initializeSections(tableView: UITableView) {
-    //        for section in sources {
-    //            if let performSetupAction = section.droarSectionPerformSetup {
-    //                performSetupAction(tableView)
-    //            }
-    //        }
-    //    }
 }

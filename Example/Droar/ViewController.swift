@@ -9,7 +9,7 @@
 import UIKit
 import Droar
 
-class ViewController: UIViewController, IDroarSource {
+class ViewController: UIViewController, IDroarKnob {
     func droarSectionTitle() -> String {
         return "ViewController"
     }

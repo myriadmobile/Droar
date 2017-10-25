@@ -1,5 +1,5 @@
 //
-//  DeviceInfoSource.swift
+//  DeviceInfoKnob.swift
 //  Droar
 //
 //  Created by Nathan Jangula on 10/11/17.
@@ -8,7 +8,7 @@
 import Foundation
 import SDVersion
 
-internal class DeviceInfoSource : IDroarSource {
+internal class DeviceInfoKnob : IDroarKnob {
     private enum DeviceInfoRow: Int {
         case name = 0
         case systemName = 1

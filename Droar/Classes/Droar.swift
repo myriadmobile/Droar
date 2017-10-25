@@ -18,7 +18,6 @@ import Foundation
     internal static var navController: UINavigationController!
     private static var viewController: DroarViewController?
     private static let drawerWidth:CGFloat = 250
-    
     private static let startOnce = DispatchOnce()
     
     @objc public static func start()
@@ -29,31 +28,17 @@ import Foundation
         }
     }
     
-    @objc public static func register(source: IDroarSource) {
-        SectionManager.sharedInstance.registerStaticSource(source)
+    @objc public static func register(_ knob: IDroarKnob) {
+        SectionManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
     }
     
-    public static func registerBasicSources(_ sources: [BasicSourceType]) {
-        SectionManager.sharedInstance.registerBasicSources(sources)
+    public static func registerDefaultKnobs(_ knobs: [DefaultKnobType]) {
+        SectionManager.sharedInstance.registerDefaultKnobs(knobs)
         viewController?.tableView.reloadData()
     }
-    
-    private static func allowEnable() -> Bool
-    {
-        var isDebug = false
-        
-        #if DEBUG
-            isDebug = true
-        #endif
-        
-        return isDebug || SourceDetection.isTestflightBuild()
-    }
-    
     
     private static func addDebugDrawer() {
-        guard allowEnable() else { return }
-        
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.numberOfTapsRequired = 3
         
@@ -66,8 +51,6 @@ import Foundation
     }
     
     @objc public static func setGestureReconizer(value: UIGestureRecognizer) {
-        guard allowEnable() else {return}
-        
         if let recognizer = gestureRecognizer {
             recognizer.view?.removeGestureRecognizer(recognizer)
         }
@@ -86,7 +69,8 @@ import Foundation
                 navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
                 
                 keyWindow.addSubview(navController.view)
-                SectionManager.sharedInstance.registerDynamicSources(loadDynamicSources())
+                SectionManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
+                SectionManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
                 
                 viewController?.tableView.reloadData()
             }
@@ -115,7 +99,38 @@ import Foundation
         }
     }
     
-    private static func loadDynamicSources() -> [IDroarSource] {
+    private static func loadDynamicKnobs() -> [IDroarKnob] {
+        if let activeVC = loadActiveResponder() as? UIViewController {
+            
+            let candidateVCs = activeVC.loadActiveViewControllers()
+            var knobs = [IDroarKnob]()
+            
+            for candidate in candidateVCs {
+                if candidate is IDroarKnob {
+                    knobs.append(candidate as! IDroarKnob)
+                }
+            }
+            
+            return knobs
+        }
+        
+        return []
+    }
+    
+    @objc private static func handleReceivedWindowDidBecomeKeyNotification(notification:NSNotification) {
+        if let recognizer = gestureRecognizer {
+            
+            recognizer.view?.removeGestureRecognizer(recognizer)
+            
+            if let window = notification.object as? UIWindow {
+                window.addGestureRecognizer(recognizer)
+            } else {
+                loadKeyWindow()?.addGestureRecognizer(recognizer)
+            }
+        }
+    }
+    
+    private static func loadActiveResponder() -> UIResponder? {
         if var window = loadKeyWindow() {
             if window.windowLevel != UIWindowLevelNormal {
                 for otherWindow in UIApplication.shared.windows {
@@ -137,37 +152,11 @@ import Foundation
                     }
                 }
                 
-                if responder is UIViewController {
-                    let responderVC = responder as! UIViewController
-                    
-                    let candidateVCs = responderVC.loadActiveViewControllers()
-                    var sources = [IDroarSource]()
-                    
-                    for candidate in candidateVCs {
-                        if candidate is IDroarSource {
-                            sources.append(candidate as! IDroarSource)
-                        }
-                    }
-                    
-                    return sources
-                }
+                return responder
             }
         }
         
-        return []
-    }
-    
-    @objc private static func handleReceivedWindowDidBecomeKeyNotification(notification:NSNotification) {
-        if let recognizer = gestureRecognizer {
-            
-            recognizer.view?.removeGestureRecognizer(recognizer)
-            
-            if let window = notification.object as? UIWindow {
-                window.addGestureRecognizer(recognizer)
-            } else {
-                loadKeyWindow()?.addGestureRecognizer(recognizer)
-            }
-        }
+        return nil
     }
     
     private static func loadKeyWindow() -> UIWindow? {

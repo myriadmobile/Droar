@@ -1,5 +1,5 @@
 //
-//  BuildInfoSource.swift
+//  BuildInfoKnob.swift
 //  Droar
 //
 //  Created by Nathan Jangula on 10/11/17.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class BuildInfoSource : IDroarSource {
+internal class BuildInfoKnob : IDroarKnob {
     
     private enum BuildInfoRow: Int {
         case name = 0
