@@ -9,6 +9,14 @@ import Foundation
 
 internal extension Droar {
     static func addDebugDrawer() {
+        if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
+            do {
+                try UIFont.register(url: fontUrl)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.numberOfTapsRequired = 3
         
@@ -29,7 +37,7 @@ internal extension Droar {
         navController.navigationBar.isTranslucent = false
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: navController.view.frame.size.height))
-        separatorView.backgroundColor = UIColor.black
+        separatorView.backgroundColor = UIColor.droarBlue
         separatorView.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
         navController.view.addSubview(separatorView)
     }

@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
     }
     
     func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {
-        
+        print("Clicked!")
     }
 
     var window: UIWindow?
