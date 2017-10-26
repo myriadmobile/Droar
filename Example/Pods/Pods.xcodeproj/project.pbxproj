@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B6F60A995FD4EF5723D582D2CCF1A1 /* RussoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C50965BDB4528D780411892CA7BE45F6 /* RussoOne-Regular.ttf */; };
 		1763EA834884A2AE83404CBDEA6DEA6B /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5381BB78B576A0A80222C19459C9B2E /* FontExtensions.swift */; };
 		239D0D67C989EE0E0C850AD3BADDFCAD /* MyriadKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471CFEE6B5D1784D235CA43BA6ACF5D /* MyriadKnob.swift */; };
 		23EBDFE75AE116F40E6BF1D2788CC288 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
-		3251372EFC5CE9EE6F44E53FB1E8C277 /* DroarImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD07668965C8E50EB64978A68ACE2590 /* DroarImageCell.xib */; };
 		37747221B64BDFC4B8FD305CC7AB5A5B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFBD8FA354FC80C56D3940F085361DD /* UIViewControllerExtensions.swift */; };
 		3F09B568FD3D42674EE8C6B4811024E9 /* ReportingKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861F574A352D436001E08F129E8FCFA6 /* ReportingKnob.swift */; };
 		40861643D2CB78344E3AC3D84FD7431C /* Pods-Droar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */; };
 		414BCF33F939B4AF6B2F1DBCDDF0BDD9 /* DroarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322844ED4BFC0F6AAC3067648899CAEE /* DroarHelper.swift */; };
 		627439470B7CF37B2003508EE84E8144 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66125878D35F04BE177E87491CE12EFE /* DroarImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2D0834AF3E9659755D8A6B7EFBEAFA /* DroarImageCell.xib */; };
 		6699C354FA44FECB1A2E59C8C87044F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E1E26F8379DF7218C642DBD21DC87 /* UIKit.framework */; };
 		6D62782B0700084AB2A1C84B65F71B08 /* SDVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE604CA7F59171A87938A0B5913466 /* SDVersion-dummy.m */; };
 		710F283FE89D44A72C088259BD76AAD9 /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BA440B3F49F02769D1F77F4927DEA4 /* DispatchOnce.swift */; };
 		7A26394841A29AE89A06E4CE8D777290 /* Pods-Droar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ABED3520959D1BDF4CD87BBFB31C662 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7525B7FD7520E938EF78DA32BC775CE3 /* BundleExtensions.swift */; };
 		831B22C321880457B86427E1BC001FE6 /* Droar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */; };
-		88224B737A5294D5E82E864E6E5114CA /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BB69796D5A77B52F39D4477F705532 /* DroarLabelCell.xib */; };
 		896F22FA5F2674FBE116DBBA6C3C7C6C /* Droar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C5966D911BC894792C3F03BF00FB1 /* Droar.swift */; };
 		89E678A687494819FE27BAFAB3AF5508 /* DroarLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E23BCFEC9E47C7BFC44649DA007D16 /* DroarLabelCell.swift */; };
 		8E29587EF42397D6ED3CCAB8EB8A77AF /* DroarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E05A86450B6B95E929D5747E1FCDAF /* DroarCell.swift */; };
@@ -34,13 +34,14 @@
 		AC74205568E55564EFD4F3E02990EAC1 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F2632C290AB3884E0D91325F1E1E2 /* ObjcHelper.m */; };
 		B052B94C5DC27679778BA557B0E0C53B /* DroarKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DA0C384C2EE3A4E2822DD463D19BD3 /* DroarKnob.swift */; };
 		B85055E92E6718650CFC0BE6CF1CE994 /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACF6C9030047F47102852AF1D4E3D4 /* DroarViewController.swift */; };
+		BD9217B0BA6A096BE62C7CE278F96164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB69EE17AA17EDFA3C7D30B03E7C7EA9 /* Assets.xcassets */; };
 		CB00BFEFD2B8571193ECB191C6FF1371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
 		CE1074AEBCF860AACDE4C5DCD2989FC0 /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */; };
 		D7B1AFF95D1937F32670D958788E88D3 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04771731D57DCA90052A310F0803C261 /* UIColorExtensions.swift */; };
 		DC38DD4D52458836F349C44D6AD5C6FB /* BuildInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010CC4B0D5952083D0B35D453F3E2F5 /* BuildInfoKnob.swift */; };
-		DF1CA2817FC097E09B790DC7E5C6150C /* RussoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03B4AD047078E47AEE959ECFBBFFAE44 /* RussoOne-Regular.ttf */; };
 		E09E3F9372A246C9C6E961AAB8661D33 /* DroarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C11AA3FC2D1F1E4C69C9CC2836EAB /* DroarImageCell.swift */; };
 		E714FC4D21FD0666AE57E80F8912FF02 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99456AC502AC096D28DD11C5ECCE46 /* Swizzling.swift */; };
+		E90B7BEFB47BA4AB723A5523BCAECEC2 /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB6BD7AEB55871F050C7845FA640EB8C /* DroarLabelCell.xib */; };
 		EBADDA699A3E2E0F162EB1115660DDA5 /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 274BC705847C718618962D93B4D149E0 /* Droar-dummy.m */; };
 		F062686CECEBBE8C81202C967DF669EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
 		F1BB24DB7DFE60F4AFD1D74F7C68F0BA /* DeviceInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEA1A4BFC0BF9997B91563794820653 /* DeviceInfoKnob.swift */; };
@@ -80,7 +81,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B4AD047078E47AEE959ECFBBFFAE44 /* RussoOne-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "RussoOne-Regular.ttf"; sourceTree = "<group>"; };
 		04771731D57DCA90052A310F0803C261 /* UIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		1181A6E7F946CA49B2C6EBF7E2E3DB98 /* ObjcHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
 		12E700220993C62928826A2253CE3A7D /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 		24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDiOSVersion.h; path = SDVersion/SDiOSVersion/SDiOSVersion.h; sourceTree = "<group>"; };
 		25BA440B3F49F02769D1F77F4927DEA4 /* DispatchOnce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
 		274BC705847C718618962D93B4D149E0 /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
+		2C2D0834AF3E9659755D8A6B7EFBEAFA /* DroarImageCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarImageCell.xib; sourceTree = "<group>"; };
 		2F7F2632C290AB3884E0D91325F1E1E2 /* ObjcHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
 		322844ED4BFC0F6AAC3067648899CAEE /* DroarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarHelper.swift; sourceTree = "<group>"; };
 		32C240C06F398664BC291504C6F5E063 /* SDVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-umbrella.h"; sourceTree = "<group>"; };
@@ -122,17 +123,18 @@
 		B5381BB78B576A0A80222C19459C9B2E /* FontExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		B6C1E95B0BB22A86F38431EF4D21155C /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Droar.framework; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0D5E20EF979A9713621CA67120F9D7 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDVersion.modulemap; sourceTree = "<group>"; };
+		BB69EE17AA17EDFA3C7D30B03E7C7EA9 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFBD8FA354FC80C56D3940F085361DD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		C08C37F9F07353669A67B360BC025152 /* Pods-Droar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droar_Example-resources.sh"; sourceTree = "<group>"; };
 		C10A140BB5D52C5FCFA8DA3F5F617234 /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Droar.modulemap; sourceTree = "<group>"; };
+		C50965BDB4528D780411892CA7BE45F6 /* RussoOne-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "RussoOne-Regular.ttf"; sourceTree = "<group>"; };
 		C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droar_Example-dummy.m"; sourceTree = "<group>"; };
+		CB6BD7AEB55871F050C7845FA640EB8C /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
 		CC99456AC502AC096D28DD11C5ECCE46 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
-		CD07668965C8E50EB64978A68ACE2590 /* DroarImageCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarImageCell.xib; sourceTree = "<group>"; };
 		D336FC03201622B22329B195D06A3EB1 /* Pods-Droar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D3E05A86450B6B95E929D5747E1FCDAF /* DroarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DroarCell.swift; path = Droar/Classes/DroarCell.swift; sourceTree = "<group>"; };
 		E20C5966D911BC894792C3F03BF00FB1 /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Droar.swift; path = Droar/Classes/Droar.swift; sourceTree = "<group>"; };
 		E21678360C4EC6BB24838C52E7B4BD52 /* Pods-Droar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E3BB69796D5A77B52F39D4477F705532 /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
 		E88C11AA3FC2D1F1E4C69C9CC2836EAB /* DroarImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarImageCell.swift; sourceTree = "<group>"; };
 		EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Droar.bundle; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2290BDD01AAED14453FF4C6EB854A13 /* Pods-Droar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,11 +213,21 @@
 				61A7ECD534794DB6A7FD20E3178E1890 /* Extensions */,
 				2A928EC73F40B35FDFAD8C56E2FA1E8F /* Helpers */,
 				D01ACE6C416B820EFCA0B030C42E7905 /* Implementation */,
-				7BC21C364D4CA4B75D5F017DE111020E /* Resources */,
+				6BE95F4A49F56940FB1B930FEDB0D2D6 /* Resources */,
 				718654B283A8FEF14F2BE18A9372E0B7 /* Support Files */,
 			);
 			name = Droar;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		47AF27EE8FA459BE3320E2F5E2B13221 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BB69EE17AA17EDFA3C7D30B03E7C7EA9 /* Assets.xcassets */,
+				C50965BDB4528D780411892CA7BE45F6 /* RussoOne-Regular.ttf */,
+			);
+			name = Assets;
+			path = Droar/Classes/Assets;
 			sourceTree = "<group>";
 		};
 		4AAA2F3BE9F68076869C0011A85BE8EB /* Development Pods */ = {
@@ -250,6 +262,15 @@
 			path = Droar/Classes/Cells;
 			sourceTree = "<group>";
 		};
+		6BE95F4A49F56940FB1B930FEDB0D2D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47AF27EE8FA459BE3320E2F5E2B13221 /* Assets */,
+				B7A82D68B1D67E9CE8165D5CCC889F7D /* Cells */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		718654B283A8FEF14F2BE18A9372E0B7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,16 +286,6 @@
 			path = "Example/Pods/Target Support Files/Droar";
 			sourceTree = "<group>";
 		};
-		74F14BCFB530A970AC0D4992DB4FAB3F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CD07668965C8E50EB64978A68ACE2590 /* DroarImageCell.xib */,
-				E3BB69796D5A77B52F39D4477F705532 /* DroarLabelCell.xib */,
-			);
-			name = Cells;
-			path = Droar/Classes/Cells;
-			sourceTree = "<group>";
-		};
 		76E3F29F7865748789035C69FE38CB05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,15 +293,6 @@
 				B63F6879F9E3A96B510A48704D21C4A7 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7BC21C364D4CA4B75D5F017DE111020E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BFC696F960DA08AF0137F4865A13D70D /* Assets */,
-				74F14BCFB530A970AC0D4992DB4FAB3F /* Cells */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -369,13 +371,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BFC696F960DA08AF0137F4865A13D70D /* Assets */ = {
+		B7A82D68B1D67E9CE8165D5CCC889F7D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				03B4AD047078E47AEE959ECFBBFFAE44 /* RussoOne-Regular.ttf */,
+				2C2D0834AF3E9659755D8A6B7EFBEAFA /* DroarImageCell.xib */,
+				CB6BD7AEB55871F050C7845FA640EB8C /* DroarLabelCell.xib */,
 			);
-			name = Assets;
-			path = Droar/Classes/Assets;
+			name = Cells;
+			path = Droar/Classes/Cells;
 			sourceTree = "<group>";
 		};
 		D01ACE6C416B820EFCA0B030C42E7905 /* Implementation */ = {
@@ -500,7 +503,7 @@
 			buildPhases = (
 				FA2EF1F1000A3D1983BA23C90DCEEF57 /* Sources */,
 				362F7A5A45D60F552873C7B089810167 /* Frameworks */,
-				4EEBF5F25FFD2A6DE1A74A4586187C0A /* Resources */,
+				E40F7CEA9613CAFB416B4C77242F7393 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -549,13 +552,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EEBF5F25FFD2A6DE1A74A4586187C0A /* Resources */ = {
+		E40F7CEA9613CAFB416B4C77242F7393 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3251372EFC5CE9EE6F44E53FB1E8C277 /* DroarImageCell.xib in Resources */,
-				88224B737A5294D5E82E864E6E5114CA /* DroarLabelCell.xib in Resources */,
-				DF1CA2817FC097E09B790DC7E5C6150C /* RussoOne-Regular.ttf in Resources */,
+				BD9217B0BA6A096BE62C7CE278F96164 /* Assets.xcassets in Resources */,
+				66125878D35F04BE177E87491CE12EFE /* DroarImageCell.xib in Resources */,
+				E90B7BEFB47BA4AB723A5523BCAECEC2 /* DroarLabelCell.xib in Resources */,
+				06B6F60A995FD4EF5723D582D2CCF1A1 /* RussoOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

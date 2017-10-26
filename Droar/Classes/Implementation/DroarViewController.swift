@@ -16,13 +16,22 @@ class DroarViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 45
         
-        navigationItem.title = "DROAR"
+        let font = UIFont(name: "Russo One", size: 30) ?? UIFont.systemFont(ofSize: 30)
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        label.textAlignment = .center
+        label.autoresizingMask = [.flexibleWidth]
+        let attachment = NSTextAttachment()
+        attachment.image = UIImage(named: "Droar_icon", in: Bundle.podBundle, compatibleWith: nil)
+        attachment.bounds = CGRect(x: 0, y: -8, width: 40, height: 40)
+        let attributedString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
+        attributedString.append(NSAttributedString(string: " DROAR", attributes: [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: UIColor.white]))
+        label.attributedText = attributedString
+        navigationItem.titleView = label
         
         navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
         navigationController?.navigationBar.barTintColor = UIColor.droarBlue
         navigationController?.navigationBar.tintColor = UIColor.white
-        let font = UIFont(name: "Russo One", size: 30) ?? UIFont.systemFont(ofSize: 30)
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: font]
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Droar" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-70-fSx">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DroarIcon_Text" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-70-fSx">
                     <rect key="frame" x="20" y="20" width="440" height="338"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Powered by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX3-Vw-gyx">
@@ -52,7 +52,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Droar" width="1024" height="1192"/>
+        <image name="DroarIcon_Text" width="1024" height="1192"/>
         <image name="MyriadLogo" width="2096" height="744"/>
     </resources>
 </document>

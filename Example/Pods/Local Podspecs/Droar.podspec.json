@@ -22,7 +22,7 @@
   "source_files": "Droar/Classes/**/*.{swift,h,m}",
   "resource_bundles": {
     "Droar": [
-      "Droar/Classes/**/*.{xib,png,jpeg,jpg,txt,ttf}"
+      "Droar/Classes/**/*.{xib,png,jpeg,jpg,txt,ttf,xcassets}"
     ]
   },
   "frameworks": "UIKit",
