@@ -42,6 +42,10 @@ Static knobs will always be shown in Droar.  They can be added using the `regist
 ### Dynamic view controller knobs:
 When Droar is opened, it will search through the application's view controller heirarchy to find the currently active view controller(s), and pull knob info if the view controller conforms to `DroarKnob`.  This is useful for a per-screen customization of Droar.
 
+## Plugins
+
+[netfox-Droar](https://github.com/myriadmobile/netfox-Droar)
+
 ## Author
 
 Myriad Mobile, developer@myriadmobile.com
