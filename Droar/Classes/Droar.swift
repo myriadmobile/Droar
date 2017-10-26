@@ -56,6 +56,10 @@ import Foundation
         }
     }
     
+    @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        navController.pushViewController(viewController, animated: animated)
+    }
+    
     @objc public static func toggleVisibility() {        
         if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
             if navController?.view.transform.isIdentity ?? false {
