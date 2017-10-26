@@ -119,4 +119,12 @@ internal extension Droar {
         
         return image
     }
+    
+    static func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+//        if let active = loadActiveResponder() as? UIViewController {
+//            active.present(viewController, animated: true, completion: completion)
+//        }
+
+    navController.present(viewController, animated: animated, completion: completion)
+    }
 }

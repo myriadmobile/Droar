@@ -12,7 +12,8 @@ import Foundation
     case buildInfo = 0
     case deviceInfo = 1
     case reporting = 2
-    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting]
+    case myriad = 3
+    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting, .myriad]
 }
 
 internal class SectionManager {
@@ -24,7 +25,7 @@ internal class SectionManager {
     public private(set) var visibleKnobs = [DroarKnob]()
     
     private init() {
-        registerDefaultKnobs(DefaultKnobType.defaultValues)
+        registerDefaultKnobs(DefaultKnobType.defaultValues.reversed())
     }
     
     public func registerDefaultKnobs(_ types: [DefaultKnobType]) {
@@ -35,6 +36,7 @@ internal class SectionManager {
             case .buildInfo: defaultKnobs.append(BuildInfoKnob()); break;
             case .deviceInfo: defaultKnobs.append(DeviceInfoKnob()); break;
             case .reporting: defaultKnobs.append(ReportingKnob()); break;
+            case .myriad: defaultKnobs.append(MyriadKnob()); break;
             }
         }
         

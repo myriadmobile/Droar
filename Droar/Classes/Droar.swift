@@ -57,11 +57,15 @@ import Foundation
     }
     
     @objc public static func toggleVisibility() {
-        if let keyWindow = loadKeyWindow() {
+        if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
             if navController?.view.transform.isIdentity ?? false {
                 navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
                 
-                keyWindow.addSubview(navController.view)
+                navController.willMove(toParentViewController: activeVC)
+                activeVC.addChildViewController(navController)
+                activeVC.view.addSubview(navController.view)
+                navController.didMove(toParentViewController: activeVC)
+                
                 SectionManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
                 SectionManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
                 
@@ -86,7 +90,9 @@ import Foundation
                 }
             }, completion: { (complete) in
                 if navController.view.transform.isIdentity {
+                    navController.willMove(toParentViewController: nil)
                     navController.view.removeFromSuperview()
+                    navController.removeFromParentViewController()
                 }
             })
         }

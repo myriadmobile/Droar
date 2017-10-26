@@ -47,7 +47,7 @@ internal class ReportingKnob : DroarKnob {
         case .screenshot:
             if let image = Droar.captureScreen() {
                 let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-                Droar.navController.present(activityVC, animated: true, completion: nil)
+                Droar.present(activityVC, animated: true, completion: nil)
             }
             break
         default:

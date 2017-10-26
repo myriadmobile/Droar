@@ -38,6 +38,7 @@ internal class BuildInfoKnob : DroarKnob {
     
     func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
+        cell.isUserInteractionEnabled = false
         
         let info = Bundle.main.infoDictionary
         
