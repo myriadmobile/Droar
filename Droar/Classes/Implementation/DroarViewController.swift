@@ -31,7 +31,6 @@ class DroarViewController: UITableViewController {
         navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
         navigationController?.navigationBar.barTintColor = UIColor.droarBlue
         navigationController?.navigationBar.tintColor = UIColor.white
-        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
