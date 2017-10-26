@@ -83,4 +83,23 @@ internal class SectionManager {
             return position1.priority.rawValue <= position2.priority.rawValue
         }
     }
+    
+    public func generateStateDump() -> [String: String] {
+        var dump = [String: String]()
+        
+        if let tableView = Droar.viewController?.tableView {
+            for knob in visibleKnobs {
+                for index in 0 ..< knob.droarSectionNumberOfCells() {
+                    let cell = knob.droarSectionCellForIndex(index: index, tableView: tableView)
+                    if let cellDump = cell.stateDump() {
+                        dump.merge(cellDump, uniquingKeysWith: { (oldValue, newValue) -> String in
+                            return newValue
+                        })
+                    }
+                }
+            }
+        }
+        
+        return dump
+    }
 }

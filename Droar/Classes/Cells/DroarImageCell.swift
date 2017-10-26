@@ -30,7 +30,5 @@ public class DroarImageCell : UITableViewCell, DroarCell {
     
     public func stateDump() -> [String : String]? {
         return nil
-//        guard let text = titleLabel.text, let detailText = detailLabel.text else { return nil }
-//        return [text : detailText]
     }
 }
