@@ -8,9 +8,11 @@
 
 import Foundation
 
-public enum DefaultKnobType: Int {
-    case buildInfo, deviceInfo, reporting
-    static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting]
+@objc public enum DefaultKnobType: Int {
+    case buildInfo = 0
+    case deviceInfo = 1
+    case reporting = 2
+    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting]
 }
 
 internal class SectionManager {

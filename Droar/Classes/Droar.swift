@@ -33,6 +33,11 @@ import Foundation
         viewController?.tableView.reloadData()
     }
     
+    @objc(registerDefaultKnobs:)
+    public static func objc_registerDefaultKnobs(knobs: [Int]) {
+        registerDefaultKnobs(knobs.map({ DefaultKnobType(rawValue: $0)! }))
+    }
+    
     public static func registerDefaultKnobs(_ knobs: [DefaultKnobType]) {
         SectionManager.sharedInstance.registerDefaultKnobs(knobs)
         viewController?.tableView.reloadData()
