@@ -24,7 +24,7 @@ Droar is a useful tool for displaying runtime information and settings, useful f
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Droar/Classes/**/*'
+  s.source_files = 'Droar/Classes/**/*.{swift,h,m}'
   
   s.resource_bundles = {
     'Droar' => ['Droar/Classes/**/*.{xib,png,jpeg,jpg,txt,ttf}']

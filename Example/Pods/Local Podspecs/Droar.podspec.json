@@ -19,7 +19,7 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Droar/Classes/**/*",
+  "source_files": "Droar/Classes/**/*.{swift,h,m}",
   "resource_bundles": {
     "Droar": [
       "Droar/Classes/**/*.{xib,png,jpeg,jpg,txt,ttf}"

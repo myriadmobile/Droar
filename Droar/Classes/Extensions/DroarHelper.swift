@@ -25,7 +25,7 @@ internal extension Droar {
         
         navController = UINavigationController(rootViewController: viewController!)
         navController.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
-        navController.view.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
+        navController.view.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
         navController.navigationBar.isTranslucent = false
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: navController.view.frame.size.height))
