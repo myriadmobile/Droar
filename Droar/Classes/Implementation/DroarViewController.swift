@@ -19,27 +19,14 @@ class DroarViewController: UITableViewController {
             do {
                 try UIFont.register(url: fontUrl)
             } catch let error {
-                
+                NSLog(error.localizedDescription)
             }
         }
-        
-        //        NSData *inData = /* your decrypted font-file data */;
-        //        CFErrorRef error;
-        //        CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)inData);
-        //        CGFontRef font = CGFontCreateWithDataProvider(provider);
-        //        if (! CTFontManagerRegisterGraphicsFont(font, &error)) {
-        //            CFStringRef errorDescription = CFErrorCopyDescription(error)
-        //            NSLog(@"Failed to load font: %@", errorDescription);
-        //            CFRelease(errorDescription);
-        //        }
-        //        CFRelease(font);
-        //        CFRelease(provider);
-        
         
         navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
         navigationController?.navigationBar.barTintColor = UIColor(red: 45/255, green: 88/255, blue: 124/255, alpha: 1.0)
         navigationController?.navigationBar.tintColor = UIColor.white
-        let font = UIFont(name: "Russo One", size: 20)!
+        let font = UIFont(name: "Russo One", size: 30) ?? UIFont.systemFont(ofSize: 30)
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: font]
     }
     
