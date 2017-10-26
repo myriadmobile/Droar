@@ -26,7 +26,7 @@ internal class MyriadKnob : DroarKnob {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarImageCell") as? DroarImageCell ?? DroarImageCell.create()
         
         cell.titleLabel.text = "Powered By:"
-        cell.largeImageView.image = UIImage(named: "MyriadLogo")
+        cell.largeImageView.image = UIImage(named: "Myriad_logo",  in: Bundle.podBundle, compatibleWith: nil)
         cell.isUserInteractionEnabled = true
 
         return cell
