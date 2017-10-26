@@ -1,4 +1,5 @@
-# Droar
+![](https://raw.githubusercontent.com/myriadmobile/Droar/master/Example/Droar/Images.xcassets/DroarIcon_Text.imageset/Droar1.png)
+
 
 [![CI Status](http://img.shields.io/travis/myriadmobile/Droar.svg?style=flat)](https://travis-ci.org/myriadmobile/Droar)
 [![Version](https://img.shields.io/cocoapods/v/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
