@@ -10,6 +10,39 @@ import UIKit
 
 class DroarViewController: UITableViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.title = "DROAR"
+        
+        if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
+            do {
+                try UIFont.register(url: fontUrl)
+            } catch let error {
+                
+            }
+        }
+        
+        //        NSData *inData = /* your decrypted font-file data */;
+        //        CFErrorRef error;
+        //        CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)inData);
+        //        CGFontRef font = CGFontCreateWithDataProvider(provider);
+        //        if (! CTFontManagerRegisterGraphicsFont(font, &error)) {
+        //            CFStringRef errorDescription = CFErrorCopyDescription(error)
+        //            NSLog(@"Failed to load font: %@", errorDescription);
+        //            CFRelease(errorDescription);
+        //        }
+        //        CFRelease(font);
+        //        CFRelease(provider);
+        
+        
+        navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
+        navigationController?.navigationBar.barTintColor = UIColor(red: 45/255, green: 88/255, blue: 124/255, alpha: 1.0)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        let font = UIFont(name: "Russo One", size: 20)!
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: font]
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return SectionManager.sharedInstance.visibleKnobs.count
     }

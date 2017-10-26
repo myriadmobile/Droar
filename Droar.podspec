@@ -27,7 +27,7 @@ Droar is a useful tool for displaying runtime information and settings, useful f
   s.source_files = 'Droar/Classes/**/*'
   
   s.resource_bundles = {
-    'Droar' => ['Droar/Classes/**/*.{xib,png,jpeg,jpg,txt}']
+    'Droar' => ['Droar/Classes/**/*.{xib,png,jpeg,jpg,txt,ttf}']
   }
 
   s.frameworks = 'UIKit'
