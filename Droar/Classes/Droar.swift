@@ -56,7 +56,7 @@ import Foundation
         }
     }
     
-    @objc public static func toggleVisibility() {
+    @objc public static func toggleVisibility() {        
         if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
             if navController?.view.transform.isIdentity ?? false {
                 navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)

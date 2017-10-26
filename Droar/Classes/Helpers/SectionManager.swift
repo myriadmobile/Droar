@@ -11,9 +11,10 @@ import Foundation
 @objc public enum DefaultKnobType: Int {
     case buildInfo = 0
     case deviceInfo = 1
-    case reporting = 2
-    case myriad = 3
-    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .reporting, .myriad]
+    case processInfo = 2
+    case reporting = 3
+    case myriad = 4
+    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .processInfo, .reporting, .myriad]
 }
 
 internal class SectionManager {
@@ -33,10 +34,11 @@ internal class SectionManager {
         
         for type in types {
             switch type {
-            case .buildInfo: defaultKnobs.append(BuildInfoKnob()); break;
-            case .deviceInfo: defaultKnobs.append(DeviceInfoKnob()); break;
-            case .reporting: defaultKnobs.append(ReportingKnob()); break;
-            case .myriad: defaultKnobs.append(MyriadKnob()); break;
+            case .buildInfo: defaultKnobs.append(BuildInfoKnob())
+            case .deviceInfo: defaultKnobs.append(DeviceInfoKnob())
+            case .processInfo: defaultKnobs.append(ProcessInfoKnob())
+            case .reporting: defaultKnobs.append(ReportingKnob())
+            case .myriad: defaultKnobs.append(MyriadKnob())
             }
         }
         

@@ -35,15 +35,12 @@ internal class ReportingKnob : DroarKnob {
         case .screenshot:
             cell.titleLabel.text = "Screenshot"
             cell.detailLabel.text = ""
-            break
         case .dump:
             cell.titleLabel.text = "Generate Current State Dump"
             cell.detailLabel.text = ""
-            break
         case .count:
             cell.titleLabel.text = ""
             cell.detailLabel.text = ""
-            break
         }
         
         return cell
@@ -56,8 +53,6 @@ internal class ReportingKnob : DroarKnob {
                 let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
                 Droar.present(activityVC, animated: true, completion: nil)
             }
-            break
-            
         case .dump:
             let dump = SectionManager.sharedInstance.generateStateDump()
             do {
