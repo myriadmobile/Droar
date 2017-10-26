@@ -10,7 +10,7 @@ import UIKit
 import Droar
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, IDroarKnob {
+class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
     func droarSectionTitle() -> String {
         return "Example Rows"
     }
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IDroarKnob {
         return 1
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         return DroarLabelCell.create(title: "Droar Label Cell", detail: "Click Me!", allowSelection: true)
     }
     

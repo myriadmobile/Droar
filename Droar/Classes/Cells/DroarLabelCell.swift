@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DroarLabelCell : UITableViewCell {
+public class DroarLabelCell : UITableViewCell, DroarCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
@@ -26,5 +26,10 @@ public class DroarLabelCell : UITableViewCell {
         cell?.isUserInteractionEnabled = allowSelection
         
         return cell ?? DroarLabelCell()
+    }
+    
+    public func stateDump() -> [String : String]? {
+        guard let text = titleLabel.text, let detailText = detailLabel.text else { return nil }
+        return [text : detailText]
     }
 }

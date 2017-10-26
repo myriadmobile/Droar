@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class BuildInfoKnob : IDroarKnob {
+internal class BuildInfoKnob : DroarKnob {
     
     private enum BuildInfoRow: Int {
         case name = 0
@@ -36,7 +36,7 @@ internal class BuildInfoKnob : IDroarKnob {
         return BuildInfoRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         
         let info = Bundle.main.infoDictionary

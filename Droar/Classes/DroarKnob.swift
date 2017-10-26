@@ -1,5 +1,5 @@
 //
-//  IDroarKnob.swift
+//  DroarKnob.swift
 //  Pods
 //
 //  Created by Nathan Jangula on 9/1/17.
@@ -29,11 +29,11 @@ import Foundation
     @objc public private(set) var priority: PositionPriority
 }
 
-@objc public protocol IDroarKnob {
+@objc public protocol DroarKnob {
     @objc optional func droarSectionWillBeginLoading(tableView: UITableView?)
     @objc func droarSectionTitle() -> String
     @objc func droarSectionPosition() -> PositionInfo
     @objc func droarSectionNumberOfCells() -> Int
-    @objc func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell
+    @objc func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell
     @objc optional func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int)
 }

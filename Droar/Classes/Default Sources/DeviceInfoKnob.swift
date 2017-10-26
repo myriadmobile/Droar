@@ -8,7 +8,7 @@
 import Foundation
 import SDVersion
 
-internal class DeviceInfoKnob : IDroarKnob {
+internal class DeviceInfoKnob : DroarKnob {
     private enum DeviceInfoRow: Int {
         case name = 0
         case systemName = 1
@@ -31,7 +31,7 @@ internal class DeviceInfoKnob : IDroarKnob {
         return DeviceInfoRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         
         let device = UIDevice.current

@@ -9,7 +9,7 @@
 import UIKit
 import Droar
 
-class ViewController: UIViewController, IDroarKnob {
+class ViewController: UIViewController, DroarKnob {
     func droarSectionTitle() -> String {
         return "ViewController"
     }
@@ -22,7 +22,7 @@ class ViewController: UIViewController, IDroarKnob {
         return 1
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         return DroarLabelCell.create(title: "Dynamic source!", detail: "Neat!", allowSelection: false)
     }
     

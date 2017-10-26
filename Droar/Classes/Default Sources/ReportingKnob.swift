@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal class ReportingKnob : IDroarKnob {
+internal class ReportingKnob : DroarKnob {
     
     private enum ReportingRow: Int {
         case screenshot = 0
@@ -26,7 +26,7 @@ internal class ReportingKnob : IDroarKnob {
         return ReportingRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> UITableViewCell {
+    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         
         switch ReportingRow(rawValue:index)! {

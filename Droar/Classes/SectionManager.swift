@@ -16,17 +16,17 @@ public enum DefaultKnobType: Int {
 internal class SectionManager {
     
     static let sharedInstance = SectionManager()
-    private var defaultKnobs = [IDroarKnob]()
-    private var staticKnobs = [IDroarKnob]()
-    private var dynamicKnobs = [IDroarKnob]()
-    public private(set) var visibleKnobs = [IDroarKnob]()
+    private var defaultKnobs = [DroarKnob]()
+    private var staticKnobs = [DroarKnob]()
+    private var dynamicKnobs = [DroarKnob]()
+    public private(set) var visibleKnobs = [DroarKnob]()
     
     private init() {
         registerDefaultKnobs(DefaultKnobType.defaultValues)
     }
     
     public func registerDefaultKnobs(_ types: [DefaultKnobType]) {
-        defaultKnobs = [IDroarKnob]()
+        defaultKnobs = [DroarKnob]()
         
         for type in types {
             switch type {
@@ -39,7 +39,7 @@ internal class SectionManager {
         sortKnobs()
     }
     
-    public func registerStaticKnob(_ knob: IDroarKnob) {
+    public func registerStaticKnob(_ knob: DroarKnob) {
         if (!staticKnobs.contains(where: { (existingKnob) -> Bool in
             return existingKnob === knob
         })) {
@@ -48,7 +48,7 @@ internal class SectionManager {
         }
     }
     
-    public func registerDynamicKnobs(_ knobs: [IDroarKnob]) {
+    public func registerDynamicKnobs(_ knobs: [DroarKnob]) {
         self.dynamicKnobs = knobs
         sortKnobs()
     }
