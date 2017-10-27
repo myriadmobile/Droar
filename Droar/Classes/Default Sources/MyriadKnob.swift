@@ -10,19 +10,19 @@ import WebKit
 
 internal class MyriadKnob : DroarKnob {
     
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return ""
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .bottom, priority: .low)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return 1
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarImageCell") as? DroarImageCell ?? DroarImageCell.create()
         
         cell.titleLabel.text = "Powered By:"
@@ -32,7 +32,7 @@ internal class MyriadKnob : DroarKnob {
         return cell
     }
     
-    func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {
+    func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         if let url = URL(string: "https://www.myriadmobile.com") {
             let alert = UIAlertController(title: "Open in Safari?", message: url.absoluteString, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in

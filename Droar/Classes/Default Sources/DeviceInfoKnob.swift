@@ -19,19 +19,19 @@ internal class DeviceInfoKnob : DroarKnob {
         case identifier = 6
         case count = 7
     }
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return "Device Info"
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .bottom, priority: .low)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return DeviceInfoRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         cell.selectionStyle = .none
 

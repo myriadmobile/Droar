@@ -10,20 +10,20 @@ import UIKit
 import Droar
 
 class ViewController: UIViewController, DroarKnob {
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return "ViewController"
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .top, priority: .low)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return 1
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
-        return DroarLabelCell.create(title: "Dynamic source!", detail: "Neat!", allowSelection: false)
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+        return DroarLabelCell.create(title: "Dynamic knob!", detail: "Neat!", allowSelection: false)
     }
     
 

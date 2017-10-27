@@ -15,19 +15,19 @@ internal class ReportingKnob : DroarKnob {
         case count = 2
     }
     
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return "Reporting"
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .middle, priority: .low)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return ReportingRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         cell.selectionStyle = .gray
 
@@ -46,7 +46,7 @@ internal class ReportingKnob : DroarKnob {
         return cell
     }
     
-    func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {
+    func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         switch ReportingRow(rawValue: selectedIndex)! {
         case .screenshot:
             if let image = Droar.captureScreen() {
@@ -54,7 +54,7 @@ internal class ReportingKnob : DroarKnob {
                 Droar.present(activityVC, animated: true, completion: nil)
             }
         case .dump:
-            let dump = SectionManager.sharedInstance.generateStateDump()
+            let dump = KnobManager.sharedInstance.generateStateDump()
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: dump, options: .prettyPrinted)
                 if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {

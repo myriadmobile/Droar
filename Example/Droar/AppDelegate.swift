@@ -11,19 +11,19 @@ import Droar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return "Example Rows"
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .top, priority: .high)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return 5
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         switch index {
         case 0:
             return DroarLabelCell.create(title: "DroarLabelCell", detail: "Click Me!", allowSelection: true)
@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
         }
     }
     
-    func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {
+    func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         print("Clicked!")
     }
 

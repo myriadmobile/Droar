@@ -1,5 +1,5 @@
 //
-//  SectionManger.swift
+//  KnobManager.swift
 //  Pods
 //
 //  Created by Nathan Jangula on 9/1/17.
@@ -17,9 +17,9 @@ import Foundation
     internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .processInfo, .reporting, .myriad]
 }
 
-internal class SectionManager {
+internal class KnobManager {
     
-    static let sharedInstance = SectionManager()
+    static let sharedInstance = KnobManager()
     private var defaultKnobs = [DroarKnob]()
     private var staticKnobs = [DroarKnob]()
     private var dynamicKnobs = [DroarKnob]()
@@ -60,8 +60,8 @@ internal class SectionManager {
     }
     
     public func prepareForDisplay(tableView: UITableView?) {
-        for section in visibleKnobs {
-            if let performSetupAction = section.droarSectionWillBeginLoading(tableView:) {
+        for knob in visibleKnobs {
+            if let performSetupAction = knob.droarKnobWillBeginLoading(tableView:) {
                 performSetupAction(tableView)
             }
         }
@@ -74,8 +74,8 @@ internal class SectionManager {
         visibleKnobs.append(contentsOf: defaultKnobs)
         
         visibleKnobs.sort { (knob1, knob2) -> Bool in
-            let position1 = knob1.droarSectionPosition()
-            let position2 = knob2.droarSectionPosition()
+            let position1 = knob1.droarKnobPosition()
+            let position2 = knob2.droarKnobPosition()
             
             if (position1.position != position2.position)
             {
@@ -91,8 +91,8 @@ internal class SectionManager {
         
         if let tableView = Droar.viewController?.tableView {
             for knob in visibleKnobs {
-                for index in 0 ..< knob.droarSectionNumberOfCells() {
-                    let cell = knob.droarSectionCellForIndex(index: index, tableView: tableView)
+                for index in 0 ..< knob.droarKnobNumberOfCells() {
+                    let cell = knob.droarKnobCellForIndex(index: index, tableView: tableView)
                     if let cellDump = cell.stateDump() {
                         dump.merge(cellDump, uniquingKeysWith: { (oldValue, newValue) -> String in
                             return newValue

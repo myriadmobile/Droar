@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public enum SectionPosition: UInt {
+@objc public enum KnobPosition: UInt {
     case top = 1
     case middle = 2
     case bottom = 3
@@ -21,19 +21,19 @@ import Foundation
 }
 
 @objc public class PositionInfo: NSObject {
-    @objc public init(position: SectionPosition = .middle, priority:PositionPriority = .medium) {
+    @objc public init(position: KnobPosition = .middle, priority:PositionPriority = .medium) {
         self.position = position
         self.priority = priority
     }
-    @objc public private(set) var position: SectionPosition
+    @objc public private(set) var position: KnobPosition
     @objc public private(set) var priority: PositionPriority
 }
 
 @objc public protocol DroarKnob {
-    @objc optional func droarSectionWillBeginLoading(tableView: UITableView?)
-    @objc func droarSectionTitle() -> String
-    @objc func droarSectionPosition() -> PositionInfo
-    @objc func droarSectionNumberOfCells() -> Int
-    @objc func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell
-    @objc optional func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int)
+    @objc optional func droarKnobWillBeginLoading(tableView: UITableView?)
+    @objc func droarKnobTitle() -> String
+    @objc func droarKnobPosition() -> PositionInfo
+    @objc func droarKnobNumberOfCells() -> Int
+    @objc func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell
+    @objc optional func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int)
 }

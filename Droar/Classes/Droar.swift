@@ -29,7 +29,7 @@ import Foundation
     }
     
     @objc public static func register(_ knob: DroarKnob) {
-        SectionManager.sharedInstance.registerStaticKnob(knob)
+        KnobManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
     }
     
@@ -39,7 +39,7 @@ import Foundation
     }
     
     public static func registerDefaultKnobs(_ knobs: [DefaultKnobType]) {
-        SectionManager.sharedInstance.registerDefaultKnobs(knobs)
+        KnobManager.sharedInstance.registerDefaultKnobs(knobs)
         viewController?.tableView.reloadData()
     }
     
@@ -70,8 +70,8 @@ import Foundation
                 activeVC.view.addSubview(navController.view)
                 navController.didMove(toParentViewController: activeVC)
                 
-                SectionManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
-                SectionManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
+                KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
+                KnobManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
                 
                 viewController?.tableView.reloadData()
             }

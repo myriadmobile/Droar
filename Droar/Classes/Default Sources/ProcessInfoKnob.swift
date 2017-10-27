@@ -19,19 +19,19 @@ internal class ProcessInfoKnob : DroarKnob {
         case count = 6
     }
     
-    func droarSectionTitle() -> String {
+    func droarKnobTitle() -> String {
         return "Process Info"
     }
     
-    func droarSectionPosition() -> PositionInfo {
+    func droarKnobPosition() -> PositionInfo {
         return PositionInfo(position: .bottom, priority: .low)
     }
     
-    func droarSectionNumberOfCells() -> Int {
+    func droarKnobNumberOfCells() -> Int {
         return ProcessInfoRow.count.rawValue
     }
     
-    func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+    func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
         cell.selectionStyle = .none
 

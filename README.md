@@ -34,7 +34,7 @@ To configure the gesture recognizer, use the `setGestureReconizer` method of `Dr
 There are 3 different ways configure the "knobs" (table sections) shown:
 
 ### Registering default knobs:
-This can be done using the `registerDefaultKnobs` method of `Droar`.  If this isn't called, all default sections will be displayed.
+This can be done using the `registerDefaultKnobs` method of `Droar`.  If this isn't called, all default knobs will be displayed.
     
 ### Registering a static knob:
 Static knobs will always be shown in Droar.  They can be added using the `register` method of `Droar`.
