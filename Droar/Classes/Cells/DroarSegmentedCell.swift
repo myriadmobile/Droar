@@ -33,6 +33,9 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
         cell?.selectionStyle = allowSelection ? .gray : .none
         cell?.onValueChanged = onValueChanged
         
+        let font = UIFont(name: "Russo One", size: 12) ?? UIFont.systemFont(ofSize: 12)
+        cell?.segmentedControl.setTitleTextAttributes([NSAttributedStringKey.font : font], for: .normal)
+        
         return cell ?? DroarSegmentedCell()
     }
     
