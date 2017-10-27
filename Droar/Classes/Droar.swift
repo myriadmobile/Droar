@@ -63,15 +63,14 @@ import Foundation
     @objc public static func toggleVisibility() {        
         if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
             if navController?.view.transform.isIdentity ?? false {
-                navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
+                KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
+                KnobManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
                 
+                navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
                 navController.willMove(toParentViewController: activeVC)
                 activeVC.addChildViewController(navController)
                 activeVC.view.addSubview(navController.view)
                 navController.didMove(toParentViewController: activeVC)
-                
-                KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
-                KnobManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
                 
                 viewController?.tableView.reloadData()
             }
