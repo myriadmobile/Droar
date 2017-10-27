@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RussoOne-Regular.ttf">
+            <string>RussoOne-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DroarSegmentedCell" id="Rzy-hY-Wrd" customClass="DroarSegmentedCell" customModule="Droar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rzy-hY-Wrd" id="xXQ-wE-l2w">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mb-Vj-i54">
+                        <rect key="frame" x="8" y="8" width="230" height="27.5"/>
+                        <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="acg-uW-kf9">
+                        <rect key="frame" x="246" y="8" width="121" height="28.5"/>
+                        <segments>
+                            <segment title="First"/>
+                            <segment title="Second"/>
+                        </segments>
+                        <color key="tintColor" red="0.1764705882" green="0.34509803919999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="handleValueChanged:" destination="Rzy-hY-Wrd" eventType="valueChanged" id="5ke-le-HXU"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="acg-uW-kf9" firstAttribute="top" secondItem="xXQ-wE-l2w" secondAttribute="topMargin" id="KNX-Nf-pGT"/>
+                    <constraint firstItem="0Mb-Vj-i54" firstAttribute="top" secondItem="xXQ-wE-l2w" secondAttribute="topMargin" id="SyM-z2-itO"/>
+                    <constraint firstItem="acg-uW-kf9" firstAttribute="trailing" secondItem="xXQ-wE-l2w" secondAttribute="trailingMargin" id="X1V-zN-DSl"/>
+                    <constraint firstItem="acg-uW-kf9" firstAttribute="leading" secondItem="0Mb-Vj-i54" secondAttribute="trailing" constant="8" id="bQ0-ow-rSn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="acg-uW-kf9" secondAttribute="bottom" id="y7C-ys-HTB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0Mb-Vj-i54" secondAttribute="bottom" id="y8W-3u-kXs"/>
+                    <constraint firstItem="0Mb-Vj-i54" firstAttribute="leading" secondItem="xXQ-wE-l2w" secondAttribute="leadingMargin" id="yO8-zy-gOR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="segmentedControl" destination="acg-uW-kf9" id="z8E-VJ-1Hg"/>
+                <outlet property="titleLabel" destination="0Mb-Vj-i54" id="GtD-G3-HCQ"/>
+            </connections>
+            <point key="canvasLocation" x="-50.5" y="-229"/>
+        </tableViewCell>
+    </objects>
+</document>
