@@ -22,8 +22,8 @@ public class DroarImageCell : UITableViewCell, DroarCell {
         }
         
         cell?.titleLabel.text = title
-        cell?.imageView?.image = image
-        cell?.isUserInteractionEnabled = allowSelection
+        cell?.largeImageView?.image = image
+        cell?.selectionStyle = allowSelection ? .gray : .none
 
         return cell ?? DroarImageCell()
     }

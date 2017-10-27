@@ -29,7 +29,7 @@ internal class ReportingKnob : DroarKnob {
     
     func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DroarLabelCell") as? DroarLabelCell ?? DroarLabelCell.create()
-        cell.isUserInteractionEnabled = true
+        cell.selectionStyle = .gray
 
         switch ReportingRow(rawValue:index)! {
         case .screenshot:

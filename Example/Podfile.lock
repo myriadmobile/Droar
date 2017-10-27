@@ -1,5 +1,5 @@
 PODS:
-  - Droar (1.1.4):
+  - Droar (1.2.2):
     - SDVersion
   - SDVersion (4.3.1)
 
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Droar: 64ab622d2ea0c9c3f42bf836a90183061dab3a58
+  Droar: 61f0629b49991c20e9e8912105ad9fb68ff9be34
   SDVersion: f89668d817ccfee16a57fc279030635bd2ad8fae
 
 PODFILE CHECKSUM: 07d626d4ded86e83b867bf5d9c50daecabba7d7d

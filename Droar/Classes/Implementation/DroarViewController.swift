@@ -46,11 +46,13 @@ class DroarViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let cell = tableView.cellForRow(at: indexPath) {
+            guard cell.selectionStyle != .none else { return }
+        }
         if let indexSelectedAction = SectionManager.sharedInstance.visibleKnobs[indexPath.section].droarSectionIndexSelected {
             indexSelectedAction(tableView, indexPath.row)
         }
-        
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

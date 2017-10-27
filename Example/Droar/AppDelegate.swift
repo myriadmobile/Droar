@@ -20,11 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
     }
     
     func droarSectionNumberOfCells() -> Int {
-        return 1
+        return 3
     }
     
     func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
-        return DroarLabelCell.create(title: "Droar Label Cell", detail: "Click Me!", allowSelection: true)
+        switch index {
+        case 0:
+            return DroarLabelCell.create(title: "DroarLabelCell", detail: "Click Me!", allowSelection: true)
+        case 1:
+            return DroarTextFieldCell.create(title: "DroarTextFieldCell", placeholder: "Type here", text: nil, allowSelection: false, onTextChanged: { (text) in
+                print(text ?? "")
+            })
+        case 2:
+            return DroarImageCell.create(title: "DroarImageCell", image: UIImage(named:"DroarIcon"), allowSelection: false)
+        default:
+            return DroarLabelCell.create(title: "", detail: "", allowSelection: true)
+
+        }
     }
     
     func droarSectionIndexSelected(tableView: UITableView, selectedIndex: Int) {

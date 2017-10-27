@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RussoOne-Regular.ttf">
+            <string>RussoOne-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DroarTextFieldCell" rowHeight="96" id="Njc-uR-RH6" customClass="DroarTextFieldCell" customModule="Droar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Njc-uR-RH6" id="RJd-QG-otg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cB-Oy-cFf">
+                        <rect key="frame" x="8" y="8" width="58.5" height="79.5"/>
+                        <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHM-Ob-JJz">
+                        <rect key="frame" x="74" y="8" width="292.5" height="79.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="12"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <action selector="handleTextChanged:" destination="Njc-uR-RH6" eventType="editingChanged" id="atU-LQ-UtZ"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6cB-Oy-cFf" firstAttribute="top" secondItem="RJd-QG-otg" secondAttribute="topMargin" id="Nrc-LT-jHj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uHM-Ob-JJz" secondAttribute="bottom" id="VD0-6x-mHA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uHM-Ob-JJz" secondAttribute="trailing" id="VlV-zM-DR8"/>
+                    <constraint firstItem="uHM-Ob-JJz" firstAttribute="top" secondItem="RJd-QG-otg" secondAttribute="topMargin" id="Y5L-aw-Xvm"/>
+                    <constraint firstItem="6cB-Oy-cFf" firstAttribute="leading" secondItem="RJd-QG-otg" secondAttribute="leadingMargin" id="hiW-Zq-jZ1"/>
+                    <constraint firstItem="uHM-Ob-JJz" firstAttribute="leading" secondItem="6cB-Oy-cFf" secondAttribute="trailing" constant="8" id="lnI-E8-vvJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6cB-Oy-cFf" secondAttribute="bottom" id="r6G-cU-Egn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="uHM-Ob-JJz" id="bEk-kp-hBq"/>
+                <outlet property="titleLabel" destination="6cB-Oy-cFf" id="PU9-YB-afA"/>
+            </connections>
+            <point key="canvasLocation" x="-50.5" y="-255"/>
+        </tableViewCell>
+    </objects>
+</document>

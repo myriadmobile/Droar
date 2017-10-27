@@ -27,7 +27,7 @@ internal class MyriadKnob : DroarKnob {
         
         cell.titleLabel.text = "Powered By:"
         cell.largeImageView.image = UIImage(named: "Myriad_logo",  in: Bundle.podBundle, compatibleWith: nil)
-        cell.isUserInteractionEnabled = true
+        cell.selectionStyle = .gray
 
         return cell
     }
