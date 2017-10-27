@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RussoOne-Regular.ttf">
+            <string>RussoOne-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DroarSwitchCell" id="b4X-FX-77z" customClass="DroarSwitchCell" customModule="Droar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b4X-FX-77z" id="Ye0-7r-5Nr">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-SC-QGv">
+                        <rect key="frame" x="318" y="8.5" width="51" height="27"/>
+                        <connections>
+                            <action selector="handleSwitchChanged:" destination="b4X-FX-77z" eventType="valueChanged" id="ggy-dY-uVO"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ib-5h-TVs">
+                        <rect key="frame" x="8" y="8" width="302" height="27"/>
+                        <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="6fj-SC-QGv" secondAttribute="trailing" id="ADh-Z5-vbX"/>
+                    <constraint firstItem="8Ib-5h-TVs" firstAttribute="leading" secondItem="Ye0-7r-5Nr" secondAttribute="leadingMargin" id="B5r-GQ-YhN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6fj-SC-QGv" secondAttribute="bottom" id="I9i-Fn-Sc5"/>
+                    <constraint firstItem="8Ib-5h-TVs" firstAttribute="top" secondItem="Ye0-7r-5Nr" secondAttribute="topMargin" id="NwE-kA-oXy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Ib-5h-TVs" secondAttribute="bottom" id="SZg-K7-mzv"/>
+                    <constraint firstItem="6fj-SC-QGv" firstAttribute="leading" secondItem="8Ib-5h-TVs" secondAttribute="trailing" constant="8" id="iJz-Vr-YQo"/>
+                    <constraint firstItem="6fj-SC-QGv" firstAttribute="top" secondItem="Ye0-7r-5Nr" secondAttribute="topMargin" id="xYC-vc-kSW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="8Ib-5h-TVs" id="EZR-bu-w3P"/>
+                <outlet property="toggleSwitch" destination="6fj-SC-QGv" id="oHG-LS-h7N"/>
+            </connections>
+            <point key="canvasLocation" x="-50.5" y="-229"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
     }
     
     func droarSectionNumberOfCells() -> Int {
-        return 3
+        return 4
     }
     
     func droarSectionCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
@@ -33,9 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, DroarKnob {
             })
         case 2:
             return DroarImageCell.create(title: "DroarImageCell", image: UIImage(named:"DroarIcon"), allowSelection: false)
+        case 3:
+            return DroarSwitchCell.create(title: "DroarSwitchCell", defaultValue: false, allowSelection: false, onValueChanged: { (value) in
+                print(value ? "True" : "False")
+            })
         default:
             return DroarLabelCell.create(title: "", detail: "", allowSelection: true)
-
         }
     }
     

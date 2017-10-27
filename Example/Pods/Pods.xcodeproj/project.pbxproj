@@ -7,48 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0295F38ADA2CC627F1A00C512EA3364D /* DroarTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D614C3A31F16713377DA76DE4A784F /* DroarTextFieldCell.xib */; };
-		071B05DC8329D78E51B5CECA3367D4AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
-		0C57011AA624FB4326C9BF93AA03BBB9 /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEACDB96FAC4F6ACE92F9E689E0B141 /* Droar-dummy.m */; };
-		1131C77BBA10A84DA080D2267B1578D9 /* SDVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE604CA7F59171A87938A0B5913466 /* SDVersion-dummy.m */; };
+		00F81D97661EA7FA774BA5A2A0064543 /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF0A979C357FA1E701A39FAFD30FA45 /* DroarLabelCell.xib */; };
+		02F4C7E88E28B8C279CE774228ED29CA /* DroarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BED0DC37C7889B1AE73ED889C6440 /* DroarCell.swift */; };
+		0C1DAE9ABC1DE7E18C6476B996DA1530 /* DroarSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3526E53313604BF519A2A9581FD8B /* DroarSwitchCell.xib */; };
+		11DD6F7563E9DB152CECDE92B6C10F24 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6735355724EF801482B94856645D5FAE /* UIColorExtensions.swift */; };
+		17189560B23C417C34C0852D3819D612 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DD3BDB449428A28E2EABB280A01D5 /* BundleExtensions.swift */; };
+		1E92FA34ED8FB95752E13932C89C62FE /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9510AB1B59391A168DD0ACEE18847C22 /* SDiOSVersion.m */; };
+		20A99F13598B743E887FB64D6F6ABC62 /* Droar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A0988069A081554E1B5CC85A5C8847 /* Droar.swift */; };
+		22A117D5DD229F811D8425C5F4A989A1 /* DroarTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F59CDAC28933A3768AD057EC0176DE /* DroarTextFieldCell.swift */; };
+		2FDCC41D135DDA872FA97E04E9BF9AA8 /* SectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47DC66FD68833F443EE118BCB1A3C8 /* SectionManager.swift */; };
+		3809E65309FFEC2AD8AC134D09AC2885 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D7F50E64E894812B2EA32217AAC89 /* ObjcHelper.m */; };
+		3F60908B4FC2465C2A7B7F7B1401B9F5 /* DroarLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9869FCAE78C72C5A9F110AEF60B11 /* DroarLabelCell.swift */; };
+		3FB76AD2B7C2A1BDEE06435A8048E988 /* ObjcHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FF463A322C2B23B1D586195F55041F /* ObjcHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40861643D2CB78344E3AC3D84FD7431C /* Pods-Droar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */; };
-		4215B532764F4D0C3B097671C401A18A /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CDA834475CFA9F3785C17D503168F0 /* BundleExtensions.swift */; };
-		5028B47CCC63036A24F6AF1C8F4572D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
-		52CB7A9BE563C0FE321E3D16DA2A3B0B /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9510AB1B59391A168DD0ACEE18847C22 /* SDiOSVersion.m */; };
-		5C4BC8ACAA24578B32FA6F64F980A29C /* Droar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */; };
-		65B51F5A8CA2939DAFF3DA91EDA3F015 /* Droar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6774301FD4FEC4810D4A41252D135F6D /* Droar.swift */; };
-		7016AC148FDAED1838E055EB2D36B868 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2894611FE4177F84DC00AE525468DCD3 /* ObjcHelper.m */; };
-		75E981A10A43D3C92979189076D5832B /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC6815A25318307A3A36C9791EEAFD9 /* Swizzling.swift */; };
-		78F53942C1EB61AB64B8AEEEA0CDCB37 /* SectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695F817FC1F4EE6EEF82A80B402F99C /* SectionManager.swift */; };
-		7912AFE0E86E7581F8279104B15A3D7F /* DroarLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769CDAEBBA7221252073690D1A0462DE /* DroarLabelCell.swift */; };
-		792BB17A4F1F5841658E3F67D0266328 /* DeviceInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19354DD7BDFE888607E675C42F7CA997 /* DeviceInfoKnob.swift */; };
+		40BD3511B727CC5B96CF730A87EC2876 /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1C972F51388A393521FEEE6B783EB /* DroarViewController.swift */; };
+		415D3518CA369093B839F0250700CF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D021635946275BC1F20343CA8FCDA42 /* Assets.xcassets */; };
+		55D815455E625B0FE958B7E1696EA5D5 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EBF9201A05207D656450F3ACE3216E /* Swizzling.swift */; };
+		5A3388063792E74E26A5847027A9D70C /* DroarSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BED6DC6C1B4B559A9F9EF39EEC184 /* DroarSwitchCell.swift */; };
 		7A26394841A29AE89A06E4CE8D777290 /* Pods-Droar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C5DF210E0D7C33215F2CBB966098E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F464D96261A3447CA5A7047DE80A27 /* Assets.xcassets */; };
-		7FEBFDF70F82EC410D35A5FBC243CE4A /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9276A92FBD23FB2F7FD2478FC3125ADA /* DroarTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C854307A0E07BB702982B19359B826 /* DroarTextFieldCell.swift */; };
-		94643D14474709C0A8546DD60914884B /* RussoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 959879B2485349397321EBAC2B6E622B /* RussoOne-Regular.ttf */; };
-		960692E51A8466F0A5A01CB223DB3932 /* ReportingKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD5C43DF0BE5C31AB2FBB66985376CE /* ReportingKnob.swift */; };
-		96BA5399BB8E8C596E19B642C23A7182 /* DroarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BB871C065095546A4C4DA15DF19A4 /* DroarHelper.swift */; };
-		98A1042CE9DDDC3E77B371BFEB1B5860 /* DroarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D153F5D766E1252F5F16703A3D68A7E /* DroarCell.swift */; };
-		A175A95AE4B215CBCCA598B803B6009D /* ObjcHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA576F4C0BF20B99F3F22CF83919CEEE /* ObjcHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A390A7BF30DF6FEC725F895B56B2682A /* MyriadKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71163A2105EFA9CDBC2521AFADF4BC66 /* MyriadKnob.swift */; };
-		A50B271082E7456EFD8F83BF2CAF11CE /* SDVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C240C06F398664BC291504C6F5E063 /* SDVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A76D556A3D0BBBCD5C8CA18CBDAE7EB2 /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E8CB91A0469395379A8BE485D9588 /* DispatchOnce.swift */; };
-		A926F324EFAAC2650A73D1AC3BAFBFD1 /* Droar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC6ED8A7EA7A0B8B3B650AEE0790E78 /* Droar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AAEB5AE66012F4C9FF9C9CF5080CF7BC /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */; };
-		B325DE464AC6B10817FC41359066AF9D /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9A77666EB72469B769171F592CB7D /* FontExtensions.swift */; };
-		B72376E9EE349BE21F1F43B5A32B4670 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 808B0A42F3845ADFB008A5E73736CEC9 /* SDVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC6BACCF480EADDA5C4AF9E04574FF96 /* DroarLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3473C3A86EC6B2EA89035B16D61DAF78 /* DroarLabelCell.xib */; };
-		BF5AF7DBDA1F3306B2E610FB484F9197 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E1E26F8379DF7218C642DBD21DC87 /* UIKit.framework */; };
-		C5A3BB07F35A2B0DB798A6D37920648D /* DroarImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9733067E6BA9E688B9DB014F5A7D2AD /* DroarImageCell.xib */; };
+		861A79DA31536442B640F6AF6B8EF7D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E1E26F8379DF7218C642DBD21DC87 /* UIKit.framework */; };
+		8A94B90F6776F0A8D40B387ABE4A19A8 /* SDVersion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C240C06F398664BC291504C6F5E063 /* SDVersion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EBB572D11B6AEAB058DFA31BE94E7E3 /* DroarTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E693A9BA4684BA12A77C402B44B2BC80 /* DroarTextFieldCell.xib */; };
+		8F87E63B33EFFE8961D8C742E4BFC2A1 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EA14282589946B34906A9656AF324 /* FontExtensions.swift */; };
+		9603935420F789D75BB297AF94A84926 /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */; };
+		9B2874806FC809FF8B5BCA22FF8005EA /* DroarKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12DD00681D5F638860E0CCD92653EC /* DroarKnob.swift */; };
+		A07FC972358352846D4265F6376EF19A /* Droar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */; };
+		A09422738D7E8500D768C8429041C5AE /* DispatchOnce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D43E29871910E0936399978A548B1 /* DispatchOnce.swift */; };
+		A48A7919F48DD842C5ECE300D557DB88 /* DeviceInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AF91A0DC7F0129B15F1DE4E014FAA8 /* DeviceInfoKnob.swift */; };
+		A76FD5DC9256FF4E1E77905E5C555EBB /* ReportingKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D96C3157521DD453E2A2FD48E7C9BF /* ReportingKnob.swift */; };
+		AA977177DFC2FFD32D56310D9C66D804 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
+		AB75A6712C0AA8505027FCDF972F9B5B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B787E205F39E7935AEE29D381F8534AA /* UIViewControllerExtensions.swift */; };
+		B1F1D534F8073FF1F29B6F29F6968FC6 /* Droar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0444DC94F0FA48E58ABB42B6CE4A729 /* Droar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCA930E2EF87134AD2EAC7C0ED0FD67 /* DroarImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7086230CF89CF6BF8A7BD0A1B9714AB6 /* DroarImageCell.xib */; };
+		C98276DEDEC241075444CB21756DC5AD /* MyriadKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC53957FA756A77ACD261C2F0C13765 /* MyriadKnob.swift */; };
 		CB00BFEFD2B8571193ECB191C6FF1371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
-		DCC4A4A1C290174CE67D801FBD3B61C3 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E085FC8FF97D56876E35237BC9DE824 /* UIViewControllerExtensions.swift */; };
-		E0717CD67480441F1EE881CBA44EF7B7 /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C16E8793A87A62F1D086D2402EAEC9 /* DroarViewController.swift */; };
-		E2C13AAC6AE6CD49D0EE333329D83229 /* DroarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8F77B295191C9A3D53E7B6F87474B /* DroarImageCell.swift */; };
-		E8D7B31CD7895AD3CF7C1BFDE34714AB /* ProcessInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436CE834A19DCCDFD4E74EEE26977A6 /* ProcessInfoKnob.swift */; };
-		F25B31E0C55EAD774EC24439EF61F871 /* DroarKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0A278BA23F7513E8479826D0316DD0 /* DroarKnob.swift */; };
-		F82AC252646ECC0B9421E9945B96BD29 /* BuildInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440ACA659FC58F5D9D4AAEC6EFCF72B /* BuildInfoKnob.swift */; };
-		FA9487A35CFCECC4EB31D36234CAE47B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9E76576B779021B7811241628DC444 /* UIColorExtensions.swift */; };
+		D00AAF708F655D60969D74D023BC60F4 /* DroarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E109FA87D729D4D4D85F62129FAAD /* DroarImageCell.swift */; };
+		D8387A25A60D533E301C79DEE01BD7A4 /* ProcessInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E0DDA195EFCFFFC5720B3B3DB0787C /* ProcessInfoKnob.swift */; };
+		DEA3C1F827097424AD2890E428E58445 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF2FA1A904A5D17B3E8B9F9B0E405B7C /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6651A0A11AD978D70AF54A0643ED31 /* Droar-dummy.m */; };
+		E02D84154411FDB3667B9FA2995DACF2 /* SDVersion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE604CA7F59171A87938A0B5913466 /* SDVersion-dummy.m */; };
+		E077FBC31CE6BE597715B3AF5CFCBD95 /* BuildInfoKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D04370F9450F0106399F514D677A78 /* BuildInfoKnob.swift */; };
+		E95B15DCA1A184B39B4C85205C3A8822 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 808B0A42F3845ADFB008A5E73736CEC9 /* SDVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EACBDCF089BADF0F1144530CF4279591 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */; };
+		F29C6B369A508CC67767DDA3638BBF46 /* DroarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0319F483EEB38D5E671CF0FCCE539 /* DroarHelper.swift */; };
+		F7EB3937865298AB6E07ADB60D3D34A3 /* RussoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E97F1E7482DD3C7FF99AA6CD1A8508E /* RussoOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,112 +58,121 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8E26A8B79D6CDD220E45CD6B723C5A11;
+			remoteGlobalIDString = A617CB992D36C0823918EA82C3BC59D3;
 			remoteInfo = SDVersion;
 		};
-		4C2ED31F1B0D86F2C456A540F14D8BF3 /* PBXContainerItemProxy */ = {
+		138C4748A04B1B52CC9C8D7CDAE78930 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8E26A8B79D6CDD220E45CD6B723C5A11;
-			remoteInfo = SDVersion;
-		};
-		53AC124265444928E33D3525D435084D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5CB786B19D3B324B53FCAEED5B764761;
+			remoteGlobalIDString = 1509D7BFF0B78DFCEC0F7A509A8EA192;
 			remoteInfo = "Droar-Droar";
+		};
+		177FCE4B8B0503F352803DA9A556BDB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A617CB992D36C0823918EA82C3BC59D3;
+			remoteInfo = SDVersion;
 		};
 		C74A6C18049DE0DC95397F35B088D539 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D64C279D37019185DF4CF52DEB189CE2;
+			remoteGlobalIDString = 405F7EBB7AEE852E792D988BA3E53B3C;
 			remoteInfo = Droar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05A3526E53313604BF519A2A9581FD8B /* DroarSwitchCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarSwitchCell.xib; sourceTree = "<group>"; };
+		081E109FA87D729D4D4D85F62129FAAD /* DroarImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarImageCell.swift; sourceTree = "<group>"; };
 		14EE604CA7F59171A87938A0B5913466 /* SDVersion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDVersion-dummy.m"; sourceTree = "<group>"; };
-		17F464D96261A3447CA5A7047DE80A27 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19354DD7BDFE888607E675C42F7CA997 /* DeviceInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceInfoKnob.swift; sourceTree = "<group>"; };
-		23CDA834475CFA9F3785C17D503168F0 /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
-		2436CE834A19DCCDFD4E74EEE26977A6 /* ProcessInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProcessInfoKnob.swift; sourceTree = "<group>"; };
+		1AA650433121D62CB0FAB40143C0A74C /* Droar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-prefix.pch"; sourceTree = "<group>"; };
+		1CC0319F483EEB38D5E671CF0FCCE539 /* DroarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarHelper.swift; sourceTree = "<group>"; };
+		1E97F1E7482DD3C7FF99AA6CD1A8508E /* RussoOne-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "RussoOne-Regular.ttf"; sourceTree = "<group>"; };
+		1EE9869FCAE78C72C5A9F110AEF60B11 /* DroarLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarLabelCell.swift; sourceTree = "<group>"; };
+		244E2C93BEC1062A894E46B2530700CB /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Droar.modulemap; sourceTree = "<group>"; };
 		24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDiOSVersion.h; path = SDVersion/SDiOSVersion/SDiOSVersion.h; sourceTree = "<group>"; };
-		2894611FE4177F84DC00AE525468DCD3 /* ObjcHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
+		281BED0DC37C7889B1AE73ED889C6440 /* DroarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DroarCell.swift; path = Droar/Classes/DroarCell.swift; sourceTree = "<group>"; };
 		32C240C06F398664BC291504C6F5E063 /* SDVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-umbrella.h"; sourceTree = "<group>"; };
-		3473C3A86EC6B2EA89035B16D61DAF78 /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
-		34C16E8793A87A62F1D086D2402EAEC9 /* DroarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarViewController.swift; sourceTree = "<group>"; };
-		3C9E76576B779021B7811241628DC444 /* UIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		3CEACDB96FAC4F6ACE92F9E689E0B141 /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
-		3E085FC8FF97D56876E35237BC9DE824 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		32D04370F9450F0106399F514D677A78 /* BuildInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuildInfoKnob.swift; sourceTree = "<group>"; };
+		33A1C972F51388A393521FEEE6B783EB /* DroarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarViewController.swift; sourceTree = "<group>"; };
+		38AF91A0DC7F0129B15F1DE4E014FAA8 /* DeviceInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceInfoKnob.swift; sourceTree = "<group>"; };
+		3B47DC66FD68833F443EE118BCB1A3C8 /* SectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionManager.swift; sourceTree = "<group>"; };
 		44584C89789BA8314BA38D4FF187F929 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447D43E29871910E0936399978A548B1 /* DispatchOnce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
+		465BED6DC6C1B4B559A9F9EF39EEC184 /* DroarSwitchCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarSwitchCell.swift; sourceTree = "<group>"; };
 		4698498BDD731DAC17027578411C4539 /* Pods-Droar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		536BB871C065095546A4C4DA15DF19A4 /* DroarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarHelper.swift; sourceTree = "<group>"; };
-		63FF602B4929E6096B7DB36BDEF07880 /* Droar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-prefix.pch"; sourceTree = "<group>"; };
-		6774301FD4FEC4810D4A41252D135F6D /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Droar.swift; path = Droar/Classes/Droar.swift; sourceTree = "<group>"; };
-		71163A2105EFA9CDBC2521AFADF4BC66 /* MyriadKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyriadKnob.swift; sourceTree = "<group>"; };
-		724745E5830AFE1A4ACB1A2043EE0480 /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		769CDAEBBA7221252073690D1A0462DE /* DroarLabelCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarLabelCell.swift; sourceTree = "<group>"; };
+		4B03B582EFACBFF03B940850302C4540 /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
+		4B3EA14282589946B34906A9656AF324 /* FontExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		50FF463A322C2B23B1D586195F55041F /* ObjcHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
+		512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Droar.xcconfig; sourceTree = "<group>"; };
+		53D96C3157521DD453E2A2FD48E7C9BF /* ReportingKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportingKnob.swift; sourceTree = "<group>"; };
+		5BF0A979C357FA1E701A39FAFD30FA45 /* DroarLabelCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarLabelCell.xib; sourceTree = "<group>"; };
+		5D021635946275BC1F20343CA8FCDA42 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E6651A0A11AD978D70AF54A0643ED31 /* Droar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Droar-dummy.m"; sourceTree = "<group>"; };
+		6735355724EF801482B94856645D5FAE /* UIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		7086230CF89CF6BF8A7BD0A1B9714AB6 /* DroarImageCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarImageCell.xib; sourceTree = "<group>"; };
+		724745E5830AFE1A4ACB1A2043EE0480 /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Droar_Example.framework; path = "Pods-Droar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droar_Example-umbrella.h"; sourceTree = "<group>"; };
-		79D37BE9DDE47AE969193387DB09C61B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D153F5D766E1252F5F16703A3D68A7E /* DroarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DroarCell.swift; path = Droar/Classes/DroarCell.swift; sourceTree = "<group>"; };
-		7D4E6DFE7282579B59EC667C09F2E7CA /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4E6DFE7282579B59EC667C09F2E7CA /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDVersion.framework; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF9C026F1C40C134263CCF7C72770B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808B0A42F3845ADFB008A5E73736CEC9 /* SDVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
-		80D9A77666EB72469B769171F592CB7D /* FontExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
-		86D614C3A31F16713377DA76DE4A784F /* DroarTextFieldCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarTextFieldCell.xib; sourceTree = "<group>"; };
-		8EC6815A25318307A3A36C9791EEAFD9 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
+		835DD3BDB449428A28E2EABB280A01D5 /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		89EBF9201A05207D656450F3ACE3216E /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
 		8F5A39337B4A1854DAF510DE35CDD09D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		908E1E26F8379DF7218C642DBD21DC87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90A0988069A081554E1B5CC85A5C8847 /* Droar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Droar.swift; path = Droar/Classes/Droar.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9510AB1B59391A168DD0ACEE18847C22 /* SDiOSVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDiOSVersion.m; path = SDVersion/SDiOSVersion/SDiOSVersion.m; sourceTree = "<group>"; };
-		959879B2485349397321EBAC2B6E622B /* RussoOne-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "RussoOne-Regular.ttf"; sourceTree = "<group>"; };
+		A1E0DDA195EFCFFFC5720B3B3DB0787C /* ProcessInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProcessInfoKnob.swift; sourceTree = "<group>"; };
 		A4571B95676081EEEA3FB855B75042AF /* SDVersion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDVersion.xcconfig; sourceTree = "<group>"; };
 		A4D46CD57307F6E39D343B7C2DC919D2 /* SDVersion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-prefix.pch"; sourceTree = "<group>"; };
-		A5C854307A0E07BB702982B19359B826 /* DroarTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarTextFieldCell.swift; sourceTree = "<group>"; };
-		A982897E2E553C26FEF9E6D989313E62 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
-		AA576F4C0BF20B99F3F22CF83919CEEE /* ObjcHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
-		AB0A278BA23F7513E8479826D0316DD0 /* DroarKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DroarKnob.swift; path = Droar/Classes/DroarKnob.swift; sourceTree = "<group>"; };
-		ADD5C43DF0BE5C31AB2FBB66985376CE /* ReportingKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportingKnob.swift; sourceTree = "<group>"; };
+		A8F59CDAC28933A3768AD057EC0176DE /* DroarTextFieldCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarTextFieldCell.swift; sourceTree = "<group>"; };
+		A982897E2E553C26FEF9E6D989313E62 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
 		B1631FAB690D9661F0088839EC3BF026 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6C1E95B0BB22A86F38431EF4D21155C /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0D5E20EF979A9713621CA67120F9D7 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDVersion.modulemap; sourceTree = "<group>"; };
-		BFC6ED8A7EA7A0B8B3B650AEE0790E78 /* Droar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-umbrella.h"; sourceTree = "<group>"; };
+		B6C1E95B0BB22A86F38431EF4D21155C /* Droar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Droar.framework; path = Droar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B787E205F39E7935AEE29D381F8534AA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		BB0D5E20EF979A9713621CA67120F9D7 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDVersion.modulemap; sourceTree = "<group>"; };
 		C08C37F9F07353669A67B360BC025152 /* Pods-Droar_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Droar_Example-resources.sh"; sourceTree = "<group>"; };
 		C910EEBE47BF29BFDCB48D891ED05C9F /* Pods-Droar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Droar_Example-dummy.m"; sourceTree = "<group>"; };
-		CC44324F333F4D1E850A545CA851AA5A /* ResourceBundle-Droar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Droar-Info.plist"; sourceTree = "<group>"; };
+		D0444DC94F0FA48E58ABB42B6CE4A729 /* Droar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Droar-umbrella.h"; sourceTree = "<group>"; };
 		D336FC03201622B22329B195D06A3EB1 /* Pods-Droar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D99E8CB91A0469395379A8BE485D9588 /* DispatchOnce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchOnce.swift; sourceTree = "<group>"; };
-		DB86062EABDBE5A63F85261A07F3854C /* Droar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Droar.modulemap; sourceTree = "<group>"; };
+		DBC53957FA756A77ACD261C2F0C13765 /* MyriadKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MyriadKnob.swift; sourceTree = "<group>"; };
 		E21678360C4EC6BB24838C52E7B4BD52 /* Pods-Droar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Droar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E440ACA659FC58F5D9D4AAEC6EFCF72B /* BuildInfoKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BuildInfoKnob.swift; sourceTree = "<group>"; };
-		EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Droar.xcconfig; sourceTree = "<group>"; };
+		E693A9BA4684BA12A77C402B44B2BC80 /* DroarTextFieldCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarTextFieldCell.xib; sourceTree = "<group>"; };
+		EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Droar.bundle; path = Droar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2290BDD01AAED14453FF4C6EB854A13 /* Pods-Droar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Droar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F2A8F77B295191C9A3D53E7B6F87474B /* DroarImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarImageCell.swift; sourceTree = "<group>"; };
 		F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F695F817FC1F4EE6EEF82A80B402F99C /* SectionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionManager.swift; sourceTree = "<group>"; };
-		F9733067E6BA9E688B9DB014F5A7D2AD /* DroarImageCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarImageCell.xib; sourceTree = "<group>"; };
+		F71D7F50E64E894812B2EA32217AAC89 /* ObjcHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
+		FA12DD00681D5F638860E0CCD92653EC /* DroarKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DroarKnob.swift; path = Droar/Classes/DroarKnob.swift; sourceTree = "<group>"; };
 		FA45BE5BB21E5E78181831D9BC6742FF /* Pods-Droar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Droar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6859144F13FA2FE334744BE0023F3725 /* Frameworks */ = {
+		187B66AB478CDC99F5B5799F256C38AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071B05DC8329D78E51B5CECA3367D4AB /* Foundation.framework in Frameworks */,
-				AAEB5AE66012F4C9FF9C9CF5080CF7BC /* SDVersion.framework in Frameworks */,
-				BF5AF7DBDA1F3306B2E610FB484F9197 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F6BD4E0D9090C2E3C251E4E13CB041A /* Frameworks */ = {
+		84D70DF55C9AB952EC57A319FE929081 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5028B47CCC63036A24F6AF1C8F4572D6 /* Foundation.framework in Frameworks */,
+				AA977177DFC2FFD32D56310D9C66D804 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2DE16006E8B90D773A5EAF07FDDA133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACBDCF089BADF0F1144530CF4279591 /* Foundation.framework in Frameworks */,
+				9603935420F789D75BB297AF94A84926 /* SDVersion.framework in Frameworks */,
+				861A79DA31536442B640F6AF6B8EF7D6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,38 +184,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA7C0E035B2D77CE2A1FB096FDFE34C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0034DDEA2AF1CCC96C4500F371CC55B6 /* Default Sources */ = {
+		0B23E8E7BB94F5DBA38910EC11E3D170 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E440ACA659FC58F5D9D4AAEC6EFCF72B /* BuildInfoKnob.swift */,
-				19354DD7BDFE888607E675C42F7CA997 /* DeviceInfoKnob.swift */,
-				71163A2105EFA9CDBC2521AFADF4BC66 /* MyriadKnob.swift */,
-				2436CE834A19DCCDFD4E74EEE26977A6 /* ProcessInfoKnob.swift */,
-				ADD5C43DF0BE5C31AB2FBB66985376CE /* ReportingKnob.swift */,
+				835DD3BDB449428A28E2EABB280A01D5 /* BundleExtensions.swift */,
+				1CC0319F483EEB38D5E671CF0FCCE539 /* DroarHelper.swift */,
+				4B3EA14282589946B34906A9656AF324 /* FontExtensions.swift */,
+				89EBF9201A05207D656450F3ACE3216E /* Swizzling.swift */,
+				6735355724EF801482B94856645D5FAE /* UIColorExtensions.swift */,
+				B787E205F39E7935AEE29D381F8534AA /* UIViewControllerExtensions.swift */,
 			);
-			name = "Default Sources";
-			path = "Droar/Classes/Default Sources";
+			name = Extensions;
+			path = Droar/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		05CF431119FBC973D66E83BFF11D6FE4 /* Cells */ = {
+		0ED4D04084BAABB7D496BC59AEF6BADD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F9733067E6BA9E688B9DB014F5A7D2AD /* DroarImageCell.xib */,
-				3473C3A86EC6B2EA89035B16D61DAF78 /* DroarLabelCell.xib */,
-				86D614C3A31F16713377DA76DE4A784F /* DroarTextFieldCell.xib */,
+				5D021635946275BC1F20343CA8FCDA42 /* Assets.xcassets */,
+				1E97F1E7482DD3C7FF99AA6CD1A8508E /* RussoOne-Regular.ttf */,
 			);
-			name = Cells;
-			path = Droar/Classes/Cells;
+			name = Assets;
+			path = Droar/Classes/Assets;
 			sourceTree = "<group>";
 		};
 		225C496204D0388F800149A04385CF2E /* Products */ = {
@@ -221,18 +225,24 @@
 		4AAA2F3BE9F68076869C0011A85BE8EB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C25512C051B33EFB8844A7DF10C35AB4 /* Droar */,
+				D87D2C4D0BA55341234B7152510C72E1 /* Droar */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5D547F2725820E31372FA10BDE91254F /* Resources */ = {
+		5042F20D37F4C404B3AE08769E6ED745 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F870DFBDFEB32F0F67A023394FFFCBC6 /* Assets */,
-				05CF431119FBC973D66E83BFF11D6FE4 /* Cells */,
+				244E2C93BEC1062A894E46B2530700CB /* Droar.modulemap */,
+				512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */,
+				5E6651A0A11AD978D70AF54A0643ED31 /* Droar-dummy.m */,
+				1AA650433121D62CB0FAB40143C0A74C /* Droar-prefix.pch */,
+				D0444DC94F0FA48E58ABB42B6CE4A729 /* Droar-umbrella.h */,
+				7DF9C026F1C40C134263CCF7C72770B8 /* Info.plist */,
+				4B03B582EFACBFF03B940850302C4540 /* ResourceBundle-Droar-Info.plist */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Droar";
 			sourceTree = "<group>";
 		};
 		76E3F29F7865748789035C69FE38CB05 /* Frameworks */ = {
@@ -256,6 +266,15 @@
 			);
 			sourceTree = "<group>";
 		};
+		7E3001ECB8F22BC47A2B1206FE149219 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				33A1C972F51388A393521FEEE6B783EB /* DroarViewController.swift */,
+			);
+			name = Implementation;
+			path = Droar/Classes/Implementation;
+			sourceTree = "<group>";
+		};
 		83CFF94B5F1D956EAF9C6D30DDF96ACC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,15 +283,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		85ECEF0B20E00B3BCB22DE6D2C4E417D /* Cells */ = {
+		8DF847F2970F05D5F8D0EAB8CCC8B4CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F2A8F77B295191C9A3D53E7B6F87474B /* DroarImageCell.swift */,
-				769CDAEBBA7221252073690D1A0462DE /* DroarLabelCell.swift */,
-				A5C854307A0E07BB702982B19359B826 /* DroarTextFieldCell.swift */,
+				0ED4D04084BAABB7D496BC59AEF6BADD /* Assets */,
+				E69E333F3C69F3EFC584D6C600CEB3FA /* Cells */,
 			);
-			name = Cells;
-			path = Droar/Classes/Cells;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		93032ECBED5FC2BCCC1D7E886E108782 /* SDVersion */ = {
@@ -283,22 +300,8 @@
 				808B0A42F3845ADFB008A5E73736CEC9 /* SDVersion.h */,
 				AB49ABD3FC65A0279F7120139D2E1BDA /* Support Files */,
 			);
+			name = SDVersion;
 			path = SDVersion;
-			sourceTree = "<group>";
-		};
-		A0D5CE33D88AE7EBCFB12858AE94FAC5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DB86062EABDBE5A63F85261A07F3854C /* Droar.modulemap */,
-				EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */,
-				3CEACDB96FAC4F6ACE92F9E689E0B141 /* Droar-dummy.m */,
-				63FF602B4929E6096B7DB36BDEF07880 /* Droar-prefix.pch */,
-				BFC6ED8A7EA7A0B8B3B650AEE0790E78 /* Droar-umbrella.h */,
-				79D37BE9DDE47AE969193387DB09C61B /* Info.plist */,
-				CC44324F333F4D1E850A545CA851AA5A /* ResourceBundle-Droar-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Droar";
 			sourceTree = "<group>";
 		};
 		AB49ABD3FC65A0279F7120139D2E1BDA /* Support Files */ = {
@@ -323,18 +326,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B1B6166522DF92CC7941330457C320C3 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				D99E8CB91A0469395379A8BE485D9588 /* DispatchOnce.swift */,
-				AA576F4C0BF20B99F3F22CF83919CEEE /* ObjcHelper.h */,
-				2894611FE4177F84DC00AE525468DCD3 /* ObjcHelper.m */,
-				F695F817FC1F4EE6EEF82A80B402F99C /* SectionManager.swift */,
-			);
-			name = Helpers;
-			path = Droar/Classes/Helpers;
-			sourceTree = "<group>";
-		};
 		B63F6879F9E3A96B510A48704D21C4A7 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,31 +335,47 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BD66853C1FA548A4ADF1FBBCA871C8BA /* Implementation */ = {
+		D87D2C4D0BA55341234B7152510C72E1 /* Droar */ = {
 			isa = PBXGroup;
 			children = (
-				34C16E8793A87A62F1D086D2402EAEC9 /* DroarViewController.swift */,
-			);
-			name = Implementation;
-			path = Droar/Classes/Implementation;
-			sourceTree = "<group>";
-		};
-		C25512C051B33EFB8844A7DF10C35AB4 /* Droar */ = {
-			isa = PBXGroup;
-			children = (
-				6774301FD4FEC4810D4A41252D135F6D /* Droar.swift */,
-				7D153F5D766E1252F5F16703A3D68A7E /* DroarCell.swift */,
-				AB0A278BA23F7513E8479826D0316DD0 /* DroarKnob.swift */,
-				85ECEF0B20E00B3BCB22DE6D2C4E417D /* Cells */,
-				0034DDEA2AF1CCC96C4500F371CC55B6 /* Default Sources */,
-				E89F01B65B0CB6674FA8AA9E8632DFF1 /* Extensions */,
-				B1B6166522DF92CC7941330457C320C3 /* Helpers */,
-				BD66853C1FA548A4ADF1FBBCA871C8BA /* Implementation */,
-				5D547F2725820E31372FA10BDE91254F /* Resources */,
-				A0D5CE33D88AE7EBCFB12858AE94FAC5 /* Support Files */,
+				90A0988069A081554E1B5CC85A5C8847 /* Droar.swift */,
+				281BED0DC37C7889B1AE73ED889C6440 /* DroarCell.swift */,
+				FA12DD00681D5F638860E0CCD92653EC /* DroarKnob.swift */,
+				DA0658128D52F029AFB73C06D5DBCAF4 /* Cells */,
+				DA0D968A201C8BCD95672154038F5F79 /* Default Sources */,
+				0B23E8E7BB94F5DBA38910EC11E3D170 /* Extensions */,
+				F203B6DDF6A19E3D4FF53ADE5264EAEB /* Helpers */,
+				7E3001ECB8F22BC47A2B1206FE149219 /* Implementation */,
+				8DF847F2970F05D5F8D0EAB8CCC8B4CD /* Resources */,
+				5042F20D37F4C404B3AE08769E6ED745 /* Support Files */,
 			);
 			name = Droar;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		DA0658128D52F029AFB73C06D5DBCAF4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				081E109FA87D729D4D4D85F62129FAAD /* DroarImageCell.swift */,
+				1EE9869FCAE78C72C5A9F110AEF60B11 /* DroarLabelCell.swift */,
+				465BED6DC6C1B4B559A9F9EF39EEC184 /* DroarSwitchCell.swift */,
+				A8F59CDAC28933A3768AD057EC0176DE /* DroarTextFieldCell.swift */,
+			);
+			name = Cells;
+			path = Droar/Classes/Cells;
+			sourceTree = "<group>";
+		};
+		DA0D968A201C8BCD95672154038F5F79 /* Default Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32D04370F9450F0106399F514D677A78 /* BuildInfoKnob.swift */,
+				38AF91A0DC7F0129B15F1DE4E014FAA8 /* DeviceInfoKnob.swift */,
+				DBC53957FA756A77ACD261C2F0C13765 /* MyriadKnob.swift */,
+				A1E0DDA195EFCFFFC5720B3B3DB0787C /* ProcessInfoKnob.swift */,
+				53D96C3157521DD453E2A2FD48E7C9BF /* ReportingKnob.swift */,
+			);
+			name = "Default Sources";
+			path = "Droar/Classes/Default Sources";
 			sourceTree = "<group>";
 		};
 		DB128B20B2F0E6DB132EF159B58DC4F4 /* Pods-Droar_Example */ = {
@@ -389,49 +396,49 @@
 			path = "Target Support Files/Pods-Droar_Example";
 			sourceTree = "<group>";
 		};
-		E89F01B65B0CB6674FA8AA9E8632DFF1 /* Extensions */ = {
+		E69E333F3C69F3EFC584D6C600CEB3FA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				23CDA834475CFA9F3785C17D503168F0 /* BundleExtensions.swift */,
-				536BB871C065095546A4C4DA15DF19A4 /* DroarHelper.swift */,
-				80D9A77666EB72469B769171F592CB7D /* FontExtensions.swift */,
-				8EC6815A25318307A3A36C9791EEAFD9 /* Swizzling.swift */,
-				3C9E76576B779021B7811241628DC444 /* UIColorExtensions.swift */,
-				3E085FC8FF97D56876E35237BC9DE824 /* UIViewControllerExtensions.swift */,
+				7086230CF89CF6BF8A7BD0A1B9714AB6 /* DroarImageCell.xib */,
+				5BF0A979C357FA1E701A39FAFD30FA45 /* DroarLabelCell.xib */,
+				05A3526E53313604BF519A2A9581FD8B /* DroarSwitchCell.xib */,
+				E693A9BA4684BA12A77C402B44B2BC80 /* DroarTextFieldCell.xib */,
 			);
-			name = Extensions;
-			path = Droar/Classes/Extensions;
+			name = Cells;
+			path = Droar/Classes/Cells;
 			sourceTree = "<group>";
 		};
-		F870DFBDFEB32F0F67A023394FFFCBC6 /* Assets */ = {
+		F203B6DDF6A19E3D4FF53ADE5264EAEB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				17F464D96261A3447CA5A7047DE80A27 /* Assets.xcassets */,
-				959879B2485349397321EBAC2B6E622B /* RussoOne-Regular.ttf */,
+				447D43E29871910E0936399978A548B1 /* DispatchOnce.swift */,
+				50FF463A322C2B23B1D586195F55041F /* ObjcHelper.h */,
+				F71D7F50E64E894812B2EA32217AAC89 /* ObjcHelper.m */,
+				3B47DC66FD68833F443EE118BCB1A3C8 /* SectionManager.swift */,
 			);
-			name = Assets;
-			path = Droar/Classes/Assets;
+			name = Helpers;
+			path = Droar/Classes/Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		426E7B1E25E6B7A3C42E999418C81F32 /* Headers */ = {
+		437535546A4124EF8BF6F58A5EDBA38D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A926F324EFAAC2650A73D1AC3BAFBFD1 /* Droar-umbrella.h in Headers */,
-				A175A95AE4B215CBCCA598B803B6009D /* ObjcHelper.h in Headers */,
+				DEA3C1F827097424AD2890E428E58445 /* SDiOSVersion.h in Headers */,
+				8A94B90F6776F0A8D40B387ABE4A19A8 /* SDVersion-umbrella.h in Headers */,
+				E95B15DCA1A184B39B4C85205C3A8822 /* SDVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7363A3225972EE7C9825444DFFF1332D /* Headers */ = {
+		B7A0C167815F63E5F9E71B211FB0B3B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FEBFDF70F82EC410D35A5FBC243CE4A /* SDiOSVersion.h in Headers */,
-				A50B271082E7456EFD8F83BF2CAF11CE /* SDVersion-umbrella.h in Headers */,
-				B72376E9EE349BE21F1F43B5A32B4670 /* SDVersion.h in Headers */,
+				B1F1D534F8073FF1F29B6F29F6968FC6 /* Droar-umbrella.h in Headers */,
+				3FB76AD2B7C2A1BDEE06435A8048E988 /* ObjcHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +453,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1509D7BFF0B78DFCEC0F7A509A8EA192 /* Droar-Droar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44704C8C248F95C06CE1F9E8939C407 /* Build configuration list for PBXNativeTarget "Droar-Droar" */;
+			buildPhases = (
+				B65C993E8D59233533E3B15BE973CF62 /* Sources */,
+				187B66AB478CDC99F5B5799F256C38AE /* Frameworks */,
+				BF434EEC50FFD0317B2B15CD4B4DB95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Droar-Droar";
+			productName = "Droar-Droar";
+			productReference = EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		3B480406E87C15673A68B4F041428FBC /* Pods-Droar_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC144AFE57D16CC4C39009D4E57C00F9 /* Build configuration list for PBXNativeTarget "Pods-Droar_Example" */;
@@ -465,30 +489,33 @@
 			productReference = 724745E5830AFE1A4ACB1A2043EE0480 /* Pods_Droar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5CB786B19D3B324B53FCAEED5B764761 /* Droar-Droar */ = {
+		405F7EBB7AEE852E792D988BA3E53B3C /* Droar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED285371F89FBDB7D70B1C0E41B3286B /* Build configuration list for PBXNativeTarget "Droar-Droar" */;
+			buildConfigurationList = 8EC8A4B28C1F7620630691541AE28F44 /* Build configuration list for PBXNativeTarget "Droar" */;
 			buildPhases = (
-				012C6701B3FF2AB63E3DDD89661CBB63 /* Sources */,
-				FA7C0E035B2D77CE2A1FB096FDFE34C0 /* Frameworks */,
-				AEC269DACBFE02C1A5EFDE9B96F5ED8E /* Resources */,
+				A294688ECE0E67F336646A8C0D9FA373 /* Sources */,
+				A2DE16006E8B90D773A5EAF07FDDA133 /* Frameworks */,
+				48D07DDC5C54492AEA0BE525E14AA8D9 /* Resources */,
+				B7A0C167815F63E5F9E71B211FB0B3B8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F0133E1EABB04EF75E482E68C1F7BF3E /* PBXTargetDependency */,
+				C61D1C63C83D77BCBA49156E2274052E /* PBXTargetDependency */,
 			);
-			name = "Droar-Droar";
-			productName = "Droar-Droar";
-			productReference = EE63C5693495E0B0A5657CF4C43DE825 /* Droar.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = Droar;
+			productName = Droar;
+			productReference = B6C1E95B0BB22A86F38431EF4D21155C /* Droar.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		8E26A8B79D6CDD220E45CD6B723C5A11 /* SDVersion */ = {
+		A617CB992D36C0823918EA82C3BC59D3 /* SDVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 269A51BAAF2F05560F8B5F98D7D7A2C1 /* Build configuration list for PBXNativeTarget "SDVersion" */;
+			buildConfigurationList = 66E61E86ADF3B0C122C774E89C3E3665 /* Build configuration list for PBXNativeTarget "SDVersion" */;
 			buildPhases = (
-				D1FF6AA9CC96A8A59EE96A444264DEEB /* Sources */,
-				9F6BD4E0D9090C2E3C251E4E13CB041A /* Frameworks */,
-				7363A3225972EE7C9825444DFFF1332D /* Headers */,
+				719D101CA3FAFD194C7351F87908483C /* Sources */,
+				84D70DF55C9AB952EC57A319FE929081 /* Frameworks */,
+				437535546A4124EF8BF6F58A5EDBA38D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -499,26 +526,6 @@
 			productReference = 7D4E6DFE7282579B59EC667C09F2E7CA /* SDVersion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D64C279D37019185DF4CF52DEB189CE2 /* Droar */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 23045DE55BA5F0B7A007739B77ED76BB /* Build configuration list for PBXNativeTarget "Droar" */;
-			buildPhases = (
-				4B514154290A4224E737BC97BD65FD47 /* Sources */,
-				6859144F13FA2FE334744BE0023F3725 /* Frameworks */,
-				2D888E011602B236EE897A5DBC086EB5 /* Resources */,
-				426E7B1E25E6B7A3C42E999418C81F32 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8D4A931FB09ED89B4E0E5B7017CE80DB /* PBXTargetDependency */,
-				B96ABB5E001EE1D4C5CFEDB96480A7E2 /* PBXTargetDependency */,
-			);
-			name = Droar;
-			productName = Droar;
-			productReference = B6C1E95B0BB22A86F38431EF4D21155C /* Droar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -526,7 +533,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -540,71 +547,82 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D64C279D37019185DF4CF52DEB189CE2 /* Droar */,
-				5CB786B19D3B324B53FCAEED5B764761 /* Droar-Droar */,
+				405F7EBB7AEE852E792D988BA3E53B3C /* Droar */,
+				1509D7BFF0B78DFCEC0F7A509A8EA192 /* Droar-Droar */,
 				3B480406E87C15673A68B4F041428FBC /* Pods-Droar_Example */,
-				8E26A8B79D6CDD220E45CD6B723C5A11 /* SDVersion */,
+				A617CB992D36C0823918EA82C3BC59D3 /* SDVersion */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2D888E011602B236EE897A5DBC086EB5 /* Resources */ = {
+		48D07DDC5C54492AEA0BE525E14AA8D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4BC8ACAA24578B32FA6F64F980A29C /* Droar.bundle in Resources */,
+				A07FC972358352846D4265F6376EF19A /* Droar.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEC269DACBFE02C1A5EFDE9B96F5ED8E /* Resources */ = {
+		BF434EEC50FFD0317B2B15CD4B4DB95B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5DF210E0D7C33215F2CBB966098E4A /* Assets.xcassets in Resources */,
-				C5A3BB07F35A2B0DB798A6D37920648D /* DroarImageCell.xib in Resources */,
-				BC6BACCF480EADDA5C4AF9E04574FF96 /* DroarLabelCell.xib in Resources */,
-				0295F38ADA2CC627F1A00C512EA3364D /* DroarTextFieldCell.xib in Resources */,
-				94643D14474709C0A8546DD60914884B /* RussoOne-Regular.ttf in Resources */,
+				415D3518CA369093B839F0250700CF93 /* Assets.xcassets in Resources */,
+				BFCA930E2EF87134AD2EAC7C0ED0FD67 /* DroarImageCell.xib in Resources */,
+				00F81D97661EA7FA774BA5A2A0064543 /* DroarLabelCell.xib in Resources */,
+				0C1DAE9ABC1DE7E18C6476B996DA1530 /* DroarSwitchCell.xib in Resources */,
+				8EBB572D11B6AEAB058DFA31BE94E7E3 /* DroarTextFieldCell.xib in Resources */,
+				F7EB3937865298AB6E07ADB60D3D34A3 /* RussoOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		012C6701B3FF2AB63E3DDD89661CBB63 /* Sources */ = {
+		719D101CA3FAFD194C7351F87908483C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E92FA34ED8FB95752E13932C89C62FE /* SDiOSVersion.m in Sources */,
+				E02D84154411FDB3667B9FA2995DACF2 /* SDVersion-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B514154290A4224E737BC97BD65FD47 /* Sources */ = {
+		A294688ECE0E67F336646A8C0D9FA373 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82AC252646ECC0B9421E9945B96BD29 /* BuildInfoKnob.swift in Sources */,
-				4215B532764F4D0C3B097671C401A18A /* BundleExtensions.swift in Sources */,
-				792BB17A4F1F5841658E3F67D0266328 /* DeviceInfoKnob.swift in Sources */,
-				A76D556A3D0BBBCD5C8CA18CBDAE7EB2 /* DispatchOnce.swift in Sources */,
-				0C57011AA624FB4326C9BF93AA03BBB9 /* Droar-dummy.m in Sources */,
-				65B51F5A8CA2939DAFF3DA91EDA3F015 /* Droar.swift in Sources */,
-				98A1042CE9DDDC3E77B371BFEB1B5860 /* DroarCell.swift in Sources */,
-				96BA5399BB8E8C596E19B642C23A7182 /* DroarHelper.swift in Sources */,
-				E2C13AAC6AE6CD49D0EE333329D83229 /* DroarImageCell.swift in Sources */,
-				F25B31E0C55EAD774EC24439EF61F871 /* DroarKnob.swift in Sources */,
-				7912AFE0E86E7581F8279104B15A3D7F /* DroarLabelCell.swift in Sources */,
-				9276A92FBD23FB2F7FD2478FC3125ADA /* DroarTextFieldCell.swift in Sources */,
-				E0717CD67480441F1EE881CBA44EF7B7 /* DroarViewController.swift in Sources */,
-				B325DE464AC6B10817FC41359066AF9D /* FontExtensions.swift in Sources */,
-				A390A7BF30DF6FEC725F895B56B2682A /* MyriadKnob.swift in Sources */,
-				7016AC148FDAED1838E055EB2D36B868 /* ObjcHelper.m in Sources */,
-				E8D7B31CD7895AD3CF7C1BFDE34714AB /* ProcessInfoKnob.swift in Sources */,
-				960692E51A8466F0A5A01CB223DB3932 /* ReportingKnob.swift in Sources */,
-				78F53942C1EB61AB64B8AEEEA0CDCB37 /* SectionManager.swift in Sources */,
-				75E981A10A43D3C92979189076D5832B /* Swizzling.swift in Sources */,
-				FA9487A35CFCECC4EB31D36234CAE47B /* UIColorExtensions.swift in Sources */,
-				DCC4A4A1C290174CE67D801FBD3B61C3 /* UIViewControllerExtensions.swift in Sources */,
+				E077FBC31CE6BE597715B3AF5CFCBD95 /* BuildInfoKnob.swift in Sources */,
+				17189560B23C417C34C0852D3819D612 /* BundleExtensions.swift in Sources */,
+				A48A7919F48DD842C5ECE300D557DB88 /* DeviceInfoKnob.swift in Sources */,
+				A09422738D7E8500D768C8429041C5AE /* DispatchOnce.swift in Sources */,
+				DF2FA1A904A5D17B3E8B9F9B0E405B7C /* Droar-dummy.m in Sources */,
+				20A99F13598B743E887FB64D6F6ABC62 /* Droar.swift in Sources */,
+				02F4C7E88E28B8C279CE774228ED29CA /* DroarCell.swift in Sources */,
+				F29C6B369A508CC67767DDA3638BBF46 /* DroarHelper.swift in Sources */,
+				D00AAF708F655D60969D74D023BC60F4 /* DroarImageCell.swift in Sources */,
+				9B2874806FC809FF8B5BCA22FF8005EA /* DroarKnob.swift in Sources */,
+				3F60908B4FC2465C2A7B7F7B1401B9F5 /* DroarLabelCell.swift in Sources */,
+				5A3388063792E74E26A5847027A9D70C /* DroarSwitchCell.swift in Sources */,
+				22A117D5DD229F811D8425C5F4A989A1 /* DroarTextFieldCell.swift in Sources */,
+				40BD3511B727CC5B96CF730A87EC2876 /* DroarViewController.swift in Sources */,
+				8F87E63B33EFFE8961D8C742E4BFC2A1 /* FontExtensions.swift in Sources */,
+				C98276DEDEC241075444CB21756DC5AD /* MyriadKnob.swift in Sources */,
+				3809E65309FFEC2AD8AC134D09AC2885 /* ObjcHelper.m in Sources */,
+				D8387A25A60D533E301C79DEE01BD7A4 /* ProcessInfoKnob.swift in Sources */,
+				A76FD5DC9256FF4E1E77905E5C555EBB /* ReportingKnob.swift in Sources */,
+				2FDCC41D135DDA872FA97E04E9BF9AA8 /* SectionManager.swift in Sources */,
+				55D815455E625B0FE958B7E1696EA5D5 /* Swizzling.swift in Sources */,
+				11DD6F7563E9DB152CECDE92B6C10F24 /* UIColorExtensions.swift in Sources */,
+				AB75A6712C0AA8505027FCDF972F9B5B /* UIViewControllerExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B65C993E8D59233533E3B15BE973CF62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,41 +634,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D1FF6AA9CC96A8A59EE96A444264DEEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52CB7A9BE563C0FE321E3D16DA2A3B0B /* SDiOSVersion.m in Sources */,
-				1131C77BBA10A84DA080D2267B1578D9 /* SDVersion-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8D4A931FB09ED89B4E0E5B7017CE80DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Droar-Droar";
-			target = 5CB786B19D3B324B53FCAEED5B764761 /* Droar-Droar */;
-			targetProxy = 53AC124265444928E33D3525D435084D /* PBXContainerItemProxy */;
-		};
-		B96ABB5E001EE1D4C5CFEDB96480A7E2 /* PBXTargetDependency */ = {
+		C61D1C63C83D77BCBA49156E2274052E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDVersion;
-			target = 8E26A8B79D6CDD220E45CD6B723C5A11 /* SDVersion */;
-			targetProxy = 4C2ED31F1B0D86F2C456A540F14D8BF3 /* PBXContainerItemProxy */;
+			target = A617CB992D36C0823918EA82C3BC59D3 /* SDVersion */;
+			targetProxy = 177FCE4B8B0503F352803DA9A556BDB9 /* PBXContainerItemProxy */;
 		};
 		E943D9BCD3EDC0B6B645C79FF424C5DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDVersion;
-			target = 8E26A8B79D6CDD220E45CD6B723C5A11 /* SDVersion */;
+			target = A617CB992D36C0823918EA82C3BC59D3 /* SDVersion */;
 			targetProxy = 0040AD5CFC0FA284DCC4347B3DAD3300 /* PBXContainerItemProxy */;
 		};
 		EDAC35F9A7E7F2D826268A0119C19CDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Droar;
-			target = D64C279D37019185DF4CF52DEB189CE2 /* Droar */;
+			target = 405F7EBB7AEE852E792D988BA3E53B3C /* Droar */;
 			targetProxy = C74A6C18049DE0DC95397F35B088D539 /* PBXContainerItemProxy */;
+		};
+		F0133E1EABB04EF75E482E68C1F7BF3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Droar-Droar";
+			target = 1509D7BFF0B78DFCEC0F7A509A8EA192 /* Droar-Droar */;
+			targetProxy = 138C4748A04B1B52CC9C8D7CDAE78930 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -682,37 +691,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		33C245B8D966BB326FE3B0EEDD968C06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4571B95676081EEEA3FB855B75042AF /* SDVersion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SDVersion/SDVersion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SDVersion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SDVersion/SDVersion.modulemap";
-				PRODUCT_NAME = SDVersion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -754,9 +732,9 @@
 			};
 			name = Debug;
 		};
-		571D16770500B829A2F0D5B3D61FB21E /* Debug */ = {
+		536EA5FEF6C71F50A7EDFB4ED2423C2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */;
+			baseConfigurationReference = 512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Droar";
@@ -768,7 +746,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -821,71 +799,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		927DE44BA00BCA4A50317CA076414731 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
-				PRODUCT_NAME = Droar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AF90E5B82CE0245687221951F615C88C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
-				PRODUCT_NAME = Droar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -949,7 +863,101 @@
 			};
 			name = Debug;
 		};
-		C533F901757D064048665156FD33B44F /* Debug */ = {
+		BA959CFEDA453F0BAA79DC6399FA77C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4571B95676081EEEA3FB855B75042AF /* SDVersion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SDVersion/SDVersion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDVersion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDVersion/SDVersion.modulemap";
+				PRODUCT_NAME = SDVersion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA4ACE54094224C3EA818769CD6BE8EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
+				PRODUCT_NAME = Droar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D040178189784EC7AD0A269E277D90B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Droar/Droar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Droar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Droar/Droar.modulemap";
+				PRODUCT_NAME = Droar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0852B7E45AD72BFFDFF6FC61A737CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4571B95676081EEEA3FB855B75042AF /* SDVersion.xcconfig */;
 			buildSettings = {
@@ -979,9 +987,9 @@
 			};
 			name = Debug;
 		};
-		D2B4338B04A57CD5A36806BABA3335C7 /* Release */ = {
+		EDCE6750D7DC62BFE11690B0CE93F546 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF8CF372D7435166A9336C7A2EA67D5 /* Droar.xcconfig */;
+			baseConfigurationReference = 512B8AA07EF964F244EE1FBCE1C99607 /* Droar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Droar";
@@ -993,29 +1001,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23045DE55BA5F0B7A007739B77ED76BB /* Build configuration list for PBXNativeTarget "Droar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				927DE44BA00BCA4A50317CA076414731 /* Debug */,
-				AF90E5B82CE0245687221951F615C88C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		269A51BAAF2F05560F8B5F98D7D7A2C1 /* Build configuration list for PBXNativeTarget "SDVersion" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C533F901757D064048665156FD33B44F /* Debug */,
-				33C245B8D966BB326FE3B0EEDD968C06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1025,11 +1015,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED285371F89FBDB7D70B1C0E41B3286B /* Build configuration list for PBXNativeTarget "Droar-Droar" */ = {
+		66E61E86ADF3B0C122C774E89C3E3665 /* Build configuration list for PBXNativeTarget "SDVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				571D16770500B829A2F0D5B3D61FB21E /* Debug */,
-				D2B4338B04A57CD5A36806BABA3335C7 /* Release */,
+				D0852B7E45AD72BFFDFF6FC61A737CFA /* Debug */,
+				BA959CFEDA453F0BAA79DC6399FA77C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC8A4B28C1F7620630691541AE28F44 /* Build configuration list for PBXNativeTarget "Droar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4ACE54094224C3EA818769CD6BE8EE /* Debug */,
+				D040178189784EC7AD0A269E277D90B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44704C8C248F95C06CE1F9E8939C407 /* Build configuration list for PBXNativeTarget "Droar-Droar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCE6750D7DC62BFE11690B0CE93F546 /* Debug */,
+				536EA5FEF6C71F50A7EDFB4ED2423C2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
