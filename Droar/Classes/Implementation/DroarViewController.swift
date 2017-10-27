@@ -31,6 +31,9 @@ class DroarViewController: UITableViewController {
         navigationController?.navigationBar.barStyle = UIBarStyle.blackOpaque
         navigationController?.navigationBar.barTintColor = UIColor.droarBlue
         navigationController?.navigationBar.tintColor = UIColor.white
+        
+        let keyboardDismissal = UITapGestureRecognizer(target: view, action: #selector(view.endEditing(_:)))
+        view.addGestureRecognizer(keyboardDismissal)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
