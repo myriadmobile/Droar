@@ -45,7 +45,9 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
     }
     
     public func stateDump() -> [String : String]? {
-        guard let text = titleLabel.text, let value = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex) else { return nil }
+        guard let text = titleLabel.text else { return nil }
+        guard segmentedControl.selectedSegmentIndex > 0 else { return [text: ""]}
+        guard let value = segmentedControl.titleForSegment(at: segmentedControl.selectedSegmentIndex) else { return nil }
         return [text : value]
     }
 }
