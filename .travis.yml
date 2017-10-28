@@ -1,15 +1,14 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 osx_image: xcode9
 language: swift
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+- gem install cocoapods
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION = 4.0 | xcpretty
-- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION = 3.2 | xcpretty
+- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION=4.0 | xcpretty
+- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION=3.2 | xcpretty
 - pod lib lint
+notifications:
+  slack:
+    secure: l5XyTBHxQsL+QQ3Z4VSgocNYqorLumojc2zbr+9ICV+IhJz0kSfUSCZn511rKXoilSEdbwVg+uNHE0zt37mzhSju7HvJHtsPx/PI9XTgYF++UlfHuP3jzWLivM4Y54js/HPrRzsVV6l0o/FA5xfjUplMQeTiFufT0KyJ+4O0t78s//lvpha5R5pRScPiQiPljKS0/7Vi9Y/RTowkNpaamUKfL6vovHNFTQLqxG9WvnXowE+XzmpJyfgYdr5/xogwzGGEAFhy1p8sCENPKMPVP+Tfvynf/8bQmu0EWBZWFLpX8c328gvrc3h4GNUrOwst9p3wyCyBrz0wACZQy9moiM//gYzVLUVmn/RTT8P+4yA16DrasQCMTjNT8sjZogmNX+C0EXShmiuLkxy1pWXmvj5SIdDiuo1TgYuUFS1ur7S5jxg9qTr/3sfAAY1kUjcYpnB5E6oyG58v+5TjCborsQ0g6uSxGwsizjDyYoiw2fmLy7vU4m9MwCv0Zqf3sMrN2jqeEYvBkxnUL6FcYp8j7EmpOX56OanhJLqVJ+KghrAS9ZR7vpuaSoZ8oXCitmnDbKNk24ZXZH7xQ/y5KdA4vLDmBf9o7eRJ2HObQx/dj6zpq6Dyi/eMyzvKgP7mtkVN3a/9LBIB/6VYLQWbuzP0UgOzpuMPdjOvYOaaEps1dDU=
