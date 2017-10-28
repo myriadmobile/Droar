@@ -35,6 +35,7 @@
 		7A26394841A29AE89A06E4CE8D777290 /* Pods-Droar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7871A1703702F04B3C38AC2ACE0AE360 /* Pods-Droar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A6991AAE8B95C9A5103AFD04675038F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A193C4F739F0F28DAEED8DA8092B9 /* UIColorExtensions.swift */; };
 		7F6BD1D5EC143F9F01D50CA95AED7527 /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246F6C19CF5B28BC791D5D7FBECCB43 /* DroarViewController.swift */; };
+		82B2C7D11FA4062D002D0540 /* NSAttributedStringKeyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2C7D01FA4062D002D0540 /* NSAttributedStringKeyExtension.swift */; };
 		860B54A03AE43C1295E4D2D7D61D4774 /* MyriadKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BEE5270A324E3463B689DBB733C87 /* MyriadKnob.swift */; };
 		92EE10DBB0629EEAB00C1297DA2B0B87 /* DroarSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA417C3C3B4ADE9BF878F077A0E3EBD /* DroarSegmentedCell.xib */; };
 		95028B5CB8F22521453018E3D5C04DFC /* Droar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CB2D42C445C69C85A6A277F89F2CF9 /* Droar-dummy.m */; };
@@ -118,6 +119,7 @@
 		7D4E6DFE7282579B59EC667C09F2E7CA /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1D26A065E1E16433248A5A9B9724BA /* DroarImageCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = DroarImageCell.xib; sourceTree = "<group>"; };
 		808B0A42F3845ADFB008A5E73736CEC9 /* SDVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDVersion.h; path = SDVersion/SDVersion.h; sourceTree = "<group>"; };
+		82B2C7D01FA4062D002D0540 /* NSAttributedStringKeyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringKeyExtension.swift; sourceTree = "<group>"; };
 		85EAAAFC3A887100B95542354A279849 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		8E2A193C4F739F0F28DAEED8DA8092B9 /* UIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		8F03F5D811140857F927250C021081E1 /* BundleExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 		ECF9094946D5894967C47B32F76BA9E7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				82B2C7D01FA4062D002D0540 /* NSAttributedStringKeyExtension.swift */,
 				8F03F5D811140857F927250C021081E1 /* BundleExtensions.swift */,
 				0442B0BA9A3DD660CC8D80545296D053 /* DroarHelper.swift */,
 				FE373A7CB32F00BAB6C482ADA1F61F49 /* FontExtensions.swift */,
@@ -623,6 +626,7 @@
 				FA6DEE76F49A5B4EAC638B233E9DBBF9 /* DroarCell.swift in Sources */,
 				6293C71816703BA5FD95F60805BC1EC0 /* DroarHelper.swift in Sources */,
 				BF1AC0A155E1E78806B187A25C62ECF4 /* DroarImageCell.swift in Sources */,
+				82B2C7D11FA4062D002D0540 /* NSAttributedStringKeyExtension.swift in Sources */,
 				95D8C7296C81749A46D830674B8D4E08 /* DroarKnob.swift in Sources */,
 				137D6024CDEBC17D84A1369C33A23BFD /* DroarLabelCell.swift in Sources */,
 				2AFF70438F84EDD7B9EE47B839C82B62 /* DroarSegmentedCell.swift in Sources */,

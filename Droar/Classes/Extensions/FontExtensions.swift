@@ -14,9 +14,13 @@ public extension UIFont {
         guard let fontDataProvider = CGDataProvider(url: url as CFURL) else {
             throw "Could not create font data provider for \(url)."
         }
-        guard let font = CGFont(fontDataProvider) else {
-            throw "Could not create font for \(url)."
-        }
+        #if swift(>=4.0)
+            guard let font = CGFont(fontDataProvider) else {
+                throw "Could not create font for \(url)."
+            }
+        #else
+            let font = CGFont(fontDataProvider)
+        #endif
         var error: Unmanaged<CFError>?
         guard CTFontManagerRegisterGraphicsFont(font, &error) else {
             throw error!.takeUnretainedValue()
