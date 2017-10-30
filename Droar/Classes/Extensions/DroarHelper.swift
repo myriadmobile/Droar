@@ -30,6 +30,9 @@ internal extension Droar {
                 print(error.localizedDescription)
             }
         }
+        
+        dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(toggleVisibility))
+        dismissalRecognizer?.direction = .right
     }
     
     static func loadDynamicKnobs() -> [DroarKnob] {

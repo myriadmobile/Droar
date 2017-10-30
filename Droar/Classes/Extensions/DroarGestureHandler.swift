@@ -12,8 +12,14 @@ internal extension Droar {
     {
         switch type {
         case .tripleTap:
-            let recognizer
+            let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTripleTap))
+            recognizer.numberOfTapsRequired = 3
+            replaceGestureRecognizer(with: recognizer)
         }
+    }
+    
+    @objc private static func handleTripleTap() {
+        toggleVisibility()
     }
     
     static func replaceGestureRecognizer(with recognizer: UIGestureRecognizer)
@@ -27,7 +33,7 @@ internal extension Droar {
         loadKeyWindow()?.addGestureRecognizer(recognizer)
     }
     
-    static func toggleVisibility() {
+    @objc static func toggleVisibility() {
         if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
             if navController?.view.transform.isIdentity ?? false {
                 KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
