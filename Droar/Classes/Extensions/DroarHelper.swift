@@ -8,26 +8,6 @@
 import Foundation
 
 internal extension Droar {
-    static func addDebugDrawer() {
-        if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
-            do {
-                try UIFont.register(url: fontUrl)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
-        
-        let tapRecognizer = UITapGestureRecognizer()
-        tapRecognizer.numberOfTapsRequired = 3
-        
-        setGestureReconizer(value: tapRecognizer)
-        
-        dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(toggleVisibility))
-        dismissalRecognizer?.direction = .right
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
-    }
-    
     static func initializeWindow() {
         viewController = DroarViewController(style: .grouped)
         
@@ -40,6 +20,19 @@ internal extension Droar {
         separatorView.backgroundColor = UIColor.droarBlue
         separatorView.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
         navController.view.addSubview(separatorView)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
+
+        if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
+            do {
+                try UIFont.register(url: fontUrl)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
+        dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(toggleVisibility))
+        dismissalRecognizer.direction = .right
     }
     
     static func loadDynamicKnobs() -> [DroarKnob] {
@@ -62,7 +55,6 @@ internal extension Droar {
     
     @objc static func handleReceivedWindowDidBecomeKeyNotification(notification:NSNotification) {
         if let recognizer = gestureRecognizer {
-            
             recognizer.view?.removeGestureRecognizer(recognizer)
             
             if let window = notification.object as? UIWindow {

@@ -8,26 +8,30 @@
 
 import Foundation
 
+@objc public enum DroarGestureType: UInt {
+    case tripleTap, panFromRight
+}
+
 @objc public class Droar: NSObject {
     
     // Droar is a purely static class.
     private override init() { }
     
-    internal static var gestureRecognizer: UIGestureRecognizer?
-    internal static var dismissalRecognizer: UISwipeGestureRecognizer?
+    internal static var gestureRecognizer: UIGestureRecognizer!
+    internal static var dismissalRecognizer: UISwipeGestureRecognizer!
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
     internal static let drawerWidth:CGFloat = 250
-    internal static let startOnce = DispatchOnce()
+    private static let startOnce = DispatchOnce()
     
     @objc public static func start()
     {
         startOnce.perform {
-            addDebugDrawer()
             initializeWindow()
+            setGestureType(.panFromRight)
         }
     }
-    
+        
     @objc public static func register(_ knob: DroarKnob) {
         KnobManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
@@ -43,61 +47,28 @@ import Foundation
         viewController?.tableView.reloadData()
     }
     
-    @objc public static func setGestureReconizer(value: UIGestureRecognizer) {
-        if let recognizer = gestureRecognizer {
-            recognizer.view?.removeGestureRecognizer(recognizer)
-        }
-        
-        gestureRecognizer = value
-        
-        if let recognizer = gestureRecognizer {
-            recognizer.addTarget(self, action: #selector(toggleVisibility))
-            loadKeyWindow()?.addGestureRecognizer(recognizer)
-        }
+    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 30.0) {
+        configureRecognizerForType(type, threshold)
     }
     
+    // For plugins
     @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
         navController.pushViewController(viewController, animated: animated)
     }
     
-    @objc public static func toggleVisibility() {        
-        if let keyWindow = loadKeyWindow(), let activeVC = loadActiveResponder() as? UIViewController {
-            if navController?.view.transform.isIdentity ?? false {
-                KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
-                KnobManager.sharedInstance.prepareForDisplay(tableView: viewController?.tableView)
-                
-                navController?.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
-                navController.willMove(toParentViewController: activeVC)
-                activeVC.addChildViewController(navController)
-                activeVC.view.addSubview(navController.view)
-                navController.didMove(toParentViewController: activeVC)
-                
-                viewController?.tableView.reloadData()
-            }
-            
-            UIView.animate(withDuration: 0.25, animations: {
-                if navController.view.transform.isIdentity {
-                    navController.view.transform = CGAffineTransform(translationX: -navController.view.frame.size.width, y: 0)
-                    
-                    if let recognizer = gestureRecognizer {
-                        keyWindow.removeGestureRecognizer(recognizer)
-                    }
-                    
-                    keyWindow.addGestureRecognizer(dismissalRecognizer!)
-                } else {
-                    navController.view.transform = CGAffineTransform.identity
-                    keyWindow.removeGestureRecognizer(dismissalRecognizer!)
-                    if let recognizer = gestureRecognizer {
-                        keyWindow .addGestureRecognizer(recognizer)
-                    }
-                }
-            }, completion: { (complete) in
-                if navController.view.transform.isIdentity {
-                    navController.willMove(toParentViewController: nil)
-                    navController.view.removeFromSuperview()
-                    navController.removeFromParentViewController()
-                }
-            })
+    @objc public static var isVisible: Bool {
+        get {
+            return navController.parent != nil
         }
+    }
+    
+    @objc public static func showWindow() {
+        guard !isVisible else { return }
+        toggleVisibility()
+    }
+
+    @objc public static func dismissWindow() {
+        guard isVisible else { return }
+        toggleVisibility()
     }
 }

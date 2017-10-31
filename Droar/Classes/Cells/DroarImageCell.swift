@@ -29,6 +29,7 @@ public class DroarImageCell : UITableViewCell, DroarCell {
     }
     
     public func stateDump() -> [String : String]? {
+        // TODO: Do we care to know what image was being displayed?  I wrote this mainly to show the Myriad Logo
         return nil
     }
 }

@@ -28,10 +28,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DroarIcon_Text" translatesAutoresizingMaskIntoConstraints="NO" id="vIY-zf-O7Y">
-                                <rect key="frame" x="36" y="63.5" width="303" height="540"/>
+                                <rect key="frame" x="36" y="63" width="303" height="541"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Triple-tap to launch!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJo-5W-p1a">
-                                <rect key="frame" x="99" y="623" width="178" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Swipe from far right to start!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJo-5W-p1a">
+                                <rect key="frame" x="62.5" y="623.5" width="250.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="20"/>
                                 <color key="textColor" red="0.1764705882352941" green="0.34509803921568627" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
