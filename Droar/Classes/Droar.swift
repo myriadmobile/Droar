@@ -9,7 +9,7 @@
 import Foundation
 
 @objc public enum DroarGestureType: UInt {
-    case tripleTap
+    case tripleTap, panFromRight
 }
 
 @objc public class Droar: NSObject {
@@ -17,8 +17,8 @@ import Foundation
     // Droar is a purely static class.
     private override init() { }
     
-    internal static var gestureRecognizer: UIGestureRecognizer?
-    internal static var dismissalRecognizer: UISwipeGestureRecognizer?
+    internal static var gestureRecognizer: UIGestureRecognizer!
+    internal static var dismissalRecognizer: UISwipeGestureRecognizer!
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
     internal static let drawerWidth:CGFloat = 250
@@ -28,10 +28,10 @@ import Foundation
     {
         startOnce.perform {
             initializeWindow()
-            setGestureType(.tripleTap)
+            setGestureType(.panFromRight)
         }
     }
-    
+        
     @objc public static func register(_ knob: DroarKnob) {
         KnobManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
@@ -47,8 +47,8 @@ import Foundation
         viewController?.tableView.reloadData()
     }
     
-    @objc public static func setGestureType(_ type: DroarGestureType) {
-        configureRecognizerForType(type)
+    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 30.0) {
+        configureRecognizerForType(type, threshold)
     }
     
     // For plugins
@@ -56,11 +56,19 @@ import Foundation
         navController.pushViewController(viewController, animated: animated)
     }
     
-//    @objc public static func showWindow() {
-//        // TODO
-//    }
-//
-//    @objc public static func dismissWindow() {
-//        // TODO
-//    }
+    @objc public static var isVisible: Bool {
+        get {
+            return navController.parent != nil
+        }
+    }
+    
+    @objc public static func showWindow() {
+        guard !isVisible else { return }
+        toggleVisibility()
+    }
+
+    @objc public static func dismissWindow() {
+        guard isVisible else { return }
+        toggleVisibility()
+    }
 }
