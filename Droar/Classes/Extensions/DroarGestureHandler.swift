@@ -9,6 +9,7 @@ import Foundation
 
 internal extension Droar {
     static var threshold: CGFloat!
+    private static let gestureDelegate = GestureDelegate()
     
     static func configureRecognizerForType(_ type: DroarGestureType, _ threshold: CGFloat) {
         self.threshold = threshold
@@ -17,10 +18,12 @@ internal extension Droar {
         case .tripleTap:
             let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTripleTap(sender:)))
             recognizer.numberOfTapsRequired = 3
+            recognizer.delegate = gestureDelegate
             replaceGestureRecognizer(with: recognizer)
             
         case .panFromRight:
             let recognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(sender:)))
+            recognizer.delegate = gestureDelegate
             replaceGestureRecognizer(with: recognizer)
         }
     }
@@ -118,6 +121,12 @@ internal extension Droar {
             }
         }) { (completed) in
             endDroarVisibilityUpdate()
+        }
+    }
+    
+    private class GestureDelegate: NSObject, UIGestureRecognizerDelegate {
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+            return true
         }
     }
 }
