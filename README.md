@@ -6,6 +6,12 @@
 [![License](https://img.shields.io/cocoapods/l/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 [![Platform](https://img.shields.io/cocoapods/p/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 
+Droar is a modular, single-line installation debugging window.
+
+## Overview
+
+The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend get code straight into production.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single
+
 ![Droar](https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif)
 
 ## Installation
@@ -21,7 +27,7 @@ pod "Droar"
 
 To start Droar, add the following line in the `didFinishLaunchingWithOptions` method of your app delegate:
 
-```ruby
+```swift
 import Droar
 ...
 Droar.start()
@@ -46,11 +52,11 @@ When Droar is opened, it will search through the application's view controller h
 
 ## Plugins
 
-[netfox-Droar](https://github.com/myriadmobile/netfox-Droar)
+[Netfox](https://github.com/myriadmobile/netfox-Droar)
 
 ## Author
 
-Myriad Mobile, developer@myriadmobile.com
+Nathan Jangula, Myriad Mobile, developer@myriadmobile.com
 
 ## License
 
