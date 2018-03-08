@@ -25,7 +25,7 @@ import Droar
 Droar.start()
 ```
 
-to open, simply triple-tap the screen to open Droar.
+to open, simply swipe starting from the far right side of the screen.
 
 ## Configuring
 
