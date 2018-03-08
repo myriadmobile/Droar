@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 [![Platform](https://img.shields.io/cocoapods/p/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 
+![Droar](https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif)
+
 ## Installation
 
 Droar is available through [CocoaPods](http://cocoapods.org). To install
