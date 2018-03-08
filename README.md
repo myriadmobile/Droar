@@ -28,15 +28,19 @@ pod "Droar"
 
 ## Start
 
-To start Droar, add the following line in the `didFinishLaunchingWithOptions` method of your app delegate:
+To start Droar, add the following in the `didFinishLaunchingWithOptions` method of your app delegate:
 
 ```swift
 import Droar
+
 ...
-Droar.start()
+
+if nonProductionEnvironment {
+    Droar.start()
+}
 ```
 
-to open, simply swipe starting from the far right side of the screen.
+To open, simply swipe starting from the far right side of the screen.
 
 ## Configuring
 
