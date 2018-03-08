@@ -1,5 +1,6 @@
-![](https://raw.githubusercontent.com/myriadmobile/Droar/master/Github/DroarLogo.png)
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/myriadmobile/Droar/master/Github/DroarLogo.png">
+</p>
 
 [![CI Status](http://img.shields.io/travis/myriadmobile/Droar.svg?style=flat)](https://travis-ci.org/myriadmobile/Droar)
 [![Version](https://img.shields.io/cocoapods/v/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
@@ -12,7 +13,9 @@ Droar is a modular, single-line installation debugging window.
 
 The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend get code straight into production.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single tool
 
-![Droar](https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif)
+<p align="center">
+<img src="https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif">
+</p>
 
 ## Installation
 
@@ -43,7 +46,7 @@ There are 3 different ways configure the "knobs" (table sections) shown:
 
 ### Registering default knobs:
 This can be done using the `registerDefaultKnobs` method of `Droar`.  If this isn't called, all default knobs will be displayed.
-    
+
 ### Registering a static knob:
 Static knobs will always be shown in Droar.  They can be added using the `register` method of `Droar`.
 
@@ -61,3 +64,5 @@ Nathan Jangula, Myriad Mobile, developer@myriadmobile.com
 ## License
 
 Droar is available under the MIT license. See the LICENSE file for more info.
+
+
