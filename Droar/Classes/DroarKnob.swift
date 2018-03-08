@@ -14,10 +14,22 @@ import Foundation
     case bottom = 3
 }
 
+extension KnobPosition : Comparable {
+    public static func <(lhs: KnobPosition, rhs: KnobPosition) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+}
+
 @objc public enum PositionPriority: UInt {
     case high = 1
     case medium = 2
     case low = 3
+}
+
+extension PositionPriority : Comparable {
+    public static func <(lhs: PositionPriority, rhs: PositionPriority) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
 }
 
 @objc public class PositionInfo: NSObject {

@@ -34,15 +34,15 @@ class DroarViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return KnobManager.sharedInstance.visibleKnobs.count
+        return KnobManager.sharedInstance.visibleSections.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return KnobManager.sharedInstance.visibleKnobs[section].droarKnobNumberOfCells()
+        return KnobManager.sharedInstance.visibleSections[section].numberOfCells()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return KnobManager.sharedInstance.visibleKnobs[indexPath.section].droarKnobCellForIndex(index: indexPath.row, tableView: tableView) as! UITableViewCell
+        return KnobManager.sharedInstance.visibleSections[indexPath.section].droarKnobCellForIndex(index: indexPath.row, tableView: tableView) as! UITableViewCell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -50,13 +50,11 @@ class DroarViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) {
             guard cell.selectionStyle != .none else { return }
         }
-        if let indexSelectedAction = KnobManager.sharedInstance.visibleKnobs[indexPath.section].droarKnobIndexSelected {
-            indexSelectedAction(tableView, indexPath.row)
-        }
+        KnobManager.sharedInstance.visibleSections[indexPath.section].droarKnobIndexSelected(tableView: tableView, selectedIndex: indexPath.row)
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return KnobManager.sharedInstance.visibleKnobs[section].droarKnobTitle()
+        return KnobManager.sharedInstance.visibleSections[section].title
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
