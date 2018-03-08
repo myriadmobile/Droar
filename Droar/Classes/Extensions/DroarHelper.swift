@@ -9,12 +9,23 @@ import Foundation
 
 internal extension Droar {
     static func initializeWindow() {
+        let size = UIScreen.main.bounds.size
+        containerViewController = UIViewController()
+        containerViewController.view.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        containerViewController.view.backgroundColor = UIColor.clear
+        containerViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
         viewController = DroarViewController(style: .grouped)
         
         navController = UINavigationController(rootViewController: viewController!)
-        navController.view.frame = CGRect(x: UIScreen.main.bounds.size.width, y: 0, width: drawerWidth, height: UIScreen.main.bounds.size.height)
+        navController.view.frame = CGRect(x: size.width, y: 0, width: drawerWidth, height: size.height)
         navController.view.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
         navController.navigationBar.isTranslucent = false
+        
+        navController.willMove(toParentViewController: viewController)
+        containerViewController.addChildViewController(navController)
+        containerViewController.view.addSubview(navController.view)
+        navController.didMove(toParentViewController: containerViewController)
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: navController.view.frame.size.height))
         separatorView.backgroundColor = UIColor.droarBlue

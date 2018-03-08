@@ -19,6 +19,8 @@ import Foundation
     
     internal static var gestureRecognizer: UIGestureRecognizer!
     internal static var dismissalRecognizer: UISwipeGestureRecognizer!
+    internal static var containerViewController: UIViewController!
+    internal static let defaultContainerAlpha: CGFloat = 0.5
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
     internal static let drawerWidth:CGFloat = 250
@@ -58,7 +60,7 @@ import Foundation
     
     @objc public static var isVisible: Bool {
         get {
-            return navController.parent != nil
+            return containerViewController.parent != nil
         }
     }
     
