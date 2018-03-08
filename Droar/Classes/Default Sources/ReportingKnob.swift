@@ -58,11 +58,12 @@ internal class ReportingKnob : DroarKnob {
             do {
                 let jsonData = try JSONSerialization.data(withJSONObject: dump, options: .prettyPrinted)
                 if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {
-                    let activityVC = UIActivityViewController(activityItems: [jsonString], applicationActivities: nil)
-                    Droar.present(activityVC, animated: true, completion: nil)
+                    Droar.pushViewController(StateDumpViewController.create(stateDump: jsonString), animated: true)
                 }
             } catch let error {
-                print(error)
+                let alert = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                Droar.present(alert, animated: true, completion: nil)
             }
         default:
             break
