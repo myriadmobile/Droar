@@ -116,7 +116,7 @@ internal extension Droar {
     }
     
     static func captureScreen() -> UIImage? {
-        let parent = navController.view.superview
+        let parent = containerViewController.view.superview
         containerViewController.view.removeFromSuperview()
         
         guard let window = loadKeyWindow() else { return .none }
