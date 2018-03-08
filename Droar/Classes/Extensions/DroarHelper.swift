@@ -117,7 +117,7 @@ internal extension Droar {
     
     static func captureScreen() -> UIImage? {
         let parent = navController.view.superview
-        navController.view.removeFromSuperview()
+        containerViewController.view.removeFromSuperview()
         
         guard let window = loadKeyWindow() else { return .none }
         UIGraphicsBeginImageContextWithOptions(window.bounds.size, false, UIScreen.main.scale)
@@ -126,7 +126,7 @@ internal extension Droar {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        parent?.addSubview(navController.view)
+        parent?.addSubview(containerViewController.view)
         
         return image
     }
