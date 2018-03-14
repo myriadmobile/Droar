@@ -95,6 +95,8 @@ internal extension Droar {
                     if subview.subviews.count > 0 {
                         let subSubView = subview.subviews.first
                         responder = subSubView?.next
+                    } else {
+                        continue
                     }
                 }
                 
