@@ -23,7 +23,7 @@ import Foundation
     internal static let defaultContainerAlpha: CGFloat = 0.5
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
-    internal static let drawerWidth:CGFloat = 250
+    internal static let drawerWidth:CGFloat = 300
     private static let startOnce = DispatchOnce()
     
     @objc public static func start()
@@ -49,7 +49,7 @@ import Foundation
         viewController?.tableView.reloadData()
     }
     
-    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 30.0) {
+    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 50.0) {
         configureRecognizerForType(type, threshold)
     }
     
