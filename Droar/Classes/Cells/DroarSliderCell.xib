@@ -17,15 +17,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DroarSliderCell" id="ofY-0B-l9r" customClass="DroarSliderCell" customModule="Droar" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DroarSliderCell" rowHeight="91" id="ofY-0B-l9r" customClass="DroarSliderCell" customModule="Droar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ofY-0B-l9r" id="a9W-5e-KTn">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123.45" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy8-DJ-Dzi">
-                        <rect key="frame" x="319" y="11" width="40" height="22"/>
+                        <rect key="frame" x="319" y="11" width="40" height="69"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="vfr-lL-n71"/>
                         </constraints>
@@ -34,13 +34,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-OD-IcT">
-                        <rect key="frame" x="16" y="11" width="58.5" height="22"/>
+                        <rect key="frame" x="16" y="11" width="58.5" height="69"/>
                         <fontDescription key="fontDescription" name="RussoOne-Regular" family="Russo One" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-Pi-KsX">
-                        <rect key="frame" x="80.5" y="6.5" width="232.5" height="31"/>
+                        <rect key="frame" x="80.5" y="30.5" width="232.5" height="31"/>
                         <connections>
                             <action selector="sliderValueChanged:" destination="ofY-0B-l9r" eventType="valueChanged" id="DMC-vR-3JN"/>
                         </connections>
@@ -51,6 +51,8 @@
                     <constraint firstItem="RkA-OD-IcT" firstAttribute="leading" secondItem="a9W-5e-KTn" secondAttribute="leadingMargin" id="3Dm-k1-7us"/>
                     <constraint firstItem="RkA-OD-IcT" firstAttribute="top" secondItem="a9W-5e-KTn" secondAttribute="topMargin" id="4XR-5Q-dtP"/>
                     <constraint firstItem="vy8-DJ-Dzi" firstAttribute="leading" secondItem="UPm-Pi-KsX" secondAttribute="trailing" constant="8" id="DZi-Di-qZ5"/>
+                    <constraint firstItem="UPm-Pi-KsX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a9W-5e-KTn" secondAttribute="topMargin" id="KwD-Sd-qXx"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="UPm-Pi-KsX" secondAttribute="bottom" id="UNy-Ma-rvg"/>
                     <constraint firstItem="UPm-Pi-KsX" firstAttribute="leading" secondItem="RkA-OD-IcT" secondAttribute="trailing" constant="8" id="bU3-a9-RPo"/>
                     <constraint firstAttribute="bottomMargin" secondItem="vy8-DJ-Dzi" secondAttribute="bottom" id="jdJ-vx-cMx"/>
                     <constraint firstAttribute="bottomMargin" secondItem="RkA-OD-IcT" secondAttribute="bottom" id="jdg-gF-JwY"/>
@@ -63,7 +65,7 @@
                 <outlet property="slider" destination="UPm-Pi-KsX" id="lKb-hj-hCw"/>
                 <outlet property="titleLabel" destination="RkA-OD-IcT" id="5if-tW-daI"/>
             </connections>
-            <point key="canvasLocation" x="-50.5" y="-229"/>
+            <point key="canvasLocation" x="-50.5" y="-205.5"/>
         </tableViewCell>
     </objects>
 </document>
