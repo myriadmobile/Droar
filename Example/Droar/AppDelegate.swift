@@ -54,7 +54,7 @@ extension AppDelegate: DroarKnob {
     }
     
     func droarKnobNumberOfCells() -> Int {
-        return 5
+        return 6
     }
     
     func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
@@ -73,6 +73,10 @@ extension AppDelegate: DroarKnob {
             })
         case 4:
             return DroarSegmentedCell.create(title: "DroarSegmentedCell", values: ["1", "2", "3"], defaultIndex: nil, allowSelection: false, onValueChanged: { (value) in
+                print(value)
+            })
+        case 5:
+            return DroarSliderCell.create(title: "DroarSliderCell", value: 0.5, min: 0, max: 1, allowSelection: false, onValueChanged: { (value) in
                 print(value)
             })
         default:

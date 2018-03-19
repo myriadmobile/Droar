@@ -18,6 +18,7 @@ public class DroarLabelCell : UITableViewCell, DroarCell {
         for view in Bundle.podBundle.loadNibNamed("DroarLabelCell", owner: self, options: nil) ?? [Any]() {
             if view is DroarLabelCell {
                 cell = view as? DroarLabelCell
+                break
             }
         }
         

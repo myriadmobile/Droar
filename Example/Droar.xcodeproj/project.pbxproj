@@ -30,7 +30,7 @@
 		990157A2E2AE605026667A1A /* Pods-Droar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Droar_Example/Pods-Droar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A03B635835B3E4435D175756 /* Pods_Droar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD360F30F987F00B581C6EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B992E50163DDDECC90C5F560 /* Droar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Droar.podspec; path = ../Droar.podspec; sourceTree = "<group>"; };
+		B992E50163DDDECC90C5F560 /* Droar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Droar.podspec; path = ../Droar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D57A4722C9194BB8AAB844D0 /* Pods_Droar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 

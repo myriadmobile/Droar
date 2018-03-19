@@ -19,6 +19,7 @@ public class DroarSwitchCell : UITableViewCell, DroarCell {
         for view in Bundle.podBundle.loadNibNamed("DroarSwitchCell", owner: self, options: nil) ?? [Any]() {
             if view is DroarSwitchCell {
                 cell = view as? DroarSwitchCell
+                break
             }
         }
         

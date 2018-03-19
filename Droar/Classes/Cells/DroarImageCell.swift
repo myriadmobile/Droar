@@ -18,6 +18,7 @@ public class DroarImageCell : UITableViewCell, DroarCell {
         for view in Bundle.podBundle.loadNibNamed("DroarImageCell", owner: self, options: nil) ?? [Any]() {
             if view is DroarImageCell {
                 cell = view as? DroarImageCell
+                break
             }
         }
         

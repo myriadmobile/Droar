@@ -19,6 +19,7 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
         for view in Bundle.podBundle.loadNibNamed("DroarSegmentedCell", owner: self, options: nil) ?? [Any]() {
             if view is DroarSegmentedCell {
                 cell = view as? DroarSegmentedCell
+                break
             }
         }
         

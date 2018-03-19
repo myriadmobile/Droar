@@ -19,6 +19,7 @@ public class DroarTextFieldCell : UITableViewCell, DroarCell {
         for view in Bundle.podBundle.loadNibNamed("DroarTextFieldCell", owner: self, options: nil) ?? [Any]() {
             if view is DroarTextFieldCell {
                 cell = view as? DroarTextFieldCell
+                break
             }
         }
         
