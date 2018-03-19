@@ -11,7 +11,7 @@ Droar is a modular, single-line installation debugging window.
 
 ## Overview
 
-The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend get written and shipped straight inline with production code.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single tool.
+The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend to get written and shipped straight inline with production code.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single tool.
 
 <p align="center">
 <img src="https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif">
