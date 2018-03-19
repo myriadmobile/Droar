@@ -28,9 +28,9 @@ public class DroarSliderCell : UITableViewCell, DroarCell {
         cell?.onValueChanged = onValueChanged
         
         cell?.titleLabel.text = title
-        cell?.slider.value = value
         cell?.slider.minimumValue = min
         cell?.slider.maximumValue = max
+        cell?.slider.value = value
         cell?.selectionStyle = allowSelection ? .gray : .none
         cell?.detailLabel.text = String(format: "%.2f", cell?.slider.value ?? 0)
 
