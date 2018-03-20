@@ -19,7 +19,7 @@
 		35304DF8B3E7C1D74E9BF1FEBC2C7BE9 /* SDiOSVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E51A2695B5DC11572E53B1329172B6 /* SDiOSVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35E4E8339E09FC9611299A0D4E646F62 /* StateDump.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E9DD75C9B2A6395F65F52B1B7FABCE /* StateDump.storyboard */; };
 		3DD8881E92DACCAA2F3C5EC4D39BEF13 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2DAEF7253417BB84502BDADF547A11 /* UIFontExtensions.swift */; };
-		3FCEA56108948403FF239F0A20EAFFD1 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E132E682CDDA24EAB9DB5768AA650 /* Swizzling.swift */; };
+		3FCEA56108948403FF239F0A20EAFFD1 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E132E682CDDA24EAB9DB5768AA650 /* Swizzler.swift */; };
 		40861643D2CB78344E3AC3D84FD7431C /* Pods-Droar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F856FF6B3E5FD985A590C67C4E6F32E8 /* Pods-Droar_Example-dummy.m */; };
 		46DC2E25181E42DF33212859E67C4642 /* SDVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */; };
 		49B2DDE9CB17CB0A72A985CDB9A1AC7A /* DroarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290289DB26B597A354DB2A58B9CD183 /* DroarViewController.swift */; };
@@ -160,7 +160,7 @@
 		F02216349CEC36CDBF65BD6FBE982A9A /* DroarHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarHelper.swift; sourceTree = "<group>"; };
 		F04CD8704A1CF35F19664F0313C9AD56 /* KnobManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KnobManager.swift; sourceTree = "<group>"; };
 		F3502E616EB62FF873D18041F5B1870B /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F38E132E682CDDA24EAB9DB5768AA650 /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzling.swift; sourceTree = "<group>"; };
+		F38E132E682CDDA24EAB9DB5768AA650 /* Swizzler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
 		F3AE0A673CA80936BA471927E6596E9A /* DroarSliderCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DroarSliderCell.swift; sourceTree = "<group>"; };
 		F4EE220AAAE05D5B83835D2DE926D092 /* Pods-Droar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Droar_Example.modulemap"; sourceTree = "<group>"; };
 		F6B07C42A1E9890BE41E5E3097BE7675 /* Pods-Droar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Droar_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 				642485213EE78D71F37C6E0973B157D2 /* DroarGestureHandler.swift */,
 				F02216349CEC36CDBF65BD6FBE982A9A /* DroarHelper.swift */,
 				EF2A6AB1D8548A683C6114C812BE192F /* NSAttributedStringKeyExtension.swift */,
-				F38E132E682CDDA24EAB9DB5768AA650 /* Swizzling.swift */,
+				F38E132E682CDDA24EAB9DB5768AA650 /* Swizzler.swift */,
 				A6A7AB815AF07D5A5BDD33892E7A47D1 /* UIColorExtensions.swift */,
 				7B2DAEF7253417BB84502BDADF547A11 /* UIFontExtensions.swift */,
 				3A1082977A352A2B162C942886ABC4BF /* UIStoryboardExtensions.swift */,
@@ -669,7 +669,7 @@
 				AD5F20DFEE0A525D8017BD9563C192A6 /* ProcessInfoKnob.swift in Sources */,
 				071AFC14D8FBDCC0510324B13AAD9521 /* ReportingKnob.swift in Sources */,
 				A70AAC6CE671BEAF5ABCA4028E376172 /* StateDumpViewController.swift in Sources */,
-				3FCEA56108948403FF239F0A20EAFFD1 /* Swizzling.swift in Sources */,
+				3FCEA56108948403FF239F0A20EAFFD1 /* Swizzler.swift in Sources */,
 				0781A02CECB4C67E1C8BA0EE0D8D5338 /* UIColorExtensions.swift in Sources */,
 				3DD8881E92DACCAA2F3C5EC4D39BEF13 /* UIFontExtensions.swift in Sources */,
 				60496F5FE0A4190F04600EBE68845977 /* UIStoryboardExtensions.swift in Sources */,
