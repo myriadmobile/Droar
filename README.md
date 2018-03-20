@@ -91,9 +91,11 @@ You can control which of the default sections are shown using the `registerDefau
 
 ## Plugins
 
-[netfox-Droar](https://github.com/myriadmobile/netfox-Droar): [netfox](https://github.com/kasketis/netfox) is a lightweight, one line setup, iOS / OSX network debugging library.
+### [netfox-Droar](https://github.com/myriadmobile/netfox-Droar)
+[netfox](https://github.com/kasketis/netfox) is a lightweight, one line setup, iOS / OSX network debugging library.
 
-[FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar): [FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
+### [FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar)
+[FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
 
 ## Author
 
