@@ -42,6 +42,14 @@ public class DroarSliderCell : UITableViewCell, DroarCell {
         onValueChanged?(slider.value)
     }
     
+    public func setEnabled(_ enabled: Bool) {
+        titleLabel.isEnabled = enabled
+        slider.isEnabled = enabled
+        detailLabel.isEnabled = enabled
+        backgroundColor = enabled ? UIColor.white : UIColor.disabledGray
+        isUserInteractionEnabled = enabled
+    }
+    
     public func stateDump() -> [String : String]? {
         guard let text = titleLabel.text, let detailText = detailLabel.text else { return nil }
         return [text : detailText]

@@ -8,7 +8,7 @@
 import Foundation
 
 #if !swift(>=4.0)
-extension NSAttributedStringKey {
+internal extension NSAttributedStringKey {
     public class var foregroundColor: String {
         return NSForegroundColorAttributeName
     }

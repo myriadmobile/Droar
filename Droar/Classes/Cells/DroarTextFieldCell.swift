@@ -37,6 +37,13 @@ public class DroarTextFieldCell : UITableViewCell, DroarCell {
         onTextChanged(textField.text)
     }
     
+    public func setEnabled(_ enabled: Bool) {
+        titleLabel.isEnabled = enabled
+        textField.isEnabled = enabled
+        backgroundColor = enabled ? UIColor.white : UIColor.disabledGray
+        isUserInteractionEnabled = enabled
+    }
+    
     public func stateDump() -> [String : String]? {
         guard let text = titleLabel.text, let enteredText = textField.text else { return nil }
         return [text : enteredText]

@@ -12,6 +12,7 @@ import Droar
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var cells = [DroarCell]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -45,6 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: DroarKnob {
+    func droarKnobWillBeginLoading(tableView: UITableView?) {
+        cells = []
+    }
+    
     func droarKnobTitle() -> String {
         return "Example Rows"
     }
@@ -54,34 +59,49 @@ extension AppDelegate: DroarKnob {
     }
     
     func droarKnobNumberOfCells() -> Int {
-        return 6
+        return 7
     }
     
     func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell {
+        
+        var cell: DroarCell
+        
         switch index {
         case 0:
-            return DroarLabelCell.create(title: "DroarLabelCell", detail: "Click Me!", allowSelection: true)
+            cell = DroarSwitchCell.create(title: "Rows Enabled", defaultValue: true, allowSelection: false, onValueChanged: { (value) in
+                for cell in self.cells {
+                    cell.setEnabled(value)
+                }
+            })
+            
+            return cell
         case 1:
-            return DroarTextFieldCell.create(title: "DroarTextFieldCell", placeholder: "Type here", text: nil, allowSelection: false, onTextChanged: { (text) in
+            cell = DroarLabelCell.create(title: "DroarLabelCell", detail: "Click Me!", allowSelection: true)
+        case 2:
+            cell = DroarTextFieldCell.create(title: "DroarTextFieldCell", placeholder: "Type here", text: nil, allowSelection: false, onTextChanged: { (text) in
                 print(text ?? "")
             })
-        case 2:
-            return DroarImageCell.create(title: "DroarImageCell", image: UIImage(named:"DroarIcon"), allowSelection: false)
         case 3:
-            return DroarSwitchCell.create(title: "DroarSwitchCell", defaultValue: false, allowSelection: false, onValueChanged: { (value) in
-                print(value)
-            })
+            cell = DroarImageCell.create(title: "DroarImageCell", image: UIImage(named:"DroarIcon"), allowSelection: true)
         case 4:
-            return DroarSegmentedCell.create(title: "DroarSegmentedCell", values: ["1", "2", "3"], defaultIndex: nil, allowSelection: false, onValueChanged: { (value) in
+            cell = DroarSwitchCell.create(title: "DroarSwitchCell", defaultValue: false, allowSelection: false, onValueChanged: { (value) in
                 print(value)
             })
         case 5:
-            return DroarSliderCell.create(title: "DroarSliderCell", value: 0.5, min: 0, max: 1, allowSelection: false, onValueChanged: { (value) in
+            cell = DroarSegmentedCell.create(title: "DroarSegmentedCell", values: ["0", "1", "2"], defaultIndex: nil, allowSelection: false, onValueChanged: { (value) in
+                print(value)
+            })
+        case 6:
+            cell = DroarSliderCell.create(title: "DroarSliderCell", value: 0.5, min: 0, max: 1, allowSelection: false, onValueChanged: { (value) in
                 print(value)
             })
         default:
-            return DroarLabelCell.create(title: "", detail: "", allowSelection: true)
+            cell =  DroarLabelCell.create(title: "", detail: "", allowSelection: true)
         }
+        
+        cells.append(cell)
+        
+        return cell
     }
     
     func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {

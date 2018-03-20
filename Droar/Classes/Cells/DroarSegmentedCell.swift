@@ -45,6 +45,13 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
         onValueChanged(segmentedControl.selectedSegmentIndex)
     }
     
+    public func setEnabled(_ enabled: Bool) {
+        titleLabel.isEnabled = enabled
+        segmentedControl.isEnabled = enabled
+        backgroundColor = enabled ? UIColor.white : UIColor.disabledGray
+        isUserInteractionEnabled = enabled
+    }
+    
     public func stateDump() -> [String : String]? {
         guard let text = titleLabel.text else { return nil }
         guard segmentedControl.selectedSegmentIndex > 0 else { return [text: ""]}

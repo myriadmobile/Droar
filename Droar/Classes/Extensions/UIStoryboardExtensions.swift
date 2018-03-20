@@ -7,6 +7,6 @@
 
 import Foundation
 
-public extension UIStoryboard {
-    public static let stateDump = UIStoryboard(name: "StateDump", bundle: Bundle.podBundle)
+internal extension UIStoryboard {
+    static let stateDump = UIStoryboard(name: "StateDump", bundle: Bundle.podBundle)
 }

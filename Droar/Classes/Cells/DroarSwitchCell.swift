@@ -36,6 +36,13 @@ public class DroarSwitchCell : UITableViewCell, DroarCell {
         onValueChanged(toggleSwitch.isOn)
     }
     
+    public func setEnabled(_ enabled: Bool) {
+        titleLabel.isEnabled = enabled
+        toggleSwitch.isEnabled = enabled
+        backgroundColor = enabled ? UIColor.white : UIColor.disabledGray
+        isUserInteractionEnabled = enabled
+    }
+    
     public func stateDump() -> [String : String]? {
         guard let text = titleLabel.text else { return nil }
         return [text : toggleSwitch.isOn ? "True" : "False"]

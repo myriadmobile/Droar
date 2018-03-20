@@ -9,4 +9,5 @@ import Foundation
 
 @objc public protocol DroarCell where Self: UITableViewCell {
     @objc func stateDump() -> [String: String]?
+    @objc func setEnabled(_ enabled: Bool)
 }

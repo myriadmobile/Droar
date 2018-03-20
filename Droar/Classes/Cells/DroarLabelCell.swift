@@ -8,7 +8,6 @@
 import Foundation
 
 public class DroarLabelCell : UITableViewCell, DroarCell {
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     
@@ -25,8 +24,15 @@ public class DroarLabelCell : UITableViewCell, DroarCell {
         cell?.titleLabel.text = title
         cell?.detailLabel.text = detail
         cell?.selectionStyle = allowSelection ? .gray : .none
-
+        
         return cell ?? DroarLabelCell()
+    }
+    
+    public func setEnabled(_ enabled: Bool) {
+        titleLabel.isEnabled = enabled
+        detailLabel.isEnabled = enabled
+        backgroundColor = enabled ? UIColor.white : UIColor.disabledGray
+        isUserInteractionEnabled = enabled
     }
     
     public func stateDump() -> [String : String]? {

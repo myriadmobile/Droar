@@ -15,4 +15,8 @@ internal extension UIColor {
     static var droarGray: UIColor {
         get { return UIColor(red: 205.0 / 255, green: 207.0 / 255, blue: 209.0/255, alpha: 1.0) }
     }
+    
+    static var disabledGray: UIColor {
+        get { return UIColor(white: 0.95, alpha: 1.0)}
+    }
 }
