@@ -9,6 +9,8 @@ import Foundation
 
 internal class ReportingKnob : DroarKnob {
     
+    private var screenshotCell: UITableViewCell?
+    
     private enum ReportingRow: Int {
         case screenshot = 0
         case dump = 1
@@ -35,6 +37,7 @@ internal class ReportingKnob : DroarKnob {
         case .screenshot:
             cell.titleLabel.text = "Screenshot"
             cell.detailLabel.text = ""
+            screenshotCell = cell
         case .dump:
             cell.titleLabel.text = "Generate Current State Dump"
             cell.detailLabel.text = ""
@@ -51,6 +54,9 @@ internal class ReportingKnob : DroarKnob {
         case .screenshot:
             if let image = Droar.captureScreen() {
                 let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+                if activityVC.responds(to: #selector(getter: UIActivityViewController.popoverPresentationController)) {
+                    activityVC.popoverPresentationController?.sourceView = screenshotCell ?? tableView
+                }
                 Droar.present(activityVC, animated: true, completion: nil)
             }
         case .dump:
