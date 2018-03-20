@@ -68,9 +68,10 @@ If you conform a `UINavigationController`, `UITabBarViewController`, etc to `Dro
     
     // Title for this knob.  If title matches existing knob, they will be combined
     @objc func droarKnobTitle() -> String
-    // The positioning and priorty for this knob
     
+    // The positioning and priorty for this knob
     @objc func droarKnobPosition() -> PositionInfo
+    
     // The number of cells for this knob
     @objc func droarKnobNumberOfCells() -> Int
     
