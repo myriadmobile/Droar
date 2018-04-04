@@ -29,7 +29,7 @@ internal extension Droar {
     }
     
     @objc private static func handleTripleTap(sender: UITapGestureRecognizer?) {
-        toggleVisibility()
+        toggleVisibility(nil)
     }
     
     @objc private static func handlePan(sender: UIPanGestureRecognizer?) {
@@ -49,7 +49,7 @@ internal extension Droar {
                 
             default:
                 sender.isEnabled = true
-                endDroarVisibilityUpdate()
+                endDroarVisibilityUpdate(nil)
             }
         }
     }
@@ -90,7 +90,7 @@ internal extension Droar {
         return true
     }
     
-    static func endDroarVisibilityUpdate() {
+    static func endDroarVisibilityUpdate(_ completion: (()->Void)?) {
         let translation = abs(navController.view.transform.tx)
         
         UIView.animate(withDuration: 0.25, animations: {
@@ -118,10 +118,12 @@ internal extension Droar {
                     window.addGestureRecognizer(dismissalRecognizer)
                 }
             }
+            
+            completion?()
         })
     }
     
-    @objc static func toggleVisibility() {
+    @objc static func toggleVisibility(_ completion: (()->Void)?) {
         guard beginDroarVisibilityUpdate() else { return }
         
         UIView.animate(withDuration: 0.25, animations: {
@@ -133,7 +135,7 @@ internal extension Droar {
                 setContainerOpacity(0)
             }
         }) { (completed) in
-            endDroarVisibilityUpdate()
+            endDroarVisibilityUpdate(completion)
         }
     }
     

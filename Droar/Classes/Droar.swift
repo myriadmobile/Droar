@@ -64,13 +64,13 @@ import Foundation
         }
     }
     
-    @objc public static func showWindow() {
+    @objc public static func showWindow(completion: (()->Void)? = nil) {
         guard !isVisible else { return }
-        toggleVisibility()
+        toggleVisibility(completion)
     }
 
-    @objc public static func dismissWindow() {
+    @objc public static func dismissWindow(completion: (()->Void)? = nil) {
         guard isVisible else { return }
-        toggleVisibility()
+        toggleVisibility(completion)
     }
 }
