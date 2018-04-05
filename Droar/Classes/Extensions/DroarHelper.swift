@@ -42,8 +42,14 @@ internal extension Droar {
             }
         }
         
-        dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(toggleVisibility))
+        dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(dismissWindow))
         dismissalRecognizer.direction = .right
+    }
+    
+    @objc private static func dismissWindow() {
+        if Droar.isVisible {
+            toggleVisibility(nil)
+        }
     }
     
     static func loadDynamicKnobs() -> [DroarKnob] {
