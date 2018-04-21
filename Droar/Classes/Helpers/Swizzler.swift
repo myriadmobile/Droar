@@ -9,7 +9,8 @@
 import Foundation
 
 public class Swizzler {
-    static func swizzleInstanceSelector(instance: NSObject, origSelector: Selector, newSelector: Selector) {
+    // Selector must be @objc dynamic
+    public static func swizzleInstanceSelector(instance: NSObject, origSelector: Selector, newSelector: Selector) {
         let aClass: AnyClass = object_getClass(instance)!
         
         let origMethod = class_getInstanceMethod(aClass, origSelector)!
@@ -18,7 +19,8 @@ public class Swizzler {
         method_exchangeImplementations(origMethod, newMethod)
     }
     
-    static func swizzleClassSelector(aClass: AnyClass, origSelector: Selector, newSelector: Selector) {
+    // Selector must be @objc dynamic class
+    public static func swizzleClassSelector(aClass: AnyClass, origSelector: Selector, newSelector: Selector) {
         let origMethod = class_getClassMethod(aClass, origSelector)!
         let newMethod = class_getClassMethod(aClass, newSelector)!
         
