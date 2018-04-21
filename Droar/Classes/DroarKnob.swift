@@ -42,6 +42,9 @@ extension PositionPriority : Comparable {
 }
 
 @objc public protocol DroarKnob {
+    // Invoked after the knob is first registered, and Droar is started.
+    @objc optional func droarKnobDidFinishRegistering()
+    
     // Perform any setup before this knob loads (Register table cells, clear cached data, etc)
     @objc optional func droarKnobWillBeginLoading(tableView: UITableView?)
     

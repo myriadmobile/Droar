@@ -25,12 +25,15 @@ import Foundation
     internal static var viewController: DroarViewController?
     internal static let drawerWidth:CGFloat = 300
     private static let startOnce = DispatchOnce()
+    public static private(set) var isStarted = false;
     
     @objc public static func start()
     {
         startOnce.perform {
             initializeWindow()
             setGestureType(.panFromRight)
+            KnobManager.sharedInstance.prepareForStart()
+            Droar.isStarted = true
         }
     }
         

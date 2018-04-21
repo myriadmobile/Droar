@@ -111,13 +111,29 @@ internal class KnobManager {
             return existingKnob === knob
         })) {
             staticKnobs.append(knob)
+            if Droar.isStarted {
+                knob.droarKnobDidFinishRegistering?()
+            }
             sortKnobs()
         }
     }
     
     public func registerDynamicKnobs(_ knobs: [DroarKnob]) {
         self.dynamicKnobs = knobs
+        if Droar.isStarted {
+            for knob in knobs {
+                knob.droarKnobDidFinishRegistering?()
+            }
+        }
         sortKnobs()
+    }
+    
+    public func prepareForStart() {
+        for section in visibleSections {
+            for knob in section.knobs {
+                knob.droarKnobDidFinishRegistering?()
+            }
+        }
     }
     
     public func prepareForDisplay(tableView: UITableView?) {
