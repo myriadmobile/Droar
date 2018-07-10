@@ -82,7 +82,7 @@ internal extension Droar {
         navController.view.frame = CGRect(x: screenSize.width, y: 0, width: drawerWidth, height: screenSize.height)
         containerViewController.willMove(toParentViewController: activeVC)
         activeVC.addChildViewController(containerViewController)
-        activeVC.view.addSubview(containerViewController.view)
+        activeVC.view.window?.addSubview(containerViewController.view)
         containerViewController.didMove(toParentViewController: activeVC)
         
         viewController?.tableView.reloadData()
