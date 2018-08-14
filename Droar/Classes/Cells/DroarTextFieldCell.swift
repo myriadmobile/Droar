@@ -13,6 +13,27 @@ public class DroarTextFieldCell : UITableViewCell, DroarCell {
     @IBOutlet weak var textField: UITextField!
     var onTextChanged: ((String?)-> Void)?
     
+    
+    public var title: String? {
+        get { return titleLabel.text }
+        set { titleLabel.text = newValue }
+    }
+    
+    public var value: String? {
+        get { return textField.text }
+        set { textField.text = newValue }
+    }
+    
+    public var placeholder: String? {
+        get { return textField.placeholder }
+        set { textField.placeholder = newValue }
+    }
+    
+    public var allowSelection: Bool {
+        get { return selectionStyle != .none }
+        set { selectionStyle = newValue ? .gray : .none }
+    }
+    
     public static func create(title: String? = "", placeholder: String? = "", text: String? = "", allowSelection: Bool = false, onTextChanged: ((String?)-> Void)? = nil) -> DroarTextFieldCell {
         var cell: DroarTextFieldCell?
         
@@ -23,10 +44,10 @@ public class DroarTextFieldCell : UITableViewCell, DroarCell {
             }
         }
         
-        cell?.titleLabel.text = title
-        cell?.textField.placeholder = placeholder
-        cell?.textField.text = text
-        cell?.selectionStyle = allowSelection ? .gray : .none
+        cell?.title = title
+        cell?.placeholder = placeholder
+        cell?.value = text
+        cell?.allowSelection = allowSelection
         cell?.onTextChanged = onTextChanged
         
         return cell ?? DroarTextFieldCell()

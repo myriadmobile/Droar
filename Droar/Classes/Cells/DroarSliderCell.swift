@@ -15,6 +15,21 @@ public class DroarSliderCell : UITableViewCell, DroarCell {
     
     private var onValueChanged: ((Float) -> Void)?
     
+    public var title: String? {
+        get { return titleLabel.text }
+        set { titleLabel.text = newValue }
+    }
+    
+    public var value: Float {
+        get { return slider.value }
+        set { slider.value = newValue }
+    }
+    
+    public var allowSelection: Bool {
+        get { return selectionStyle != .none }
+        set { selectionStyle = newValue ? .gray : .none }
+    }
+    
     public static func create(title: String? = "", value: Float = 0, min: Float = 0, max: Float = 1, allowSelection: Bool = false, onValueChanged: ((Float) -> Void)? = nil) -> DroarSliderCell {
         var cell: DroarSliderCell?
         
@@ -27,12 +42,12 @@ public class DroarSliderCell : UITableViewCell, DroarCell {
         
         cell?.onValueChanged = onValueChanged
         
-        cell?.titleLabel.text = title
+        cell?.title = title
         cell?.slider.minimumValue = min
         cell?.slider.maximumValue = max
-        cell?.slider.value = value
-        cell?.selectionStyle = allowSelection ? .gray : .none
-        cell?.detailLabel.text = String(format: "%.2f", cell?.slider.value ?? 0)
+        cell?.value = value
+        cell?.allowSelection = allowSelection
+        cell?.detailLabel.text = String(format: "%.2f", cell?.value ?? 0)
 
         return cell ?? DroarSliderCell()
     }

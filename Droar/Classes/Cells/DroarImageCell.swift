@@ -11,6 +11,21 @@ public class DroarImageCell : UITableViewCell, DroarCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var largeImageView: UIImageView!
     
+    public var title: String? {
+        get { return titleLabel.text }
+        set { titleLabel.text = newValue }
+    }
+    
+    public var detailImage: UIImage? {
+        get { return largeImageView.image }
+        set { largeImageView.image = newValue }
+    }
+    
+    public var allowSelection: Bool {
+        get { return selectionStyle != .none }
+        set { selectionStyle = newValue ? .gray : .none }
+    }
+    
     public static func create(title: String? = "", image: UIImage? = nil, allowSelection: Bool = false) -> DroarImageCell {
         var cell: DroarImageCell?
         
@@ -21,9 +36,9 @@ public class DroarImageCell : UITableViewCell, DroarCell {
             }
         }
         
-        cell?.titleLabel.text = title
-        cell?.largeImageView?.image = image
-        cell?.selectionStyle = allowSelection ? .gray : .none
+        cell?.title = title
+        cell?.detailImage = image
+        cell?.allowSelection = allowSelection
 
         return cell ?? DroarImageCell()
     }

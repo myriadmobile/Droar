@@ -11,6 +11,21 @@ public class DroarLabelCell : UITableViewCell, DroarCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     
+    public var title: String? {
+        get { return titleLabel.text }
+        set { titleLabel.text = newValue }
+    }
+    
+    public var detail: String? {
+        get { return detailLabel.text }
+        set { detailLabel.text = newValue }
+    }
+    
+    public var allowSelection: Bool {
+        get { return selectionStyle != .none }
+        set { selectionStyle = newValue ? .gray : .none }
+    }
+    
     public static func create(title: String? = "", detail: String? = "", allowSelection: Bool = false) -> DroarLabelCell {
         var cell: DroarLabelCell?
         
@@ -21,9 +36,9 @@ public class DroarLabelCell : UITableViewCell, DroarCell {
             }
         }
         
-        cell?.titleLabel.text = title
-        cell?.detailLabel.text = detail
-        cell?.selectionStyle = allowSelection ? .gray : .none
+        cell?.title = title
+        cell?.detail = detail        
+        cell?.allowSelection = allowSelection
         
         return cell ?? DroarLabelCell()
     }

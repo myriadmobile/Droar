@@ -13,6 +13,21 @@ public class DroarSwitchCell : UITableViewCell, DroarCell {
     @IBOutlet weak var toggleSwitch: UISwitch!
     var onValueChanged: ((Bool) -> Void)?
     
+    public var title: String? {
+        get { return titleLabel.text }
+        set { titleLabel.text = newValue }
+    }
+    
+    public var value: Bool {
+        get { return toggleSwitch.isOn }
+        set { toggleSwitch.isOn = newValue }
+    }
+    
+    public var allowSelection: Bool {
+        get { return selectionStyle != .none }
+        set { selectionStyle = newValue ? .gray : .none }
+    }
+    
     public static func create(title: String? = "", defaultValue: Bool = false, allowSelection: Bool = false, onValueChanged: ((Bool) -> Void)? = nil) -> DroarSwitchCell {
         var cell: DroarSwitchCell?
         
@@ -23,9 +38,9 @@ public class DroarSwitchCell : UITableViewCell, DroarCell {
             }
         }
         
-        cell?.titleLabel.text = title
-        cell?.toggleSwitch.isOn = defaultValue
-        cell?.selectionStyle = allowSelection ? .gray : .none
+        cell?.title = title
+        cell?.value = defaultValue
+        cell?.allowSelection = allowSelection
         cell?.onValueChanged = onValueChanged
         
         return cell ?? DroarSwitchCell()
