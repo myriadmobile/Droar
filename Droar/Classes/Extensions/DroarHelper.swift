@@ -22,17 +22,17 @@ internal extension Droar {
         navController.view.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
         navController.navigationBar.isTranslucent = false
         
-        navController.willMove(toParentViewController: viewController)
-        containerViewController.addChildViewController(navController)
+        navController.willMove(toParent: viewController)
+        containerViewController.addChild(navController)
         containerViewController.view.addSubview(navController.view)
-        navController.didMove(toParentViewController: containerViewController)
+        navController.didMove(toParent: containerViewController)
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: navController.view.frame.size.height))
         separatorView.backgroundColor = UIColor.droarBlue
         separatorView.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
         navController.view.addSubview(separatorView)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: UIWindow.didBecomeKeyNotification, object: nil)
 
         if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
             do {
@@ -84,9 +84,9 @@ internal extension Droar {
     
     static func loadActiveResponder() -> UIResponder? {
         if var window = loadKeyWindow() {
-            if window.windowLevel != UIWindowLevelNormal {
+            if window.windowLevel != UIWindow.Level.normal {
                 for otherWindow in UIApplication.shared.windows {
-                    if otherWindow.windowLevel == UIWindowLevelNormal {
+                    if otherWindow.windowLevel == UIWindow.Level.normal {
                         window = otherWindow
                         break
                     }

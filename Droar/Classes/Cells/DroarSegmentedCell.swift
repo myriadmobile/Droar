@@ -19,8 +19,8 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
     }
     
     public var selectedIndex: Int? {
-        get { return segmentedControl.selectedSegmentIndex == UISegmentedControlNoSegment ? nil : segmentedControl.selectedSegmentIndex }
-        set { segmentedControl.selectedSegmentIndex = (newValue == nil) ? UISegmentedControlNoSegment : newValue! }
+        get { return segmentedControl.selectedSegmentIndex == UISegmentedControl.noSegment ? nil : segmentedControl.selectedSegmentIndex }
+        set { segmentedControl.selectedSegmentIndex = (newValue == nil) ? UISegmentedControl.noSegment : newValue! }
     }
     
     public var allowSelection: Bool {
@@ -48,7 +48,7 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
         cell?.onValueChanged = onValueChanged
         
         let font = UIFont(name: "Russo One", size: 12) ?? UIFont.systemFont(ofSize: 12)
-        cell?.segmentedControl.setTitleTextAttributes([NSAttributedStringKey.font : font], for: .normal)
+        cell?.segmentedControl.setTitleTextAttributes([NSAttributedString.Key.font : font], for: .normal)
         
         return cell ?? DroarSegmentedCell()
     }

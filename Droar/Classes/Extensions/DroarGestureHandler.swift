@@ -80,10 +80,10 @@ internal extension Droar {
         
         containerViewController.view.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height)
         navController.view.frame = CGRect(x: screenSize.width, y: 0, width: drawerWidth, height: screenSize.height)
-        containerViewController.willMove(toParentViewController: activeVC)
-        activeVC.addChildViewController(containerViewController)
+        containerViewController.willMove(toParent: activeVC)
+        activeVC.addChild(containerViewController)
         activeVC.view.window?.addSubview(containerViewController.view)
-        containerViewController.didMove(toParentViewController: activeVC)
+        containerViewController.didMove(toParent: activeVC)
         
         viewController?.tableView.reloadData()
         
@@ -103,9 +103,9 @@ internal extension Droar {
             }
         }, completion: { (complete) in
             if navController.view.transform.isIdentity {
-                containerViewController.willMove(toParentViewController: nil)
+                containerViewController.willMove(toParent: nil)
                 containerViewController.view.removeFromSuperview()
-                containerViewController.removeFromParentViewController()
+                containerViewController.removeFromParent()
                 
                 if let window = dismissalRecognizer.view {
                     window.removeGestureRecognizer(dismissalRecognizer)
