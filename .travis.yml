@@ -11,8 +11,6 @@ before_install:
 - pod update --project-directory=Example
 script:
 - set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator12.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION=4.2 | xcpretty
-- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION=4.0 | xcpretty
-- set -o pipefail && xcodebuild -workspace Example/Droar.xcworkspace -scheme Droar-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO SWIFT_VERSION=3.2 | xcpretty
 - pod lib lint
 notifications:
   slack:
