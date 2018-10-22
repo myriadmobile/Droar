@@ -22,18 +22,29 @@ internal extension Droar {
         navController.view.autoresizingMask = [.flexibleHeight, .flexibleLeftMargin]
         navController.navigationBar.isTranslucent = false
         
+        #if swift(>=4.2)
+        navController.willMove(toParent: viewController)
+        containerViewController.addChild(navController)
+        containerViewController.view.addSubview(navController.view)
+        navController.didMove(toParent: containerViewController)
+        #else
         navController.willMove(toParentViewController: viewController)
         containerViewController.addChildViewController(navController)
         containerViewController.view.addSubview(navController.view)
         navController.didMove(toParentViewController: containerViewController)
+        #endif
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: navController.view.frame.size.height))
         separatorView.backgroundColor = UIColor.droarBlue
         separatorView.autoresizingMask = [.flexibleHeight, .flexibleRightMargin]
         navController.view.addSubview(separatorView)
         
+        #if swift(>=4.2)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: UIWindow.didBecomeKeyNotification, object: nil)
+        #else
         NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
-
+        #endif
+        
         if let fontUrl = Bundle.podBundle.url(forResource: "RussoOne-Regular", withExtension: ".ttf") {
             do {
                 try UIFont.register(url: fontUrl)
@@ -84,6 +95,16 @@ internal extension Droar {
     
     static func loadActiveResponder() -> UIResponder? {
         if var window = loadKeyWindow() {
+            #if swift(>=4.2)
+            if window.windowLevel != UIWindow.Level.normal {
+                for otherWindow in UIApplication.shared.windows {
+                    if otherWindow.windowLevel == UIWindow.Level.normal {
+                        window = otherWindow
+                        break
+                    }
+                }
+            }
+            #else
             if window.windowLevel != UIWindowLevelNormal {
                 for otherWindow in UIApplication.shared.windows {
                     if otherWindow.windowLevel == UIWindowLevelNormal {
@@ -92,6 +113,7 @@ internal extension Droar {
                     }
                 }
             }
+            #endif
             
             for subview in window.subviews {
                 var responder = subview.next

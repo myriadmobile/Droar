@@ -13,7 +13,11 @@ class DroarViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        #if swift(>=4.2)
+        tableView.rowHeight = UITableView.automaticDimension
+        #else
         tableView.rowHeight = UITableViewAutomaticDimension
+        #endif
         tableView.estimatedRowHeight = 45
         
         let font = UIFont(name: "Russo One", size: 30) ?? UIFont.systemFont(ofSize: 30)
@@ -24,7 +28,7 @@ class DroarViewController: UITableViewController {
         attachment.image = UIImage(named: "Droar_icon", in: Bundle.podBundle, compatibleWith: nil)
         attachment.bounds = CGRect(x: 0, y: -8, width: 40, height: 40)
         let attributedString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
-        attributedString.append(NSAttributedString(string: " DROAR", attributes: [NSAttributedStringKey.font: font, NSAttributedStringKey.foregroundColor: UIColor.white]))
+        attributedString.append(NSAttributedString(string: " DROAR", attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]))
         label.attributedText = attributedString
         navigationItem.titleView = label
         
