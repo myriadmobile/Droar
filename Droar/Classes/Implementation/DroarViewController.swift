@@ -13,7 +13,11 @@ class DroarViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        #if swift(>=4.2)
         tableView.rowHeight = UITableView.automaticDimension
+        #else
+        tableView.rowHeight = UITableViewAutomaticDimension
+        #endif
         tableView.estimatedRowHeight = 45
         
         let font = UIFont(name: "Russo One", size: 30) ?? UIFont.systemFont(ofSize: 30)
