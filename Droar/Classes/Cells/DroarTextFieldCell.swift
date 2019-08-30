@@ -13,6 +13,11 @@ public class DroarTextFieldCell : UITableViewCell, DroarCell {
     @IBOutlet weak var textField: UITextField!
     var onTextChanged: ((String?)-> Void)?
     
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        //I imagine that Droar will seldom need autocorrect. We can add a param in the future if needed.
+        textField.autocorrectionType = .no
+    }
     
     public var title: String? {
         get { return titleLabel.text }
