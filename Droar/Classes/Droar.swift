@@ -37,6 +37,20 @@ import UIKit
         }
     }
     
+    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 50.0) {
+        configureRecognizerForType(type, threshold)
+    }
+    
+    // For plugins
+    @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        navController.pushViewController(viewController, animated: animated)
+    }
+    
+}
+
+//Knobs
+extension Droar {
+    
     @objc public static func register(_ knob: DroarKnob) {
         KnobManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
@@ -52,13 +66,8 @@ import UIKit
         viewController?.tableView.reloadData()
     }
     
-    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 50.0) {
-        configureRecognizerForType(type, threshold)
-    }
-    
-    // For plugins
-    @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        navController.pushViewController(viewController, animated: animated)
+    public static func refreshKnobs() {
+        viewController?.tableView.reloadData()
     }
     
 }
@@ -97,6 +106,15 @@ extension Droar {
     
     private static func setContainerOpacity(_ opacity: CGFloat) {
         containerViewController.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: defaultContainerAlpha * opacity)
+    }
+    
+}
+
+//Backwards compatibility
+extension Droar {
+    
+    public static func dismissWindow() {
+        closeDroar(completion: nil)
     }
     
 }
