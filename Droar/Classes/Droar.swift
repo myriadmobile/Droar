@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 @objc public enum DroarGestureType: UInt {
     case tripleTap, panFromRight
@@ -36,7 +36,21 @@ import Foundation
             Droar.isStarted = true
         }
     }
-        
+    
+    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 50.0) {
+        configureRecognizerForType(type, threshold)
+    }
+    
+    // For plugins
+    @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        navController.pushViewController(viewController, animated: animated)
+    }
+    
+}
+
+//Knobs
+extension Droar {
+    
     @objc public static func register(_ knob: DroarKnob) {
         KnobManager.sharedInstance.registerStaticKnob(knob)
         viewController?.tableView.reloadData()
@@ -52,28 +66,55 @@ import Foundation
         viewController?.tableView.reloadData()
     }
     
-    @objc public static func setGestureType(_ type: DroarGestureType, _ threshold: CGFloat = 50.0) {
-        configureRecognizerForType(type, threshold)
+    public static func refreshKnobs() {
+        viewController?.tableView.reloadData()
     }
     
-    // For plugins
-    @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        navController.pushViewController(viewController, animated: animated)
-    }
+}
+
+//Visibility
+extension Droar {
     
-    @objc public static var isVisible: Bool {
-        get {
-            return containerViewController.parent != nil
+    //Technically this could be wrong depending on the tx value, but it is close enough.
+    @objc public static var isVisible: Bool { return !(navController.view.transform == CGAffineTransform.identity) }
+    
+    @objc public static func openDroar(completion: (()->Void)? = nil) {
+        UIView.animate(withDuration: 0.25, animations: {
+            navController.view.transform = CGAffineTransform(translationX: -navController.view.frame.size.width, y: 0)
+            setContainerOpacity(1)
+        }) { (completed) in
+            endDroarVisibilityUpdate(completion)
         }
     }
     
-    @objc public static func showWindow(completion: (()->Void)? = nil) {
-        guard !isVisible else { return }
-        toggleVisibility(completion)
+    @objc public static func closeDroar(completion: (()->Void)? = nil) {
+        UIView.animate(withDuration: 0.25, animations: {
+            navController.view.transform = CGAffineTransform.identity
+            setContainerOpacity(0)
+        }) { (completed) in
+            endDroarVisibilityUpdate(completion)
+        }
     }
+    
+    @objc static func toggleVisibility(completion: (()->Void)? = nil) {
+        if isVisible {
+            closeDroar(completion: completion)
+        } else {
+            openDroar(completion: completion)
+        }
+    }
+    
+    private static func setContainerOpacity(_ opacity: CGFloat) {
+        containerViewController.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: defaultContainerAlpha * opacity)
+    }
+    
+}
 
-    @objc public static func dismissWindow(completion: (()->Void)? = nil) {
-        guard isVisible else { return }
-        toggleVisibility(completion)
+//Backwards compatibility
+extension Droar {
+    
+    public static func dismissWindow() {
+        closeDroar(completion: nil)
     }
+    
 }
