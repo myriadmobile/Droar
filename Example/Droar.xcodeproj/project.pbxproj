@@ -129,7 +129,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				40D824FBDB82F9921D517258 /* [CP] Embed Pods Frameworks */,
-				BC12E11C612E14D498ACC5EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +194,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Droar_Example/Pods-Droar_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Droar_Example/Pods-Droar_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Droar/Droar.framework",
 				"${BUILT_PRODUCTS_DIR}/SDVersion/SDVersion.framework",
 			);
@@ -206,22 +205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Droar_Example/Pods-Droar_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC12E11C612E14D498ACC5EA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Droar_Example/Pods-Droar_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droar_Example/Pods-Droar_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9E26489949CC1D66EACABB9 /* [CP] Check Pods Manifest.lock */ = {

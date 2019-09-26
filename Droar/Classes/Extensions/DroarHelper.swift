@@ -89,50 +89,12 @@ internal extension Droar {
         }
     }
     
-    static func loadActiveResponder() -> UIResponder? {
-        if var window = loadKeyWindow() {
-            #if swift(>=4.2)
-            if window.windowLevel != UIWindow.Level.normal {
-                for otherWindow in UIApplication.shared.windows {
-                    if otherWindow.windowLevel == UIWindow.Level.normal {
-                        window = otherWindow
-                        break
-                    }
-                }
-            }
-            #else
-            if window.windowLevel != UIWindowLevelNormal {
-                for otherWindow in UIApplication.shared.windows {
-                    if otherWindow.windowLevel == UIWindowLevelNormal {
-                        window = otherWindow
-                        break
-                    }
-                }
-            }
-            #endif
-            
-            for subview in window.subviews {
-                var responder = subview.next
-                //added this block of code for iOS 8 which puts a UITransitionView in between the UIWindow and the UILayoutContainerView
-                if responder?.isEqual(window) ?? false {
-                    //this is a UITransitionView
-                    if subview.subviews.count > 0 {
-                        let subSubView = subview.subviews.first
-                        responder = subSubView?.next
-                    } else {
-                        continue
-                    }
-                }
-                
-                return responder
-            }
-        }
-        
-        return nil
+    static func loadActiveResponder() -> UIViewController? {
+        return loadKeyWindow()?.rootViewController
     }
     
     static func loadKeyWindow() -> UIWindow? {
-        var window = UIApplication.shared.keyWindow
+        var window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
         
         if window == nil {
             window = UIApplication.shared.delegate?.window!
