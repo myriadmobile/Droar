@@ -70,7 +70,7 @@ internal extension Droar {
     }
     
     static func beginDroarVisibilityUpdate() -> Bool {
-        guard let activeVC = loadActiveResponder() as? UIViewController else { return false }
+        guard let activeVC = loadActiveResponder() else { return false }
         guard navController?.view.transform.isIdentity ?? false else { return true }
         
         KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
