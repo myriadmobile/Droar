@@ -60,7 +60,7 @@ internal extension Droar {
     @objc private static func dismissalRecognizerEvent() { closeDroar() } //We can't call closeDroar from the selector because of the optional completion block
     
     static func loadDynamicKnobs() -> [DroarKnob] {
-        if let activeVC = loadActiveResponder() as? UIViewController {
+        if let activeVC = loadActiveResponder() {
             
             let candidateVCs = activeVC.loadActiveViewControllers()
             var knobs = [DroarKnob]()

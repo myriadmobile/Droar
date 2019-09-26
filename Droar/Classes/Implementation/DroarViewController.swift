@@ -51,7 +51,7 @@ class DroarViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return KnobManager.sharedInstance.visibleSections[indexPath.section].droarKnobCellForIndex(index: indexPath.row, tableView: tableView) as! UITableViewCell
+        return KnobManager.sharedInstance.visibleSections[indexPath.section].droarKnobCellForIndex(index: indexPath.row, tableView: tableView)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
