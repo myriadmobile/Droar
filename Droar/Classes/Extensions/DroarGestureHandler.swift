@@ -82,12 +82,12 @@ internal extension Droar {
         navController.view.frame = CGRect(x: screenSize.width, y: 0, width: drawerWidth, height: screenSize.height)
         #if swift(>=4.2)
         containerViewController.willMove(toParent: activeVC)
-        activeVC.view.window?.addSubview(containerViewController.view)
+        UIApplication.shared.keyWindow?.addSubview(containerViewController.view)
         activeVC.addChild(containerViewController)
         containerViewController.didMove(toParent: activeVC)
         #else
         containerViewController.willMove(toParentViewController: activeVC)
-        activeVC.view.window?.addSubview(containerViewController.view)
+        UIApplication.shared.keyWindow?.addSubview(containerViewController.view)
         activeVC.addChildViewController(containerViewController)
         containerViewController.didMove(toParentViewController: activeVC)
         #endif
