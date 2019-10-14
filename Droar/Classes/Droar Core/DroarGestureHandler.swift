@@ -7,21 +7,14 @@
 
 import Foundation
 
-
-private class GestureDelegate: NSObject, UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
-}
-
 internal extension Droar {
     
     //State
-    static var gestureRecognizer: UIGestureRecognizer!
+    static var openRecognizer: UIGestureRecognizer!
     static var dismissalRecognizer: UISwipeGestureRecognizer!
     
     static var threshold: CGFloat!
-    private static let gestureDelegate = GestureDelegate()
+    private static let gestureDelegate = DroarGestureDelegate()
     
     //Setup
     static func configureRecognizerForType(_ type: DroarGestureType, _ threshold: CGFloat) {
@@ -44,6 +37,7 @@ internal extension Droar {
         if let old = dismissalRecognizer { old.view?.removeGestureRecognizer(old) }
         dismissalRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(dismissalRecognizerEvent))
         dismissalRecognizer.direction = .right
+        dismissalRecognizer.delegate = gestureDelegate
     }
     
     //Handlers
@@ -115,15 +109,34 @@ internal extension Droar {
     //Convenience
     private static func replaceGestureRecognizer(with recognizer: UIGestureRecognizer) {
         //Remove old (if applicable)
-        if let gestureRecognizer = gestureRecognizer {
+        if let gestureRecognizer = openRecognizer {
             gestureRecognizer.view?.removeGestureRecognizer(gestureRecognizer)
         }
         
         //Add new
-        gestureRecognizer = recognizer
-        loadKeyWindow()?.addGestureRecognizer(gestureRecognizer)
+        openRecognizer = recognizer
+        loadKeyWindow()?.addGestureRecognizer(openRecognizer)
     }
     
     @objc private static func dismissalRecognizerEvent() { closeDroar() } //We can't call closeDroar from the selector because of the optional completion block
+    
+}
+
+//Gesture Delegates
+fileprivate class DroarGestureDelegate: NSObject, UIGestureRecognizerDelegate {
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if gestureRecognizer == Droar.openRecognizer {
+            
+        } else if gestureRecognizer == Droar.dismissalRecognizer {
+            if touch.view is UISlider { return false } //Prevent pan from interfering with slider
+        }
+        
+        return true
+    }
     
 }
