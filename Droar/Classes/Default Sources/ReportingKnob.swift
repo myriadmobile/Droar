@@ -52,7 +52,7 @@ internal class ReportingKnob : DroarKnob {
     func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         switch ReportingRow(rawValue: selectedIndex)! {
         case .screenshot:
-            if let image = Droar.captureScreen() {
+            if let image = captureScreen() {
                 let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
                 if activityVC.responds(to: #selector(getter: UIActivityViewController.popoverPresentationController)) {
                     activityVC.popoverPresentationController?.sourceView = screenshotCell ?? tableView
@@ -75,4 +75,23 @@ internal class ReportingKnob : DroarKnob {
             break
         }
     }
+    
+    func captureScreen() -> UIImage? {
+        let containerViewController = Droar.containerViewController!
+        let parent = containerViewController.view.superview
+        containerViewController.view.removeFromSuperview()
+        
+        guard let window = Droar.loadKeyWindow() else { return .none }
+        UIGraphicsBeginImageContextWithOptions(window.bounds.size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return .none }
+        window.layer.render(in: context)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        parent?.addSubview(containerViewController.view)
+        
+        return image
+    }
+    
 }
+

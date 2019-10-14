@@ -17,13 +17,11 @@ import UIKit
     // Droar is a purely static class.
     private override init() { }
     
-    internal static var gestureRecognizer: UIGestureRecognizer!
-    internal static var dismissalRecognizer: UISwipeGestureRecognizer!
     internal static var containerViewController: UIViewController!
     internal static let defaultContainerAlpha: CGFloat = 0.5
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
-    internal static let drawerWidth:CGFloat = 300
+    internal static let drawerWidth: CGFloat = 300
     private static let startOnce = DispatchOnce()
     public static private(set) var isStarted = false;
     
@@ -41,9 +39,28 @@ import UIKit
         configureRecognizerForType(type, threshold)
     }
     
-    // For plugins
+    //Navigation
     @objc public static func pushViewController(_ viewController: UIViewController, animated: Bool) {
         navController.pushViewController(viewController, animated: animated)
+    }
+    
+    @objc static func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        navController.present(viewController, animated: animated, completion: completion)
+    }
+    
+    //Internal Accessors
+    static func loadKeyWindow() -> UIWindow? {
+        var window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        
+        if window == nil {
+            window = UIApplication.shared.keyWindow
+        }
+        
+        return window
+    }
+    
+    static func loadActiveResponder() -> UIViewController? {
+        return loadKeyWindow()?.rootViewController
     }
     
 }
@@ -83,7 +100,12 @@ extension Droar {
             navController.view.transform = CGAffineTransform(translationX: -navController.view.frame.size.width, y: 0)
             setContainerOpacity(1)
         }) { (completed) in
-            endDroarVisibilityUpdate(completion)
+            if let window = gestureRecognizer.view {
+                window.removeGestureRecognizer(gestureRecognizer)
+                window.addGestureRecognizer(dismissalRecognizer)
+            }
+            
+            completion?()
         }
     }
     
@@ -92,7 +114,22 @@ extension Droar {
             navController.view.transform = CGAffineTransform.identity
             setContainerOpacity(0)
         }) { (completed) in
-            endDroarVisibilityUpdate(completion)
+            #if swift(>=4.2)
+            containerViewController.willMove(toParent: nil)
+            containerViewController.view.removeFromSuperview()
+            containerViewController.removeFromParent()
+            #else
+            containerViewController.willMove(toParentViewController: nil)
+            containerViewController.view.removeFromSuperview()
+            containerViewController.removeFromParentViewController()
+            #endif
+            
+            if let window = dismissalRecognizer.view {
+                window.removeGestureRecognizer(dismissalRecognizer)
+                window.addGestureRecognizer(gestureRecognizer)
+            }
+            
+            completion?()
         }
     }
     
@@ -104,7 +141,7 @@ extension Droar {
         }
     }
     
-    private static func setContainerOpacity(_ opacity: CGFloat) {
+    static func setContainerOpacity(_ opacity: CGFloat) {
         containerViewController.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: defaultContainerAlpha * opacity)
     }
     
