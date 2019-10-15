@@ -17,16 +17,15 @@ import UIKit
     // Droar is a purely static class.
     private override init() { }
     
-    internal static var containerViewController: UIViewController!
-    internal static let defaultContainerAlpha: CGFloat = 0.5
+    static var window: DroarWindow!
+    
     internal static var navController: UINavigationController!
     internal static var viewController: DroarViewController?
     internal static let drawerWidth: CGFloat = 300
     private static let startOnce = DispatchOnce()
     public static private(set) var isStarted = false;
     
-    @objc public static func start()
-    {
+    @objc public static func start() {
         startOnce.perform {
             initializeWindow()
             setGestureType(.panFromRight)
@@ -96,10 +95,13 @@ extension Droar {
     @objc public static var isVisible: Bool { return !(navController.view.transform == CGAffineTransform.identity) }
     
     @objc public static func openDroar(completion: (()->Void)? = nil) {
+        window.isHidden = false
+        
         UIView.animate(withDuration: 0.25, animations: {
             navController.view.transform = CGAffineTransform(translationX: -navController.view.frame.size.width, y: 0)
-            setContainerOpacity(1)
+            window.setActivationPercent(1)
         }) { (completed) in
+            
             if let window = openRecognizer.view {
                 window.removeGestureRecognizer(openRecognizer)
                 window.addGestureRecognizer(dismissalRecognizer)
@@ -112,21 +114,13 @@ extension Droar {
     @objc public static func closeDroar(completion: (()->Void)? = nil) {
         UIView.animate(withDuration: 0.25, animations: {
             navController.view.transform = CGAffineTransform.identity
-            setContainerOpacity(0)
+            window.setActivationPercent(0)
         }) { (completed) in
-            #if swift(>=4.2)
-            containerViewController.willMove(toParent: nil)
-            containerViewController.view.removeFromSuperview()
-            containerViewController.removeFromParent()
-            #else
-            containerViewController.willMove(toParentViewController: nil)
-            containerViewController.view.removeFromSuperview()
-            containerViewController.removeFromParentViewController()
-            #endif
+            window.isHidden = true
             
             if let window = dismissalRecognizer.view {
                 window.removeGestureRecognizer(dismissalRecognizer)
-                window.addGestureRecognizer(openRecognizer)
+                replaceGestureRecognizer(with: openRecognizer)
             }
             
             completion?()
@@ -139,10 +133,6 @@ extension Droar {
         } else {
             openDroar(completion: completion)
         }
-    }
-    
-    static func setContainerOpacity(_ opacity: CGFloat) {
-        containerViewController.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: defaultContainerAlpha * opacity)
     }
     
 }

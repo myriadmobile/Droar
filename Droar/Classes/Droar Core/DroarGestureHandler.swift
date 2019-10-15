@@ -58,7 +58,8 @@ internal extension Droar {
         case .changed:
             let limitedPan = max(sender.translation(in: sender.view).x, -navController.view.frame.width)
             navController.view.transform = CGAffineTransform(translationX: limitedPan, y: 0)
-            setContainerOpacity(abs(limitedPan) / drawerWidth)
+            let percent = abs(limitedPan) / drawerWidth
+            window.setActivationPercent(percent)
         default:
             sender.isEnabled = true
             
@@ -73,12 +74,9 @@ internal extension Droar {
     
     //Visibility Updates
     private static func beginDroarVisibilityUpdate() -> Bool {
-        guard let window = loadKeyWindow() else { print("No key window found."); return false }
-        guard navController.view.transform.isIdentity else { return true } //TODO: Ask what this is for
-        
-        //Ensure that the VC is added to the window
-        window.addSubview(containerViewController.view)
-        containerViewController.view.frame = window.frame
+        //Ensure the window is visible
+        window.makeKeyAndVisible()
+        window.addSubview(navController.view)
         
         //Update for knob state
         KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
@@ -107,7 +105,7 @@ internal extension Droar {
     }
     
     //Convenience
-    private static func replaceGestureRecognizer(with recognizer: UIGestureRecognizer) {
+    static func replaceGestureRecognizer(with recognizer: UIGestureRecognizer) {
         //Remove old (if applicable)
         if let gestureRecognizer = openRecognizer {
             gestureRecognizer.view?.removeGestureRecognizer(gestureRecognizer)

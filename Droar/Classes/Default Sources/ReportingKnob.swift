@@ -77,18 +77,21 @@ internal class ReportingKnob : DroarKnob {
     }
     
     func captureScreen() -> UIImage? {
-        let containerViewController = Droar.containerViewController!
-        let parent = containerViewController.view.superview
-        containerViewController.view.removeFromSuperview()
+        //Find all the windows we want to capture; these will be layered, NOT taken individually.
+        var capturableWindows = UIApplication.shared.windows
+        capturableWindows.removeAll(where: { $0 == Droar.window })
         
-        guard let window = Droar.loadKeyWindow() else { return .none }
-        UIGraphicsBeginImageContextWithOptions(window.bounds.size, false, UIScreen.main.scale)
+        //Find the necessary size
+        var size: CGSize = .zero
+        size.height = capturableWindows.compactMap({ $0.frame.height }).max() ?? 0
+        size.width = capturableWindows.compactMap({ $0.frame.width }).max() ?? 0
+        
+        //Capture
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         guard let context = UIGraphicsGetCurrentContext() else { return .none }
-        window.layer.render(in: context)
+        capturableWindows.forEach({ $0.layer.render(in: context) })
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        parent?.addSubview(containerViewController.view)
         
         return image
     }

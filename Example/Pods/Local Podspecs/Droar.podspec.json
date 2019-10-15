@@ -20,11 +20,7 @@
     "ios": "9.0"
   },
   "source_files": "Droar/Classes/**/*.{swift,h,m}",
-  "resource_bundles": {
-    "Droar": [
-      "Droar/Classes/**/*.{xib,storyboard,png,jpeg,jpg,txt,ttf,xcassets}"
-    ]
-  },
+  "resources": "Droar/Classes/**/*.{xib,storyboard,png,jpeg,jpg,txt,ttf,xcassets}",
   "frameworks": "UIKit",
   "dependencies": {
     "SDVersion": [
