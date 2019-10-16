@@ -20,18 +20,10 @@ public class DroarSegmentedCell : UITableViewCell, DroarCell {
     
     public var selectedIndex: Int? {
         get {
-            #if swift(>=4.2)
             return segmentedControl.selectedSegmentIndex == UISegmentedControl.noSegment ? nil : segmentedControl.selectedSegmentIndex
-            #else
-            return segmentedControl.selectedSegmentIndex == UISegmentedControlNoSegment ? nil : segmentedControl.selectedSegmentIndex
-            #endif
         }
         set {
-            #if swift(>=4.2)
             segmentedControl.selectedSegmentIndex = (newValue == nil) ? UISegmentedControl.noSegment : newValue!
-            #else
-            segmentedControl.selectedSegmentIndex = (newValue == nil) ? UISegmentedControlNoSegment : newValue!
-            #endif
         }
     }
     

@@ -39,11 +39,7 @@ internal extension Droar {
         navController.view.layer.borderColor = UIColor.droarBlue.cgColor
         
         //This observer watches for when new windows become available; we need to move gesture recognizer to the new window when this happens
-        #if swift(>=4.2)
         NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: UIWindow.didBecomeKeyNotification, object: nil)
-        #else
-        NotificationCenter.default.addObserver(self, selector: #selector(handleReceivedWindowDidBecomeKeyNotification), name: NSNotification.Name.UIWindowDidBecomeKey, object: nil)
-        #endif
     }
     
     //Handlers
