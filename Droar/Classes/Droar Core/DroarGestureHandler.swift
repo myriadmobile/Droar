@@ -75,8 +75,10 @@ internal extension Droar {
     //Visibility Updates
     private static func beginDroarVisibilityUpdate() -> Bool {
         //Ensure the window is visible
+        let appWindow = loadKeyWindow()
         window.makeKeyAndVisible()
         window.addSubview(navController.view)
+        appWindow?.makeKeyAndVisible()
         
         //Update for knob state
         KnobManager.sharedInstance.registerDynamicKnobs(loadDynamicKnobs())
