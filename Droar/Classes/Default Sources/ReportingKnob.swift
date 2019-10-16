@@ -52,7 +52,7 @@ internal class ReportingKnob : DroarKnob {
     func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int) {
         switch ReportingRow(rawValue: selectedIndex)! {
         case .screenshot:
-            if let image = Droar.captureScreen() {
+            if let image = captureScreen() {
                 let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
                 if activityVC.responds(to: #selector(getter: UIActivityViewController.popoverPresentationController)) {
                     activityVC.popoverPresentationController?.sourceView = screenshotCell ?? tableView
@@ -75,4 +75,26 @@ internal class ReportingKnob : DroarKnob {
             break
         }
     }
+    
+    func captureScreen() -> UIImage? {
+        //Find all the windows we want to capture; these will be layered, NOT taken individually.
+        var capturableWindows = UIApplication.shared.windows
+        capturableWindows.removeAll(where: { $0 == Droar.window })
+        
+        //Find the necessary size
+        var size: CGSize = .zero
+        size.height = capturableWindows.compactMap({ $0.frame.height }).max() ?? 0
+        size.width = capturableWindows.compactMap({ $0.frame.width }).max() ?? 0
+        
+        //Capture
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return .none }
+        capturableWindows.forEach({ $0.layer.render(in: context) })
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
 }
+

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Droar'
-  s.version          = '1.5.4'
+  s.version          = '2.0.0'
   s.summary          = 'A runtime debugging tool for iOS.'
 
   s.description      = <<-DESC
@@ -25,10 +25,7 @@ Droar is a useful tool for displaying runtime information and settings, useful f
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'Droar/Classes/**/*.{swift,h,m}'
-  
-  s.resource_bundles = {
-    'Droar' => ['Droar/Classes/**/*.{xib,storyboard,png,jpeg,jpg,txt,ttf,xcassets}']
-  }
+  s.resources = 'Droar/Classes/**/*.{xib,storyboard,png,jpeg,jpg,txt,ttf,xcassets}'
 
   s.frameworks = 'UIKit'
   s.dependency 'SDVersion'

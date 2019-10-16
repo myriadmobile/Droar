@@ -36,5 +36,10 @@ class ViewController: UIViewController, DroarKnob {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func presentTest(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let rootVC = storyboard.instantiateInitialViewController() else { return }
+        present(rootVC, animated: true, completion: nil)
+    }
 }
 
