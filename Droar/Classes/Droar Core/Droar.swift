@@ -101,11 +101,9 @@ extension Droar {
             navController.view.transform = CGAffineTransform(translationX: -navController.view.frame.size.width, y: 0)
             window.setActivationPercent(1)
         }) { (completed) in
-            
-            if let window = openRecognizer.view {
-                window.removeGestureRecognizer(openRecognizer)
-                window.addGestureRecognizer(dismissalRecognizer)
-            }
+            //Swap gestures
+            openRecognizer.view?.removeGestureRecognizer(openRecognizer)
+            window.addGestureRecognizer(dismissalRecognizer)
             
             completion?()
         }
@@ -118,10 +116,9 @@ extension Droar {
         }) { (completed) in
             window.isHidden = true
             
-            if let window = dismissalRecognizer.view {
-                window.removeGestureRecognizer(dismissalRecognizer)
-                replaceGestureRecognizer(with: openRecognizer)
-            }
+            //Swap gestures
+            dismissalRecognizer.view?.removeGestureRecognizer(dismissalRecognizer)
+            replaceGestureRecognizer(with: openRecognizer)
             
             completion?()
         }
