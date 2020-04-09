@@ -29,5 +29,5 @@ Droar is a useful tool for displaying runtime information and settings, useful f
   s.resources = 'Droar/Classes/**/*.{xib,storyboard,png,jpeg,jpg,txt,ttf,xcassets}'
 
   s.frameworks = 'UIKit'
-  s.dependency 'SDVersion'
+  s.dependency 'SDVersion', 'NotifyAPNS'
 end
