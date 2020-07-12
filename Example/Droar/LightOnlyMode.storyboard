@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LightOnlyMode-->
+        <scene sceneID="5IZ-nC-eI7">
+            <objects>
+                <viewController storyboardIdentifier="LightOnlyModeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aUk-fV-9UV" customClass="LightOnlyModeViewController" customModule="Droar_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DIF-b5-yv9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7F-II-ifp" customClass="RoundedCornerView" customModule="Droar_Example" customModuleProvider="target">
+                                <rect key="frame" x="52.5" y="233.5" width="270" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subview using in-app dark mode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXM-Xv-7Kx">
+                                        <rect key="frame" x="16" y="16" width="238" height="168"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="UcA-eu-x1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="QXM-Xv-7Kx" secondAttribute="bottom" constant="16" id="V5I-xN-Vnz"/>
+                                    <constraint firstAttribute="height" constant="200" id="bCT-fo-Vem"/>
+                                    <constraint firstItem="QXM-Xv-7Kx" firstAttribute="leading" secondItem="L7F-II-ifp" secondAttribute="leading" constant="16" id="hIh-Bu-rqN"/>
+                                    <constraint firstItem="QXM-Xv-7Kx" firstAttribute="top" secondItem="L7F-II-ifp" secondAttribute="top" constant="16" id="nZB-ZX-bKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="QXM-Xv-7Kx" secondAttribute="trailing" constant="16" id="qYh-3f-EwM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ny-rx-N9N">
+                                <rect key="frame" x="20" y="144" width="335" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="qji-Qo-RHC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view controller always show in light mode." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRS-Fz-WPb">
+                                <rect key="frame" x="20" y="179" width="335" height="43"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gRS-Fz-WPb" firstAttribute="trailing" secondItem="1Ny-rx-N9N" secondAttribute="trailing" id="8BI-o9-ehf"/>
+                            <constraint firstItem="1Ny-rx-N9N" firstAttribute="leading" secondItem="6eG-YI-HCa" secondAttribute="leading" constant="20" id="Js9-eg-8Gb"/>
+                            <constraint firstItem="L7F-II-ifp" firstAttribute="centerY" secondItem="DIF-b5-yv9" secondAttribute="centerY" id="V9w-CW-pNw"/>
+                            <constraint firstItem="6eG-YI-HCa" firstAttribute="trailing" secondItem="1Ny-rx-N9N" secondAttribute="trailing" constant="20" id="ZI5-4P-uVo"/>
+                            <constraint firstItem="L7F-II-ifp" firstAttribute="centerX" secondItem="DIF-b5-yv9" secondAttribute="centerX" id="dFa-Zs-CXc"/>
+                            <constraint firstItem="1Ny-rx-N9N" firstAttribute="top" secondItem="6eG-YI-HCa" secondAttribute="top" constant="100" id="eq3-4W-4SN"/>
+                            <constraint firstItem="gRS-Fz-WPb" firstAttribute="top" secondItem="1Ny-rx-N9N" secondAttribute="bottom" constant="8" id="nxX-7Y-QDu"/>
+                            <constraint firstItem="gRS-Fz-WPb" firstAttribute="leading" secondItem="1Ny-rx-N9N" secondAttribute="leading" id="xV2-up-K7g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6eG-YI-HCa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LightOnlyMode" id="Wtu-UJ-rOE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGi-sM-0gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="149"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,11 +10,12 @@ import Foundation
 
 @objc public enum DefaultKnobType: Int {
     case buildInfo = 0
-    case deviceInfo = 1
-    case processInfo = 2
-    case reporting = 3
-    case myriad = 4
-    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .deviceInfo, .processInfo, .reporting, .myriad]
+    case appearanceInfo = 1
+    case deviceInfo = 2
+    case processInfo = 3
+    case reporting = 4
+    case myriad = 5
+    internal static let defaultValues: [DefaultKnobType] = [.buildInfo, .appearanceInfo, .deviceInfo, .processInfo, .reporting, .myriad]
 }
 
 internal class KnobManager {
@@ -39,6 +40,10 @@ internal class KnobManager {
         for type in types {
             switch type {
             case .buildInfo: defaultKnobs.append(BuildInfoKnob())
+            case .appearanceInfo:
+            if #available(iOS 12.0, *) {
+                defaultKnobs.append(AppearanceInfoKnob())
+            }
             case .deviceInfo: defaultKnobs.append(DeviceInfoKnob())
             case .processInfo: defaultKnobs.append(ProcessInfoKnob())
             case .reporting: defaultKnobs.append(ReportingKnob())

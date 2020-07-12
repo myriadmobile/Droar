@@ -1,5 +1,5 @@
 PODS:
-  - Droar (2.0.0):
+  - Droar (2.0.1):
     - SDVersion
   - SDVersion (4.3.2)
 
@@ -8,7 +8,7 @@ DEPENDENCIES:
   - SDVersion
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SDVersion
 
 EXTERNAL SOURCES:
@@ -16,9 +16,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Droar: 87bd728f679c50489b78812823991d08b33a783a
+  Droar: bd8a5213c4bc0bd5f31a403552fcf1ef83041ab5
   SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
 
 PODFILE CHECKSUM: 07d626d4ded86e83b867bf5d9c50daecabba7d7d
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1
