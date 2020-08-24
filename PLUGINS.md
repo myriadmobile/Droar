@@ -1,109 +1,53 @@
 ## Plugin Creation
 
+Creating a plugin requires a separate cocoapod with a dependency on Droar.  Follow [this guide](https://guides.cocoapods.org/making/using-pod-lib-create.html) to create the new plugin.
 
+> Use the syntax `<coupled_project>-Droar` for the cocoapod's name
 
+## Modifying the .podspect
 
+Modify your .podspect to include an appropriate summary and description, as well as any dependencies you'll need.  You can reference [netfox-Droar's .podspec](https://github.com/myriadmobile/netfox-Droar/blob/master/netfox-Droar.podspec) as a simple example.
 
+## Loading your plugin
 
+Droar automatically manages any plugins registered to it, however your code must register to be a "Knob" (See [README](README.md)).  There are two ways to do this:
 
+### 1) Codeless installation
 
-
-
-
-
-The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend to get written and shipped straight inline with production code.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single tool.
-
-<p align="center">
-<img src="https://media.giphy.com/media/7FfNceqr7lhqyqsrW6/giphy.gif">
-</p>
-
-## Installation
-
-Droar is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "Droar"
-```
-
-## Start
-
-To start Droar, add the following in the `didFinishLaunchingWithOptions` method of your app delegate:
+Create a new Objective-C "loader" class to perform the loading.  Override Obj-C's static `load` method to hook into the runtime, and register your knob:
 
 ```
-import Droar
+#import "example_DroarLoader.h"
+#import <Droar/Droar-Swift.h>
+#import <example_Droar/example_Droar-Swift.h>
 
-...
-if nonProductionEnvironment {
-    Droar.start()
+@implementation example_DroarLoader
+
++ (void)load {
+    SEL selector = NSSelectorFromString(@"sharedInstance");
+    if ([example_Droar respondsToSelector:selector])
+    {
+        [Droar register:[netfox_Droar performSelector:selector]];
+    }
 }
+
+@end
 ```
 
-To open, simply swipe starting from the far right side of the screen.
+Check out [netfox-Droar](https://github.com/myriadmobile/netfox-Droar/tree/master/netfox-Droar/Classes) as an example.
 
-## Configuring
+Registering this way won't require your user to write any code.  They'll simply register your plugin in their .podfile and carry on!
 
-### Adding your own Knobs (table sections)
+> I'm using selectors because I wanted the knob's initializer and `sharedInstance` to be private, to ensure no users will misuse it.
 
-There are two ways to add knobs in Droar:
+### 2) Have consumers of your cocoapod register it manually
 
-#### Static Knobs
+Simply provide access to an intializer or `sharedInstance` of your DroarKnob to register themselves, or else write a function that will register the knob for them.
 
-Static knobs will always appear in Droar.  Simply conform a new or existing class to `DroarKnob`, and use `Droar.register(DroarKnob)` to register an instance of it.
+> Make sure to include how to install in your plugin's README!
 
-#### Dynamic Knobs
+## Write your plugin
 
-Dynamic knobs are instances of `UIViewController` that conform to `DroarKnob`.  When Droar is appearing, it will search through the main window's view controller hierarchy and and find currently active/visible `UIViewController`'s, to see if they conform to `DroarKnob`.
+Write your plugin to behave how you'd like.  Check out [netfox-Droar's knob](https://github.com/myriadmobile/netfox-Droar/blob/master/netfox-Droar/Classes/netfox-Droar.swift) as an example.
 
-There is no need to register your view controllers as static knobs.  Simply conform to `DroarKnob`, and Droar will pull information from them if Droar is opened on that screen.
-
-If you conform a `UINavigationController`, `UITabBarViewController`, etc to `DroarKnob` (and it's currently visible/active), Droar will pull information both from it, as well as its active/visible view controller.
-
-#### The `DroarKnob` Interface:
-
-```
-@objc public protocol DroarKnob {
-    // Perform any setup before this knob loads (Register table cells, clear cached data, etc)
-    @objc optional func droarKnobWillBeginLoading(tableView: UITableView?)
-    
-    // Title for this knob.  If title matches existing knob, they will be combined
-    @objc func droarKnobTitle() -> String
-    
-    // The positioning and priorty for this knob
-    @objc func droarKnobPosition() -> PositionInfo
-    
-    // The number of cells for this knob
-    @objc func droarKnobNumberOfCells() -> Int
-    
-    // The cell at the specified index.  There are many pre-defined cells, just use Droar<#type#>Cell.create(), or create your own.
-    @objc func droarKnobCellForIndex(index: Int, tableView: UITableView) -> DroarCell
-    
-    // Indicates the cell was selected.  This will not be called if `UITableViewCell.selectionStyle == .none`
-    @objc optional func droarKnobIndexSelected(tableView: UITableView, selectedIndex: Int)
-}
-```
-
-### Activation Gesture
-
-To configure the gesture that opens Droar, use the `setGestureType` method of `Droar`.
-
-### Default Knobs
-You can control which of the default sections are shown using the `registerDefaultKnobs` method of `Droar`.  If this isn't called, all default knobs will be displayed.
-
-## Plugins
-
-### [netfox-Droar](https://github.com/myriadmobile/netfox-Droar)
-[netfox](https://github.com/kasketis/netfox) is a lightweight, one line setup, iOS / OSX network debugging library.
-
-### [FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar)
-[FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
-
-## Author
-
-Nathan Jangula, Myriad Mobile, developer@myriadmobile.com
-
-## License
-
-Droar is available under the MIT license. See the LICENSE file for more info.
-
-
+> You can learn more about `DroarKnob`s in [Droar's README](https://github.com/myriadmobile/Droar#the-droarknob-interface)
