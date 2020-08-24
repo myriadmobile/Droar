@@ -4,9 +4,9 @@ Creating a plugin requires a separate cocoapod with a dependency on Droar.  Foll
 
 > Use the syntax `<coupled_project>-Droar` for the cocoapod's name
 
-## Modifying the .podspect
+## Modifying the .podspec
 
-Modify your .podspect to include an appropriate summary and description, as well as any dependencies you'll need.  You can reference [netfox-Droar's .podspec](https://github.com/myriadmobile/netfox-Droar/blob/master/netfox-Droar.podspec) as a simple example.
+Modify your .podspec to include an appropriate summary and description, as well as any dependencies you'll need.  You can reference [netfox-Droar's .podspec](https://github.com/myriadmobile/netfox-Droar/blob/master/netfox-Droar.podspec) as a simple example.
 
 ## Loading your plugin
 
