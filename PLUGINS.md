@@ -1,15 +1,15 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/myriadmobile/Droar/master/Github/DroarLogo.png">
-</p>
+## Plugin Creation
 
-[![CI Status](http://img.shields.io/travis/myriadmobile/Droar.svg?style=flat)](https://travis-ci.org/myriadmobile/Droar)
-[![Version](https://img.shields.io/cocoapods/v/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
-[![License](https://img.shields.io/cocoapods/l/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
-[![Platform](https://img.shields.io/cocoapods/p/Droar.svg?style=flat)](http://cocoapods.org/pods/Droar)
 
-Droar is a modular, single-line installation debugging window.
 
-## Overview
+
+
+
+
+
+
+
+
 
 The idea behind Droar is simple: during app deployment stages, adding quick app configurations (switching between mock vs live, QA credential quick-login, changing http environments, etc) tend to get written and shipped straight inline with production code.  Droar solves this issue by adding quick configurations that are grouped into one place, and under a single tool.
 
@@ -97,10 +97,6 @@ You can control which of the default sections are shown using the `registerDefau
 
 ### [FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar)
 [FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
-
-## Writing a Plugin
-
-Check out [the guide](PLUGINS.md) for creating a new Droar plugin.
 
 ## Author
 
