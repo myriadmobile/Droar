@@ -29,6 +29,8 @@ class ViewController: UIViewController, DroarKnob {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Test.setup()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,3 +45,12 @@ class ViewController: UIViewController, DroarKnob {
     }
 }
 
+class Test: URLProtocol {
+    static func setup() {
+        URLProtocol.registerClass(Test.self)
+    }
+    
+    override class func canInit(with request: URLRequest) -> Bool {
+        return false
+    }
+}
