@@ -33,6 +33,8 @@ internal extension UIViewController {
             return viewControllers
         }
         
-        return [self]
+        var viewControllers: [UIViewController] = [self]
+        viewControllers.append(contentsOf: children)
+        return viewControllers
     }
 }
