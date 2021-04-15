@@ -54,6 +54,9 @@ public class DroarSliderCell : UITableViewCell, DroarCell {
     
     @IBAction func sliderValueChanged(_ sender: Any) {
         detailLabel.text = String(format: "%.2f", slider.value)
+    }
+    
+    @IBAction func sliderEditingEnded(_ sender: Any) {
         onValueChanged?(slider.value)
     }
     
