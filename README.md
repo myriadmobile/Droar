@@ -103,6 +103,10 @@ Since this plugin requires custom customization of OHHTTPStubs, it is dependent 
 ### [FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar)
 [FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
 
+## Writing a Plugin
+
+Check out [the guide](PLUGINS.md) for creating a new Droar plugin.
+
 ## Author
 
 Nathan Jangula, Myriad Mobile, developer@myriadmobile.com
