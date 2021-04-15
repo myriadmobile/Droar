@@ -43,7 +43,7 @@ import UIKit
         navController.pushViewController(viewController, animated: animated)
     }
     
-    @objc static func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+    @objc public static func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
         navController.present(viewController, animated: animated, completion: completion)
     }
     
