@@ -95,6 +95,11 @@ You can control which of the default sections are shown using the `registerDefau
 ### [netfox-Droar](https://github.com/myriadmobile/netfox-Droar)
 [netfox](https://github.com/kasketis/netfox) is a lightweight, one line setup, iOS / OSX network debugging library.
 
+
+### [OHHTTPStubs-Droar](https://github.com/myriadmobile/OHHTTPStubs-Droar)
+[OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs) is a library designed to stub your network requests very easily.
+Since this plugin requires custom customization of OHHTTPStubs, it is dependent on a [fork of the OHHTPStubs](https://github.com/myriadmobile/OHHTTPStubs).
+
 ### [FBMemoryProfiler-Droar](https://github.com/myriadmobile/FBMemoryProfiler-Droar)
 [FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) is an iOS library providing developer tools for browsing objects in memory over time, using FBAllocationTracker and FBRetainCycleDetector.
 
